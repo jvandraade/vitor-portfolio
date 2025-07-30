@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply transition-colors duration-300;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-gray-100 dark:bg-gray-900;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-aqua-green rounded-full;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-forest-green;
+  }
+}
+
+@layer components {
+  .minecraft-btn {
+    @apply relative px-6 py-3 bg-forest-green text-white font-bold text-sm uppercase tracking-wide;
+    @apply transition-all duration-150 hover:bg-aqua-green;
+    @apply shadow-minecraft hover:shadow-glow;
+    border: 2px solid #2d7d2d;
+    clip-path: polygon(8px 0, 100% 0, 100% calc(100% - 8px), calc(100% - 8px) 100%, 0 100%, 0 8px);
+  }
+
+  .glass-card {
+    @apply bg-white/10 dark:bg-black/20 backdrop-blur-md border border-white/20;
+    @apply rounded-2xl shadow-xl;
+  }
+
+  .glow-text {
+    @apply text-aqua-green;
+    text-shadow: 0 0 10px rgba(0, 213, 183, 0.5);
+  }
+
+  .section-padding {
+    @apply px-4 sm:px-6 lg:px-8 py-16 lg:py-24;
+  }
+
+  .container-max {
+    @apply max-w-7xl mx-auto;
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    @apply bg-gradient-to-r from-aqua-green to-baby-blue bg-clip-text text-transparent;
+  }
+
+  .bg-gradient-primary {
+    @apply bg-gradient-to-br from-aqua-green via-forest-green to-baby-blue;
+  }
+
+  .bg-gradient-gold {
+    @apply bg-gradient-to-r from-gold via-yellow-400 to-gold;
+  }
+
+  .hover-lift {
+    @apply transition-transform duration-300 hover:-translate-y-2;
+  }
+
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
