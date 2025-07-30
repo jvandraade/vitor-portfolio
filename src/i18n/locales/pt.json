@@ -1,0 +1,110 @@
+{
+  "nav": {
+    "about": "Sobre mim",
+    "education": "Formação",
+    "courses": "Cursos",
+    "technologies": "Tecnologias",
+    "experience": "Experiências",
+    "axk": "AXK",
+    "portfolio": "Portfólio",
+    "contact": "Contato"
+  },
+  "theme": {
+    "light": "Claro",
+    "dark": "Escuro"
+  },
+  "about": {
+    "title": "Sobre mim",
+    "name": "Vitor Andrade",
+    "role": "Engenheiro de Software Front-end",
+    "description": "Especialista em UI/UX com formação em Análise e Desenvolvimento de Sistemas e Pós-graduação em Engenharia de Software. Sou apaixonado por criar experiências digitais excepcionais, com expertise em IA e Machine Learning. Além da programação, sou viciado em jogos eletrônicos e compito semi-profissionalmente em diversos títulos.",
+    "age": "anos",
+    "location": "Aracaju, Sergipe - Brasil"
+  },
+  "education": {
+    "title": "Formação Acadêmica",
+    "ads": {
+      "title": "Análise e Desenvolvimento de Sistemas",
+      "institution": "Estácio de Sergipe",
+      "period": "2022 - 2024",
+      "status": "Concluído"
+    },
+    "pos": {
+      "title": "Pós-graduação em Engenharia de Software",
+      "institution": "Estácio de Sergipe",
+      "period": "2025 - 2026",
+      "status": "Em andamento"
+    }
+  },
+  "courses": {
+    "title": "Certificações e Cursos",
+    "description": "Clique nos cursos para visualizar os certificados",
+    "list": [
+      "Python - Curso em Vídeo",
+      "JavaScript - Curso em Vídeo",
+      "HTML5 e CSS3 - Curso em Vídeo",
+      "React.js - Udemy",
+      "TypeScript - Rocketseat",
+      "Node.js - Rocketseat",
+      "Git e GitHub - Digital Innovation One",
+      "MySQL - Curso em Vídeo",
+      "Docker - Alura",
+      "UI/UX Design - Google",
+      "Machine Learning - Coursera",
+      "Agile e Scrum - Udemy"
+    ]
+  },
+  "technologies": {
+    "title": "Tecnologias & Ferramentas",
+    "subtitle": "Stack moderna que domino"
+  },
+  "experience": {
+    "title": "Experiência Profissional",
+    "axk": {
+      "title": "Estágio em Desenvolvimento Back-end",
+      "company": "AXK eSports",
+      "period": "2024 - Atual",
+      "mentor": "Mentor: Gustavo Vargas (CEO)",
+      "description": "Desenvolvimento de APIs e sistemas back-end para plataforma de eSports. Trabalhando com tecnologias modernas e metodologias ágeis sob mentoria do CEO Gustavo Vargas, Engenheiro de Software Sênior."
+    }
+  },
+  "axk": {
+    "title": "AXK eSports",
+    "subtitle": "Organização de eSports Profissional",
+    "description": "A AXK é uma organização brasileira de eSports fundada com o objetivo de competir nos mais altos níveis dos jogos eletrônicos. Nossa missão é formar talentos e representar o Brasil no cenário competitivo mundial.",
+    "ceo": "CEO: Gustavo Vargas",
+    "ceoDescription": "Engenheiro de Software Sênior e visionário dos eSports",
+    "games": {
+      "title": "Jogos de Atuação",
+      "list": [
+        "Pokémon UNITE",
+        "VALORANT",
+        "Brawlhalla",
+        "Rainbow Six Siege",
+        "Predecessor",
+        "Brawl Stars"
+      ]
+    },
+    "pillars": {
+      "title": "Nossos Pilares",
+      "excellence": "Excelência Competitiva",
+      "innovation": "Inovação Tecnológica",
+      "community": "Comunidade Forte",
+      "growth": "Crescimento Sustentável"
+    }
+  },
+  "portfolio": {
+    "title": "Meus Projetos",
+    "introduction": {
+      "title": "Introdução",
+      "description": "Este portfólio foi criado com muita dedicação para apresentação pessoal, mas também das minhas habilidades técnicas, projetos de maneira estruturada e interativa. Além de contar um pouco sobre mim, e também mostrar do que sou capaz de criar com códigos. Ele está dividido em suas devidas sessões, cada uma destacando tecnologias utilizadas e desafios enfrentados. Sinta-se à vontade para explorar e conhecer mais sobre meu trabalho. Caso tenha dúvidas, a aba de contato estará à sua disposição!"
+    }
+  },
+  "contact": {
+    "title": "Vamos Conversar?",
+    "subtitle": "Entre em contato através das redes sociais",
+    "linkedin": "LinkedIn",
+    "instagram": "Instagram",
+    "twitter": "Twitter"
+  }
+}

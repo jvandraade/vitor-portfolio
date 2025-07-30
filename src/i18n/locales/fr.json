@@ -1,0 +1,110 @@
+{
+  "nav": {
+    "about": "À propos",
+    "education": "Formation",
+    "courses": "Cours",
+    "technologies": "Technologies",
+    "experience": "Expérience",
+    "axk": "AXK",
+    "portfolio": "Portfolio",
+    "contact": "Contact"
+  },
+  "theme": {
+    "light": "Clair",
+    "dark": "Sombre"
+  },
+  "about": {
+    "title": "À propos de moi",
+    "name": "Vitor Andrade",
+    "role": "Ingénieur Logiciel Front-end",
+    "description": "Spécialiste UI/UX avec un diplôme en Analyse et Développement de Systèmes et une Post-graduation en Génie Logiciel. Je suis passionné par la création d'expériences numériques exceptionnelles, avec une expertise en IA et Machine Learning. En plus de la programmation, je suis accro aux jeux vidéo et je concours semi-professionnellement dans divers titres.",
+    "age": "ans",
+    "location": "Aracaju, Sergipe - Brésil"
+  },
+  "education": {
+    "title": "Formation Académique",
+    "ads": {
+      "title": "Analyse et Développement de Systèmes",
+      "institution": "Estácio de Sergipe",
+      "period": "2022 - 2024",
+      "status": "Terminé"
+    },
+    "pos": {
+      "title": "Post-graduation en Génie Logiciel",
+      "institution": "Estácio de Sergipe",
+      "period": "2025 - 2026",
+      "status": "En cours"
+    }
+  },
+  "courses": {
+    "title": "Certifications et Cours",
+    "description": "Cliquez sur les cours pour voir les certificats",
+    "list": [
+      "Python - Curso em Vídeo",
+      "JavaScript - Curso em Vídeo",
+      "HTML5 e CSS3 - Curso em Vídeo",
+      "React.js - Udemy",
+      "TypeScript - Rocketseat",
+      "Node.js - Rocketseat",
+      "Git e GitHub - Digital Innovation One",
+      "MySQL - Curso em Vídeo",
+      "Docker - Alura",
+      "UI/UX Design - Google",
+      "Machine Learning - Coursera",
+      "Agile e Scrum - Udemy"
+    ]
+  },
+  "technologies": {
+    "title": "Technologies et Outils",
+    "subtitle": "Stack moderne que je maîtrise"
+  },
+  "experience": {
+    "title": "Expérience Professionnelle",
+    "axk": {
+      "title": "Stage en Développement Back-end",
+      "company": "AXK eSports",
+      "period": "2024 - Actuel",
+      "mentor": "Mentor: Gustavo Vargas (PDG)",
+      "description": "Développement d'APIs et systèmes back-end pour plateforme eSports. Travaillant avec des technologies modernes et méthodologies agiles sous le mentorat du PDG Gustavo Vargas, Ingénieur Logiciel Senior."
+    }
+  },
+  "axk": {
+    "title": "AXK eSports",
+    "subtitle": "Organisation eSports Professionnelle",
+    "description": "AXK est une organisation brésilienne d'eSports fondée avec l'objectif de concourir aux plus hauts niveaux des jeux électroniques. Notre mission est de former des talents et représenter le Brésil sur la scène compétitive mondiale.",
+    "ceo": "PDG: Gustavo Vargas",
+    "ceoDescription": "Ingénieur Logiciel Senior et visionnaire des eSports",
+    "games": {
+      "title": "Jeux de Compétition",
+      "list": [
+        "Pokémon UNITE",
+        "VALORANT",
+        "Brawlhalla",
+        "Rainbow Six Siege",
+        "Predecessor",
+        "Brawl Stars"
+      ]
+    },
+    "pillars": {
+      "title": "Nos Piliers",
+      "excellence": "Excellence Compétitive",
+      "innovation": "Innovation Technologique",
+      "community": "Communauté Forte",
+      "growth": "Croissance Durable"
+    }
+  },
+  "portfolio": {
+    "title": "Mes Projets",
+    "introduction": {
+      "title": "Introduction",
+      "description": "Ce portfolio a été créé avec beaucoup de dévouement pour la présentation personnelle, mais aussi pour présenter mes compétences techniques et projets de manière structurée et interactive. En plus de raconter un peu sur moi, il montre aussi ce que je suis capable de créer avec du code. Il est divisé en ses sections respectives, chacune mettant en évidence les technologies utilisées et les défis rencontrés. N'hésitez pas à explorer et en savoir plus sur mon travail. Si vous avez des questions, la section contact sera à votre disposition!"
+    }
+  },
+  "contact": {
+    "title": "Parlons?",
+    "subtitle": "Contactez-moi via les réseaux sociaux",
+    "linkedin": "LinkedIn",
+    "instagram": "Instagram",
+    "twitter": "Twitter"
+  }
+}

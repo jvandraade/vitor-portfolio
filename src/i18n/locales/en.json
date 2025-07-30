@@ -1,0 +1,110 @@
+{
+  "nav": {
+    "about": "About me",
+    "education": "Education",
+    "courses": "Courses",
+    "technologies": "Technologies",
+    "experience": "Experience",
+    "axk": "AXK",
+    "portfolio": "Portfolio",
+    "contact": "Contact"
+  },
+  "theme": {
+    "light": "Light",
+    "dark": "Dark"
+  },
+  "about": {
+    "title": "About me",
+    "name": "Vitor Andrade",
+    "role": "Front-end Software Engineer",
+    "description": "UI/UX Specialist with a degree in Systems Analysis and Development and a Postgraduate degree in Software Engineering. I'm passionate about creating exceptional digital experiences, with expertise in AI and Machine Learning. Besides programming, I'm addicted to video games and compete semi-professionally in various titles.",
+    "age": "years old",
+    "location": "Aracaju, Sergipe - Brazil"
+  },
+  "education": {
+    "title": "Academic Background",
+    "ads": {
+      "title": "Systems Analysis and Development",
+      "institution": "Estácio de Sergipe",
+      "period": "2022 - 2024",
+      "status": "Completed"
+    },
+    "pos": {
+      "title": "Postgraduate in Software Engineering",
+      "institution": "Estácio de Sergipe",
+      "period": "2025 - 2026",
+      "status": "In progress"
+    }
+  },
+  "courses": {
+    "title": "Certifications & Courses",
+    "description": "Click on courses to view certificates",
+    "list": [
+      "Python - Curso em Vídeo",
+      "JavaScript - Curso em Vídeo",
+      "HTML5 e CSS3 - Curso em Vídeo",
+      "React.js - Udemy",
+      "TypeScript - Rocketseat",
+      "Node.js - Rocketseat",
+      "Git e GitHub - Digital Innovation One",
+      "MySQL - Curso em Vídeo",
+      "Docker - Alura",
+      "UI/UX Design - Google",
+      "Machine Learning - Coursera",
+      "Agile e Scrum - Udemy"
+    ]
+  },
+  "technologies": {
+    "title": "Technologies & Tools",
+    "subtitle": "Modern stack I master"
+  },
+  "experience": {
+    "title": "Professional Experience",
+    "axk": {
+      "title": "Back-end Development Internship",
+      "company": "AXK eSports",
+      "period": "2024 - Current",
+      "mentor": "Mentor: Gustavo Vargas (CEO)",
+      "description": "Development of APIs and back-end systems for eSports platform. Working with modern technologies and agile methodologies under the mentorship of CEO Gustavo Vargas, Senior Software Engineer."
+    }
+  },
+  "axk": {
+    "title": "AXK eSports",
+    "subtitle": "Professional eSports Organization",
+    "description": "AXK is a Brazilian eSports organization founded with the goal of competing at the highest levels of electronic games. Our mission is to develop talent and represent Brazil on the world competitive scene.",
+    "ceo": "CEO: Gustavo Vargas",
+    "ceoDescription": "Senior Software Engineer and eSports visionary",
+    "games": {
+      "title": "Games We Compete In",
+      "list": [
+        "Pokémon UNITE",
+        "VALORANT",
+        "Brawlhalla",
+        "Rainbow Six Siege",
+        "Predecessor",
+        "Brawl Stars"
+      ]
+    },
+    "pillars": {
+      "title": "Our Pillars",
+      "excellence": "Competitive Excellence",
+      "innovation": "Technological Innovation",
+      "community": "Strong Community",
+      "growth": "Sustainable Growth"
+    }
+  },
+  "portfolio": {
+    "title": "My Projects",
+    "introduction": {
+      "title": "Introduction",
+      "description": "This portfolio was created with great dedication for personal presentation, but also to showcase my technical skills and projects in a structured and interactive way. In addition to telling a bit about myself, it also shows what I'm capable of creating with code. It's divided into its respective sections, each highlighting technologies used and challenges faced. Feel free to explore and learn more about my work. If you have any questions, the contact section will be at your disposal!"
+    }
+  },
+  "contact": {
+    "title": "Let's Talk?",
+    "subtitle": "Get in touch through social media",
+    "linkedin": "LinkedIn",
+    "instagram": "Instagram",
+    "twitter": "Twitter"
+  }
+}
