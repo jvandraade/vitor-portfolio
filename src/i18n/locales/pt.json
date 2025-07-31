@@ -55,8 +55,16 @@
     ]
   },
   "technologies": {
-    "title": "Tecnologias & Ferramentas",
-    "subtitle": "Stack moderna que domino"
+    "title": "Tecnologias",
+    "subtitle": "Ferramentas e tecnologias que domino para criar soluções inovadoras",
+    "stats": {
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "database": "Database",
+      "tools": "Ferramentas"
+    },
+    "cta": "Sempre aprendendo e explorando novas tecnologias",
+    "explore": "Explorar Projetos"
   },
   "experience": {
     "title": "Experiência Profissional",

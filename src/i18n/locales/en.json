@@ -55,8 +55,16 @@
     ]
   },
   "technologies": {
-    "title": "Technologies & Tools",
-    "subtitle": "Modern stack I master"
+    "title": "Technologies",
+    "subtitle": "Tools and technologies I master to create innovative solutions",
+    "stats": {
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "database": "Database",
+      "tools": "Tools"
+    },
+    "cta": "Always learning and exploring new technologies",
+    "explore": "Explore Projects"
   },
   "experience": {
     "title": "Professional Experience",

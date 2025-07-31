@@ -55,8 +55,16 @@
     ]
   },
   "technologies": {
-    "title": "Technologies et Outils",
-    "subtitle": "Stack moderne que je maîtrise"
+    "title": "Technologies",
+    "subtitle": "Outils et technologies que je maîtrise pour créer des solutions innovantes",
+    "stats": {
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "database": "Base de données",
+      "tools": "Outils"
+    },
+    "cta": "Toujours en train d'apprendre et d'explorer de nouvelles technologies",
+    "explore": "Explorer les Projets"
   },
   "experience": {
     "title": "Expérience Professionnelle",

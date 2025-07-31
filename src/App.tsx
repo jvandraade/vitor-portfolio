@@ -3,6 +3,8 @@ import { Navbar } from './components/layout/Navbar';
 import { AboutMe } from './components/sections/AboutMe';
 import { Education } from './components/sections/Education';
 import { Courses } from './components/sections/Courses';
+import Technologies from './components/sections/Technologies';
+import Experience from './components/sections/Experience';
 import './i18n';
 import './styles/globals.css';
 
@@ -29,27 +31,10 @@ function App() {
             <div className="container-max">
               <div className="space-y-32">
                 {/* Technologies Section */}
-                <section id="technologies" className="min-h-screen flex items-center">
-                  <div className="w-full text-center">
-                    <h2 className="text-3xl md:text-5xl font-display font-bold text-gradient mb-8">
-                      Tecnologias
-                    </h2>
-                    <p className="text-gray-600 dark:text-gray-400">
-                      Carrossel de tecnologias será implementado aqui
-                    </p>
-                  </div>
-                </section>
-
+                <Technologies />
                 {/* Experience Section */}
                 <section id="experience" className="min-h-screen flex items-center">
-                  <div className="w-full text-center">
-                    <h2 className="text-3xl md:text-5xl font-display font-bold text-gradient mb-8">
-                      Experiência
-                    </h2>
-                    <p className="text-gray-600 dark:text-gray-400">
-                      Seção de experiências profissionais será implementada aqui
-                    </p>
-                  </div>
+                  <Experience />
                 </section>
 
                 {/* AXK Section */}
