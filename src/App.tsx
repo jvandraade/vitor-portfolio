@@ -6,6 +6,8 @@ import { Courses } from './components/sections/Courses';
 import Technologies from './components/sections/Technologies';
 import Experience from './components/sections/Experience';
 import AXK from './components/sections/AXK';
+import Portfolio from './components/sections/Portfolio';
+import Contact from './components/sections/Contact';
 import './i18n';
 import './styles/globals.css';
 
@@ -27,38 +29,20 @@ function App() {
           {/* Courses Section */}
           <Courses />
 
-          {/* Placeholder sections for future implementation */}
-          <div className="section-padding">
-            <div className="container-max">
-              <div className="space-y-32">
-                {/* Technologies Section */}
-                <Technologies />
+          {/* Technologies Section */}
+          <Technologies />
 
-                {/* Experience Section */}
-                <Experience />
+          {/* Experience Section */}
+          <Experience />
 
-                {/* AXK Section */}
-                <AXK />
+          {/* AXK Section */}
+          <AXK />
 
-                {/* Portfolio Section */}
-                <section id="portfolio" className="min-h-screen flex items-center">
-                  <p>Portfóio em construção</p>
-                </section>
+          {/* Portfolio Section */}
+          <Portfolio />
 
-                {/* Contact Section */}
-                <section id="contact" className="min-h-screen flex items-center">
-                  <div className="w-full text-center">
-                    <h2 className="text-3xl md:text-5xl font-display font-bold text-gradient mb-8">
-                      Contato
-                    </h2>
-                    <p className="text-gray-600 dark:text-gray-400">
-                      Seção de contato e redes sociais será implementada aqui
-                    </p>
-                  </div>
-                </section>
-              </div>
-            </div>
-          </div>
+          {/* Contact Section */}
+          <Contact />
         </div>
       </main>
     </div>
