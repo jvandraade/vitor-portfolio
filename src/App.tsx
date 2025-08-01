@@ -5,6 +5,7 @@ import { Education } from './components/sections/Education';
 import { Courses } from './components/sections/Courses';
 import Technologies from './components/sections/Technologies';
 import Experience from './components/sections/Experience';
+import AXK from './components/sections/AXK';
 import './i18n';
 import './styles/globals.css';
 
@@ -32,33 +33,16 @@ function App() {
               <div className="space-y-32">
                 {/* Technologies Section */}
                 <Technologies />
+
                 {/* Experience Section */}
-                <section id="experience" className="min-h-screen flex items-center">
-                  <Experience />
-                </section>
+                <Experience />
 
                 {/* AXK Section */}
-                <section id="axk" className="min-h-screen flex items-center">
-                  <div className="w-full text-center">
-                    <h2 className="text-3xl md:text-5xl font-display font-bold text-gradient mb-8">
-                      AXK eSports
-                    </h2>
-                    <p className="text-gray-600 dark:text-gray-400">
-                      Seção sobre a AXK será implementada aqui
-                    </p>
-                  </div>
-                </section>
+                <AXK />
 
                 {/* Portfolio Section */}
                 <section id="portfolio" className="min-h-screen flex items-center">
-                  <div className="w-full text-center">
-                    <h2 className="text-3xl md:text-5xl font-display font-bold text-gradient mb-8">
-                      Portfólio
-                    </h2>
-                    <p className="text-gray-600 dark:text-gray-400">
-                      Seção de projetos será implementada aqui
-                    </p>
-                  </div>
+                  <p>Portfóio em construção</p>
                 </section>
 
                 {/* Contact Section */}
