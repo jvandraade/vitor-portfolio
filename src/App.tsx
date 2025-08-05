@@ -18,30 +18,44 @@ function App() {
       <Navbar />
 
       {/* Main Content */}
-      <main className="pt-32 md:pt-36">
-        <div className="space-y-0">
-          {/* About Section */}
+      <main className="pt-20 md:pt-24">
+        {/* About Section */}
+        <div className="relative">
           <AboutMe />
+        </div>
 
-          {/* Education Section */}
+        {/* Education Section */}
+        <div className="relative -mt-4">
           <Education />
+        </div>
 
-          {/* Courses Section */}
+        {/* Courses Section */}
+        <div className="relative -mt-8">
           <Courses />
+        </div>
 
-          {/* Technologies Section */}
+        {/* Technologies Section */}
+        <div className="relative -mt-8">
           <Technologies />
+        </div>
 
-          {/* Experience Section */}
+        {/* Experience Section */}
+        <div className="relative -mt-8">
           <Experience />
+        </div>
 
-          {/* AXK Section */}
+        {/* AXK Section */}
+        <div className="relative -mt-8">
           <AXK />
+        </div>
 
-          {/* Portfolio Section */}
+        {/* Portfolio Section */}
+        <div className="relative -mt-8">
           <Portfolio />
+        </div>
 
-          {/* Contact Section */}
+        {/* Contact Section */}
+        <div className="relative -mt-8">
           <Contact />
         </div>
       </main>
