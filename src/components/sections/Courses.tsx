@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
-import { BookOpen, Award, Eye, ExternalLink, CheckCircle } from 'lucide-react';
+import { BookOpen, Award, Eye, ExternalLink, CheckCircle, ImageIcon } from 'lucide-react';
 
 interface Course {
   id: string;
@@ -16,6 +16,7 @@ interface Course {
 export const Courses: React.FC = () => {
   const { t } = useTranslation();
   const [selectedCourse, setSelectedCourse] = useState<Course | null>(null);
+  const [imageError, setImageError] = useState<{ [key: string]: boolean }>({});
 
   const courses: Course[] = [
     {
@@ -23,56 +24,72 @@ export const Courses: React.FC = () => {
       name: 'Python - Curso em Vídeo',
       platform: 'Curso em Vídeo',
       category: 'backend',
-      completedYear: '2023',
+      completedYear: 'In progress',
       skills: ['Python', 'Algoritmos', 'Estruturas de Dados'],
+      // certificateImage: '/images/certificates/python.png',
     },
     {
       id: 'javascript',
       name: 'JavaScript - Curso em Vídeo',
       platform: 'Curso em Vídeo',
       category: 'frontend',
-      completedYear: '2022',
+      completedYear: '2023',
       skills: ['JavaScript', 'DOM', 'ES6+'],
+      certificateImage: '/images/certificates/javascript.png',
+    },
+    {
+      id: 'vue',
+      name: 'Vue.js - Udemy',
+      platform: 'Udemy',
+      category: 'frontend',
+      completedYear: '2024',
+      skills: ['Vue', 'JavaScript', 'Responsive Design'],
+      certificateImage: '../../../public/certificates/vue.png',
     },
     {
       id: 'html-css',
       name: 'HTML5 e CSS3 - Curso em Vídeo',
       platform: 'Curso em Vídeo',
       category: 'frontend',
-      completedYear: '2022',
+      completedYear: '2023',
       skills: ['HTML5', 'CSS3', 'Responsive Design'],
+      certificateImage: '/images/certificates/html-css.png',
     },
     {
       id: 'react',
-      name: 'React.js - Udemy',
-      platform: 'Udemy',
-      category: 'frontend',
-      completedYear: '2023',
-      skills: ['React', 'Hooks', 'Context API'],
-    },
-    {
-      id: 'typescript',
-      name: 'TypeScript - Rocketseat',
+      name: 'React.js - Rocketseat',
       platform: 'Rocketseat',
       category: 'frontend',
-      completedYear: '2023',
+      completedYear: '2024',
+      skills: ['React', 'Hooks', 'Context API'],
+      certificateImage: '../../../public/certificates/react.png',
+    },
+    {
+      id: 'react',
+      name: 'React + Redux - Udemy',
+      platform: 'Udemy',
+      category: 'frontend',
+      completedYear: '2024',
       skills: ['TypeScript', 'Tipos', 'Interfaces'],
+      certificateImage: '../../../public/certificates/react2.png',
     },
     {
       id: 'nodejs',
-      name: 'Node.js - Rocketseat',
-      platform: 'Rocketseat',
+      name: 'Node.js + TypeScript - Udemy',
+      platform: 'Udemy',
       category: 'backend',
-      completedYear: '2024',
+      completedYear: '2025',
       skills: ['Node.js', 'Express', 'APIs'],
+      certificateImage: '/images/certificates/nodejs.png',
     },
     {
       id: 'git',
-      name: 'Git e GitHub - Digital Innovation One',
-      platform: 'Digital Innovation One',
+      name: 'Git e GitHub - Curso em Vídeo',
+      platform: 'Curso em Vídeo',
       category: 'tools',
-      completedYear: '2022',
+      completedYear: 'In progress',
       skills: ['Git', 'GitHub', 'Versionamento'],
+      // certificateImage: '/images/certificates/git.png'
     },
     {
       id: 'mysql',
@@ -81,38 +98,43 @@ export const Courses: React.FC = () => {
       category: 'backend',
       completedYear: '2023',
       skills: ['MySQL', 'SQL', 'Banco de Dados'],
+      certificateImage: '/images/certificates/mysql.png',
     },
     {
       id: 'docker',
-      name: 'Docker - Alura',
-      platform: 'Alura',
+      name: 'Docker - Udemy',
+      platform: 'Udemy',
       category: 'tools',
-      completedYear: '2024',
+      completedYear: 'In progress',
       skills: ['Docker', 'Containers', 'DevOps'],
+      // certificateImage: '/images/certificates/docker.png'
     },
     {
       id: 'uiux',
       name: 'UI/UX Design - Google',
       platform: 'Google',
       category: 'design',
-      completedYear: '2023',
+      completedYear: 'In progress',
       skills: ['UI Design', 'UX Research', 'Figma'],
+      // certificateImage: '/images/certificates/uiux.png'
     },
     {
       id: 'ml',
-      name: 'Machine Learning - Coursera',
-      platform: 'Coursera',
+      name: 'IA and Machine Learning - Curso em Vídeo',
+      platform: 'Curso em Vídeo',
       category: 'data',
-      completedYear: '2024',
+      completedYear: 'In progress',
       skills: ['Machine Learning', 'Python', 'Scikit-learn'],
+      // certificateImage: '/images/certificates/ml.png'
     },
     {
       id: 'agile',
       name: 'Agile e Scrum - Udemy',
       platform: 'Udemy',
       category: 'tools',
-      completedYear: '2023',
+      completedYear: 'In progress',
       skills: ['Scrum', 'Agile', 'Metodologias'],
+      // certificateImage: '/images/certificates/agile.png'
     },
   ];
 
@@ -125,6 +147,19 @@ export const Courses: React.FC = () => {
   };
 
   const categories = Object.keys(categoryConfig) as Array<keyof typeof categoryConfig>;
+
+  // Função para lidar com erro de imagem
+  const handleImageError = (courseId: string) => {
+    setImageError(prev => ({
+      ...prev,
+      [courseId]: true,
+    }));
+  };
+
+  // Verificar se o curso tem certificado disponível
+  const hasCertificate = (course: Course) => {
+    return course.certificateImage && !imageError[course.id];
+  };
 
   return (
     <section id="courses" className="section-padding relative overflow-hidden">
@@ -217,6 +252,15 @@ export const Courses: React.FC = () => {
                                   <span>{course.platform}</span>
                                   <span>•</span>
                                   <span>{course.completedYear}</span>
+                                  {hasCertificate(course) && (
+                                    <>
+                                      <span>•</span>
+                                      <div className="flex items-center space-x-1 text-gold">
+                                        <Award className="w-3 h-3" />
+                                        <span className="text-xs font-medium">Certificado</span>
+                                      </div>
+                                    </>
+                                  )}
                                 </div>
                               </div>
                             </div>
@@ -235,7 +279,11 @@ export const Courses: React.FC = () => {
                           </div>
 
                           <div className="flex items-center space-x-2">
-                            <Eye className="w-4 h-4 text-gray-400 group-hover:text-aqua-green transition-colors" />
+                            {hasCertificate(course) ? (
+                              <Award className="w-5 h-5 text-gold group-hover:scale-110 transition-transform" />
+                            ) : (
+                              <Eye className="w-4 h-4 text-gray-400 group-hover:text-aqua-green transition-colors" />
+                            )}
                             <ExternalLink className="w-4 h-4 text-gray-400 group-hover:text-aqua-green transition-colors" />
                           </div>
                         </div>
@@ -271,23 +319,60 @@ export const Courses: React.FC = () => {
                       <div className="flex items-center space-x-3 mb-4">
                         <Award className="w-6 h-6 text-gold" />
                         <h3 className="font-bold text-lg text-gray-800 dark:text-gray-200">
-                          Certificado
+                          {hasCertificate(selectedCourse) ? 'Certificado' : 'Preview do Curso'}
                         </h3>
+                        {hasCertificate(selectedCourse) && (
+                          <div className="ml-auto">
+                            <div className="flex items-center space-x-1 text-xs bg-gold/20 text-gold px-2 py-1 rounded-full">
+                              <CheckCircle className="w-3 h-3" />
+                              <span>Verificado</span>
+                            </div>
+                          </div>
+                        )}
                       </div>
 
                       {/* Certificate Preview */}
                       <div className="flex-1 bg-gradient-to-br from-gray-100 to-gray-200 dark:from-gray-800 dark:to-gray-900 rounded-xl flex items-center justify-center mb-4 relative overflow-hidden">
-                        {selectedCourse.certificateImage ? (
-                          <img
-                            src={selectedCourse.certificateImage}
-                            alt={`Certificado ${selectedCourse.name}`}
-                            className="w-full h-full object-cover rounded-xl"
-                          />
+                        {hasCertificate(selectedCourse) ? (
+                          <motion.div
+                            initial={{ opacity: 0, scale: 0.8 }}
+                            animate={{ opacity: 1, scale: 1 }}
+                            transition={{ duration: 0.4 }}
+                            className="relative w-full h-full group"
+                          >
+                            <img
+                              src={selectedCourse.certificateImage}
+                              alt={`Certificado ${selectedCourse.name}`}
+                              className="w-full h-full object-cover rounded-xl transition-transform duration-500 group-hover:scale-105"
+                              onError={() => handleImageError(selectedCourse.id)}
+                            />
+
+                            {/* Overlay com zoom hint */}
+                            <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300 flex items-center justify-center rounded-xl">
+                              <motion.div
+                                initial={{ opacity: 0, scale: 0.8 }}
+                                whileHover={{ opacity: 1, scale: 1 }}
+                                className="bg-white/90 dark:bg-black/90 backdrop-blur-sm rounded-full p-2"
+                              >
+                                <Eye className="w-5 h-5 text-gray-800 dark:text-gray-200" />
+                              </motion.div>
+                            </div>
+
+                            {/* Selo de autenticidade */}
+                            <div className="absolute top-3 right-3 bg-gold text-white text-xs px-2 py-1 rounded-full font-medium shadow-lg">
+                              ✓ Original
+                            </div>
+                          </motion.div>
                         ) : (
                           <div className="text-center space-y-3">
-                            <div className="w-16 h-16 bg-gradient-primary rounded-xl flex items-center justify-center mx-auto">
-                              <Award className="w-8 h-8 text-white" />
-                            </div>
+                            <motion.div
+                              initial={{ scale: 0 }}
+                              animate={{ scale: 1 }}
+                              transition={{ delay: 0.1, type: 'spring' }}
+                              className="w-16 h-16 bg-gradient-primary rounded-xl flex items-center justify-center mx-auto"
+                            >
+                              <ImageIcon className="w-8 h-8 text-white" />
+                            </motion.div>
                             <div className="space-y-1">
                               <p className="text-sm font-medium text-gray-600 dark:text-gray-400">
                                 Certificado em breve
@@ -298,7 +383,7 @@ export const Courses: React.FC = () => {
                         )}
 
                         {/* Overlay Pattern */}
-                        <div className="absolute inset-0 bg-gradient-to-br from-transparent via-transparent to-aqua-green/10" />
+                        <div className="absolute inset-0 bg-gradient-to-br from-transparent via-transparent to-aqua-green/5 pointer-events-none" />
                       </div>
 
                       {/* Course Details */}
@@ -307,9 +392,20 @@ export const Courses: React.FC = () => {
                           <h4 className="font-semibold text-gray-800 dark:text-gray-200 mb-1">
                             {selectedCourse.name}
                           </h4>
-                          <p className="text-sm text-gray-600 dark:text-gray-400">
-                            {selectedCourse.platform} • {selectedCourse.completedYear}
-                          </p>
+                          <div className="flex items-center space-x-2 text-sm text-gray-600 dark:text-gray-400">
+                            <span>{selectedCourse.platform}</span>
+                            <span>•</span>
+                            <span>{selectedCourse.completedYear}</span>
+                            {hasCertificate(selectedCourse) && (
+                              <>
+                                <span>•</span>
+                                <div className="flex items-center space-x-1 text-green-600">
+                                  <CheckCircle className="w-3 h-3" />
+                                  <span className="text-xs font-medium">Concluído</span>
+                                </div>
+                              </>
+                            )}
+                          </div>
                         </div>
 
                         {/* Skills */}
@@ -368,7 +464,10 @@ export const Courses: React.FC = () => {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto">
             {[
               { number: courses.length.toString(), label: 'Cursos Concluídos' },
-              { number: '5', label: 'Plataformas' },
+              {
+                number: courses.filter(c => hasCertificate(c)).length.toString(),
+                label: 'Certificados',
+              },
               { number: '2022', label: 'Início dos Estudos' },
               { number: '∞', label: 'Aprendizado Contínuo' },
             ].map((stat, index) => (
