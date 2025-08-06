@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
-import { MapPin, Code, Gamepad2, Brain, Trophy } from 'lucide-react';
+import { MapPin, Code, Gamepad2, Brain, Trophy, ChevronDown } from 'lucide-react';
 
 export const AboutMe: React.FC = () => {
   const { t } = useTranslation();
@@ -28,6 +28,13 @@ export const AboutMe: React.FC = () => {
       description: 'Soluções criativas e eficientes',
     },
   ];
+
+  const scrollToNextSection = () => {
+    const nextSection = document.getElementById('education');
+    if (nextSection) {
+      nextSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
 
   return (
     <section
@@ -163,26 +170,59 @@ export const AboutMe: React.FC = () => {
           />
         </div>
 
-        {/* Scroll Indicator */}
+        {/* Improved Scroll Indicator - More Accessible Position */}
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ delay: 1, duration: 0.6 }}
-          className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
+          className="fixed bottom-6 right-6 md:bottom-8 md:right-8 z-20"
+        >
+          <motion.button
+            onClick={scrollToNextSection}
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+            animate={{ y: [0, -8, 0] }}
+            transition={{
+              y: { duration: 2, repeat: Infinity, ease: 'easeInOut' },
+              scale: { duration: 0.2 },
+            }}
+            className="group flex flex-col items-center space-y-2 glass-card p-4 rounded-2xl hover:bg-aqua-green/10 transition-all duration-300 cursor-pointer shadow-lg hover:shadow-xl"
+          >
+            <span className="text-xs font-medium text-gray-600 dark:text-gray-400 group-hover:text-aqua-green transition-colors whitespace-nowrap">
+              Explorar
+            </span>
+
+            <div className="flex flex-col items-center space-y-1">
+              <ChevronDown className="w-5 h-5 text-aqua-green group-hover:text-gold transition-colors" />
+              <motion.div
+                animate={{ scaleY: [1, 1.5, 1] }}
+                transition={{ duration: 2, repeat: Infinity, ease: 'easeInOut' }}
+                className="w-0.5 h-4 bg-gradient-to-b from-aqua-green to-transparent rounded-full"
+              />
+            </div>
+          </motion.button>
+        </motion.div>
+
+        {/* Alternative: Bottom Center Scroll Hint (More Subtle) */}
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ delay: 1.2, duration: 0.6 }}
+          className="absolute bottom-4 left-1/2 transform -translate-x-1/2 hidden md:flex"
         >
           <motion.div
-            animate={{ y: [0, 10, 0] }}
-            transition={{ duration: 2, repeat: Infinity }}
-            className="flex flex-col items-center space-y-2 text-gray-500 dark:text-gray-400"
+            animate={{ y: [0, 6, 0] }}
+            transition={{ duration: 2.5, repeat: Infinity, ease: 'easeInOut' }}
+            className="flex flex-col items-center space-y-2 text-gray-400 dark:text-gray-600"
           >
-            <span className="text-sm font-medium">Scroll para explorar</span>
-            <div className="w-6 h-10 border-2 border-current rounded-full flex justify-center">
+            <div className="w-6 h-10 border-2 border-current rounded-full flex justify-center opacity-60">
               <motion.div
                 animate={{ y: [0, 12, 0] }}
-                transition={{ duration: 2, repeat: Infinity }}
+                transition={{ duration: 2.5, repeat: Infinity, ease: 'easeInOut' }}
                 className="w-1 h-3 bg-current rounded-full mt-2"
               />
             </div>
+            <span className="text-xs opacity-70">Scroll</span>
           </motion.div>
         </motion.div>
       </div>

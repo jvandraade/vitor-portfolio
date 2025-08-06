@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import { Menu, X } from 'lucide-react';
-import { useScrollToSection } from '../../hooks/useScrollToSection';
 
 const navItems = [
   { key: 'about', sectionId: 'about' },
@@ -17,31 +16,73 @@ const navItems = [
 
 export const Navbar: React.FC = () => {
   const { t } = useTranslation();
-  const { scrollToSection } = useScrollToSection();
   const [isOpen, setIsOpen] = useState(false);
   const [activeSection, setActiveSection] = useState('about');
 
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      const headerOffset = 120;
+      const elementPosition = element.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth',
+      });
+    }
+  };
+
   useEffect(() => {
     const handleScroll = () => {
-      const sections = navItems.map(item => document.getElementById(item.sectionId));
-      const scrollPosition = window.scrollY + 150;
+      const scrollPosition = window.scrollY;
+      const windowHeight = window.innerHeight;
+      const offset = 150;
 
-      for (let i = sections.length - 1; i >= 0; i--) {
-        const section = sections[i];
-        if (section && section.offsetTop <= scrollPosition) {
-          setActiveSection(navItems[i].key);
-          break;
+      for (let i = navItems.length - 1; i >= 0; i--) {
+        const section = document.getElementById(navItems[i].sectionId);
+        if (section) {
+          const sectionTop = section.getBoundingClientRect().top + scrollPosition;
+          const sectionBottom = sectionTop + section.offsetHeight;
+
+          if (scrollPosition + offset >= sectionTop && scrollPosition + offset < sectionBottom) {
+            setActiveSection(navItems[i].key);
+            break;
+          }
+
+          if (
+            i === navItems.length - 1 &&
+            scrollPosition + windowHeight >= document.body.scrollHeight - 100
+          ) {
+            setActiveSection(navItems[i].key);
+            break;
+          }
         }
       }
     };
 
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    handleScroll();
+
+    let ticking = false;
+    const throttledHandleScroll = () => {
+      if (!ticking) {
+        requestAnimationFrame(() => {
+          handleScroll();
+          ticking = false;
+        });
+        ticking = true;
+      }
+    };
+
+    window.addEventListener('scroll', throttledHandleScroll, { passive: true });
+    return () => window.removeEventListener('scroll', throttledHandleScroll);
   }, []);
 
   const handleNavClick = (sectionId: string, key: string) => {
     scrollToSection(sectionId);
+
     setActiveSection(key);
+
     setIsOpen(false);
   };
 
@@ -73,11 +114,17 @@ export const Navbar: React.FC = () => {
               >
                 {t(`nav.${item.key}`)}
 
+                {/* Barrinha indicadora - agora com layoutId único */}
                 {activeSection === item.key && (
                   <motion.div
-                    className="absolute bottom-0 left-0 right-0 h-0.5 bg-aqua-green rounded-full"
-                    layoutId="activeSection"
-                    transition={{ duration: 0.3 }}
+                    className="absolute bottom-0 left-0 right-0 h-0.5 bg-gradient-to-r from-aqua-green to-baby-blue rounded-full"
+                    layoutId="navActiveIndicator"
+                    transition={{
+                      type: 'spring',
+                      stiffness: 380,
+                      damping: 30,
+                      duration: 0.3,
+                    }}
                   />
                 )}
 
@@ -134,6 +181,16 @@ export const Navbar: React.FC = () => {
                     whileTap={{ scale: 0.98 }}
                   >
                     {t(`nav.${item.key}`)}
+
+                    {/* Indicador visual para mobile */}
+                    {activeSection === item.key && (
+                      <motion.div
+                        className="absolute inset-0 border-2 border-aqua-green rounded-lg"
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        exit={{ opacity: 0 }}
+                      />
+                    )}
                   </motion.button>
                 ))}
               </div>
