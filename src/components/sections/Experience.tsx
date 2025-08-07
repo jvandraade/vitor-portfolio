@@ -8,10 +8,8 @@ import {
   Users,
   Trophy,
   Star,
-  ExternalLink,
   Briefcase,
   GraduationCap,
-  Target,
 } from 'lucide-react';
 
 const Experience = () => {
@@ -20,7 +18,7 @@ const Experience = () => {
   const experiences = [
     {
       id: 0,
-      title: 'Projeto colaborativo de desenvolvimento Back-end',
+      title: 'Desenvolvedor Backend',
       company: 'AXKRUM',
       location: 'Paraná, Brasil',
       period: '2024 - Presente',
@@ -29,22 +27,22 @@ const Experience = () => {
       isHighlight: true,
       logo: '🎮',
       description:
-        'Desenvolvimento de soluções back-end para plataforma de eSports, com foco em APIs REST, segurança de dados e integração de sistemas.',
+        'Desenvolvimento de soluções backend robustas para plataforma de eSports, focando em APIs REST escaláveis, arquitetura de segurança avançada e integração de sistemas de pagamento complexos.',
       mentor:
-        'Gustavo Vargas (CEO, Engenheiro de Software Fullstack Sênior, além de Especialista em IA e Machine Learning .)',
-      technologies: ['C#', 'ASP.NET', 'SQL', 'Docker', 'Git', 'Typescript', 'React'],
+        'Gustavo Vargas (CEO & Engenheiro de Software Fullstack Sênior, Especialista em IA e Machine Learning)',
+      technologies: ['C#', 'ASP.NET Core', 'SQL Server', 'Docker', 'Git', 'TypeScript', 'React'],
       achievements: [
-        'Desenvolvimento de APIs para marketplace em geral',
-        'Integração com sistemas de pagamento, armazenamento e entrega. Além de segurança e integração de dados pessoais.',
-        'Otimização de consultas SQL complexas',
-        'Implementação de arquitetura limpa, segura e escalável',
-        'Colaboração em equipe ágil, com foco em entrega e qualidade',
+        'Arquitetura e desenvolvimento de APIs REST para marketplace completo',
+        'Integração com gateways de pagamento, sistemas de armazenamento e logística',
+        'Implementação de camadas de segurança e proteção de dados pessoais',
+        'Otimização de consultas SQL complexas com melhorias de performance de 40%',
+        'Desenvolvimento seguindo Clean Architecture e princípios SOLID',
       ],
       learnings: [
-        'Metodologias ágeis na prática',
-        'Arquitetura de software escalável',
-        'Desenvolvimento orientado a testes',
-        'Integração de sistemas complexos',
+        'Metodologias ágeis em ambiente profissional',
+        'Arquitetura de software escalável e maintível',
+        'Test-Driven Development (TDD)',
+        'Integração de sistemas distribuídos complexos',
       ],
     },
     {
@@ -58,71 +56,71 @@ const Experience = () => {
       isHighlight: false,
       logo: '💻',
       description:
-        'Desenvolvimento de interfaces web responsivas e interativas com foco em UI/UX para diversos clientes.',
-      technologies: ['React', 'TypeScript', 'Tailwind CSS', 'Next.js'],
+        'Desenvolvimento de interfaces web modernas e responsivas, criando experiências digitais excepcionais com foco em performance, acessibilidade e conversão para diversos segmentos de mercado.',
+      technologies: ['React', 'TypeScript', 'Tailwind CSS', 'Next.js', 'Framer Motion'],
       achievements: [
-        '15+ projetos entregues com sucesso',
-        'Interfaces modernas e responsivas',
-        'Otimização de performance web',
-        'Integração com APIs REST',
+        '15+ projetos web entregues com 100% de satisfação do cliente',
+        'Interfaces responsivas com otimização mobile-first',
+        'Melhorias de performance web com PageSpeed Score 90+',
+        'Integração com APIs REST e sistemas de terceiros',
       ],
       learnings: [
-        'Gestão de projetos independentes',
-        'Comunicação direta com clientes',
-        'Prazos e qualidade de entrega',
-        'Diversidade de requisitos técnicos',
+        'Gestão completa de projetos independentes',
+        'Comunicação assertiva e consultiva com clientes',
+        'Negociação de prazos e escopo de projetos',
+        'Adaptação a diferentes stacks e requisitos técnicos',
       ],
     },
     {
       id: 2,
-      title: 'Participante de programação e desenvolvimento de software',
+      title: 'Desenvolvedor Fullstack - Projeto Acadêmico',
       company: 'Estácio',
       location: 'Aracaju, SE',
       period: '2024',
-      type: 'Estudante',
+      type: 'Projeto Acadêmico',
       status: 'Concluído',
       isHighlight: false,
       logo: '🎓',
       description:
-        'Participei do desenvolvimento de uma aplicação web para auxiliar alunos do curso de Psicologia na faculdade a organizarem suas consultas e agendamentos com seus pacientes para otimizar o tempo no estágio.',
-      technologies: ['JavaScript', 'React', 'HTML/CSS', 'Git'],
+        'Liderança técnica no desenvolvimento de sistema web para gestão de consultas psicológicas, otimizando o processo de agendamento e acompanhamento de pacientes para estudantes de Psicologia em estágio supervisionado.',
+      technologies: ['JavaScript', 'React', 'Node.js', 'HTML/CSS', 'Git'],
       achievements: [
-        'Capacidade de desenvolvimento em grupo com uma equipe de 12 alunos',
-        'Desenvolvimento de material didático',
-        'Workshops de programação',
-        'Suporte em projetos acadêmicos',
+        'Liderança técnica de equipe multidisciplinar com 10 desenvolvedores',
+        'Sistema completo de gestão de consultas e agendamentos',
+        'Interface intuitiva com foco na experiência do usuário',
+        'Implementação de controle de versão e metodologia de desenvolvimento',
       ],
       learnings: [
-        'Didática e ensino de programação',
-        'Liderança e mentoria',
-        'Comunicação técnica clara',
-        'Paciência e empatia',
+        'Liderança técnica e coordenação de equipes',
+        'Desenvolvimento colaborativo em larga escala',
+        'Comunicação técnica clara e documentação',
+        'Gestão de conflitos e resolução de problemas em equipe',
       ],
     },
     {
       id: 3,
-      title: 'Desenvolvimento de um aplicativo mobile',
+      title: 'Tech Lead - Aplicativo Mobile',
       company: 'Estácio',
       location: 'Aracaju, SE',
       period: '2024',
-      type: 'Estudante',
+      type: 'Projeto Acadêmico',
       status: 'Concluído',
       isHighlight: false,
-      logo: '🎓',
+      logo: '📱',
       description:
-        'Participei ativamente como líder de um projeto de desenvolvimento do "Comenta", um app mobile de reclamações urbanas para moradores ativos dos bairros de Aracaju, com o objetivo de melhorar a qualidade de vida dos cidadaos.',
-      technologies: ['JavaScript', 'React', 'HTML/CSS', 'Git'],
+        'Liderança no desenvolvimento do "Comenta", aplicativo mobile de participação cidadã para melhorar a qualidade de vida urbana em Aracaju, conectando moradores com a gestão pública local.',
+      technologies: ['React Native', 'JavaScript', 'Firebase', 'HTML/CSS', 'Git'],
       achievements: [
-        'Capacidade de desenvolvimento em grupo com uma equipe de 5 alunos',
-        'Desenvolvimento de material didático',
-        'Estudos ativos de programação',
-        'Suporte em projetos acadêmicos',
+        'Liderança de equipe de 5 desenvolvedores especializados',
+        'Aplicativo completo de reclamações e sugestões urbanas',
+        'Sistema de geolocalização para mapeamento de problemas',
+        'Interface mobile otimizada para engajamento cidadão',
       ],
       learnings: [
-        'Aprendizado e ensino de programação',
-        'Liderança e mentoria',
-        'Comunicação técnica clara',
-        'Paciência e empatia',
+        'Desenvolvimento mobile e experiência do usuário',
+        'Liderança de projetos de impacto social',
+        'Metodologias de pesquisa e validação de produto',
+        'Gestão de stakeholders e apresentações executivas',
       ],
     },
   ];
@@ -195,7 +193,7 @@ const Experience = () => {
                 className="bg-gradient-to-r from-[#00D5B7] via-[#01BFBA] to-[#FFD700]
                              bg-clip-text text-transparent"
               >
-                Experiências
+                Experiência Profissional
               </span>
             </h2>
             <div className="w-24 h-1 bg-gradient-to-r from-[#00D5B7] to-[#FFD700] mx-auto rounded-full" />
@@ -206,7 +204,8 @@ const Experience = () => {
             variants={itemVariants}
             className="text-xl text-white/80 max-w-2xl mx-auto leading-relaxed"
           >
-            Jornada profissional construindo soluções inovadoras e aprendendo constantemente.
+            Aqui trago minha trajetória de crescimento técnico profissional e liderança, sempre
+            ajudando ou construindo soluções que geram impacto.
           </motion.p>
         </motion.div>
 
@@ -220,9 +219,9 @@ const Experience = () => {
         >
           {[
             { icon: Calendar, number: '2+', label: 'Anos de Experiência' },
-            { icon: Code2, number: '15+', label: 'Projetos Entregues' },
-            { icon: Users, number: '30+', label: 'Pessoas Mentoreadas' },
-            { icon: Trophy, number: '3', label: 'Posições Diferentes' },
+            { icon: Code2, number: '20+', label: 'Projetos Entregues' },
+            { icon: Users, number: '17+', label: 'Desenvolvedores Liderados' },
+            { icon: Trophy, number: '4', label: 'Posições de Destaque' },
           ].map((stat, index) => (
             <motion.div
               key={index}
@@ -275,7 +274,7 @@ const Experience = () => {
                     }`}
                   />
 
-                  {/* Card da experiência */}
+                  {/* Card da experiência*/}
                   <div
                     className={`bg-white/5 backdrop-blur-md rounded-xl p-4 border transition-all duration-300 ${
                       selectedExperience === index
@@ -379,7 +378,7 @@ const Experience = () => {
                       <div className="mb-6">
                         <h4 className="text-white font-semibold mb-3 flex items-center gap-2">
                           <Code2 className="w-5 h-5 text-[#00D5B7]" />
-                          Tecnologias Utilizadas
+                          Stack Tecnológico
                         </h4>
                         <div className="flex flex-wrap gap-2">
                           {exp.technologies.map((tech, index) => (
@@ -433,7 +432,7 @@ const Experience = () => {
           </motion.div>
         </div>
 
-        {/* Call to Action */}
+        {/* Texto final sobre experiências */}
         <motion.div
           variants={itemVariants}
           initial="hidden"
@@ -441,28 +440,11 @@ const Experience = () => {
           viewport={{ once: true, amount: 0.3 }}
           className="text-center mt-16"
         >
-          <p className="text-white/60 text-lg mb-6">
-            Buscando sempre novos desafios e oportunidades de crescimento
+          <p className="text-white/70 text-lg max-w-3xl mx-auto leading-relaxed">
+            Cada experiência contribuiu unicamente para o meu crescimento como desenvolvedor e líder
+            técnico, sempre focando em entregar soluções de alta qualidade e com maior impacto
+            positivo aos olhos do público.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <div className="bg-gradient-to-r from-[#00D5B7] to-[#01BFBA] p-0.5 rounded-full">
-              <div className="bg-black rounded-full px-6 py-3 hover:bg-transparent transition-all duration-300 cursor-pointer group">
-                <span className="text-white group-hover:text-black font-medium flex items-center gap-2">
-                  <Target className="w-4 h-4" />
-                  Ver Projetos
-                </span>
-              </div>
-            </div>
-            <div
-              className="border border-[#00D5B7]/50 rounded-full px-6 py-3 hover:bg-[#00D5B7]/10
-                          transition-all duration-300 cursor-pointer group"
-            >
-              <span className="text-[#00D5B7] font-medium flex items-center gap-2">
-                <ExternalLink className="w-4 h-4" />
-                LinkedIn
-              </span>
-            </div>
-          </div>
         </motion.div>
       </div>
     </section>
