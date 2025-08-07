@@ -90,22 +90,22 @@ const Technologies = () => {
                     hover:shadow-[#00D5B7]/20 h-32 flex flex-col items-center justify-center
                     relative overflow-hidden group-hover:bg-white/10"
       >
-        {/* Efeito de brilho no hover */}
+        {/* Efeito de brilho no hover - CORRIGIDO: Agora fica dentro do card */}
         <div
           className="absolute inset-0 bg-gradient-to-br from-transparent via-white/5 to-transparent
-                       opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+                       opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-2xl"
         />
 
         {/* Ícone */}
         <tech.icon
-          className="text-3xl mb-2 transition-all duration-300 group-hover:scale-110"
+          className="text-3xl mb-2 transition-all duration-300 group-hover:scale-110 relative z-10"
           style={{ color: tech.color }}
         />
 
         {/* Nome */}
         <span
           className="text-white/90 text-sm font-medium text-center group-hover:text-white
-                        transition-colors duration-300"
+                        transition-colors duration-300 relative z-10"
         >
           {tech.name}
         </span>
@@ -157,7 +157,7 @@ const Technologies = () => {
                 className="bg-gradient-to-r from-[#00D5B7] via-[#01BFBA] to-[#FFD700]
                              bg-clip-text text-transparent"
               >
-                Tecnologias
+                Tecnologias & Ferramentas
               </span>
             </h2>
             <div className="w-24 h-1 bg-gradient-to-r from-[#00D5B7] to-[#FFD700] mx-auto rounded-full" />
@@ -168,7 +168,8 @@ const Technologies = () => {
             variants={itemVariants}
             className="text-xl text-white/80 max-w-2xl mx-auto leading-relaxed"
           >
-            Ferramentas e tecnologias que domino para criar soluções inovadoras
+            Ferramentas e tecnologias das quais eu domino bastante, ao ponto de criar soluções
+            inovadoras.
           </motion.p>
         </motion.div>
 
@@ -181,10 +182,10 @@ const Technologies = () => {
           className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-16"
         >
           {[
-            { number: '15+', label: 'Frontend' },
-            { number: '8+', label: 'Backend' },
-            { number: '5+', label: 'Database' },
-            { number: '10+', label: 'Ferramentas' },
+            { number: '9+', label: 'Frontend' },
+            { number: '5+', label: 'Backend' },
+            { number: '3+', label: 'Databases' },
+            { number: '6+', label: 'Ferramentas' },
           ].map((stat, index) => (
             <motion.div
               key={index}
@@ -232,7 +233,7 @@ const Technologies = () => {
           </div>
         </motion.div>
 
-        {/* Call to Action */}
+        {/* Texto final */}
         <motion.div
           variants={itemVariants}
           initial="hidden"
@@ -240,18 +241,11 @@ const Technologies = () => {
           viewport={{ once: true, amount: 0.3 }}
           className="text-center mt-16"
         >
-          <p className="text-white/60 text-lg mb-6">
-            Sempre aprendendo e explorando novas tecnologias
+          <p className="text-white/70 text-lg max-w-2xl mx-auto leading-relaxed">
+            Estou em constante aprendizado e sempre atualizando meu stack tecnológico, para
+            acompanhar as últimas tendências e melhores práticas do desenvolvimento moderno, afim de
+            proporcionar a melhor experiência aos meus usuários e clientes.
           </p>
-          <div className="flex justify-center">
-            <div className="bg-gradient-to-r from-[#00D5B7] to-[#01BFBA] p-0.5 rounded-full">
-              <div className="bg-black rounded-full px-6 py-3 hover:bg-transparent transition-all duration-300 cursor-pointer group">
-                <span className="text-white group-hover:text-black font-medium">
-                  Explorar Projetos →
-                </span>
-              </div>
-            </div>
-          </div>
         </motion.div>
       </div>
 
