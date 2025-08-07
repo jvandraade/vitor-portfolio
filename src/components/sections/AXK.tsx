@@ -13,7 +13,6 @@ import {
   Sword,
   ChevronRight,
   ExternalLink,
-  Play,
   TrendingUp,
 } from 'lucide-react';
 
@@ -27,9 +26,9 @@ const AXK = () => {
       name: 'Pokémon UNITE',
       icon: '⚡',
       color: '#FFCB05',
-      description: 'MOBA estratégico com Pokémon em batalhas 5v5',
-      achievements: ['Top 3 Regional', 'Melhor Equipe 2024', '15+ Vitórias Consecutivas'],
-      players: 8,
+      description: 'MOBA estratégico com Pokémons em batalhas 5v5 intensas',
+      achievements: ['Top 5 Regional', 'Melhor Equipe 2023/24', '15+ Vitórias Consecutivas'],
+      players: 7,
       status: 'Ativo',
     },
     {
@@ -37,8 +36,9 @@ const AXK = () => {
       name: 'VALORANT',
       icon: '🎯',
       color: '#FF4655',
-      description: 'FPS tático competitivo da Riot Games',
-      achievements: ['Ascendant Tier', 'MVP Torneio Local', 'Clutch Master'],
+      description:
+        'FPS tático competitivo da Riot Games com foco na transformação de novos talentos',
+      achievements: ['Radiant Tier', 'Champions of Desafiant tier in Premier', 'Clutch Master'],
       players: 5,
       status: 'Ativo',
     },
@@ -47,19 +47,19 @@ const AXK = () => {
       name: 'Brawlhalla',
       icon: '⚔️',
       color: '#F39C12',
-      description: 'Jogo de luta em plataforma free-to-play',
-      achievements: ['Diamond Rank', 'Combo Champion', '500+ Vitórias'],
-      players: 4,
+      description: 'Jogo de luta 3D em plataforma com combos devastadores',
+      achievements: ['Valhallan Rank', 'Ultra Combo Champions', '100+ Vitórias'],
+      players: 2,
       status: 'Ativo',
     },
     {
       id: 3,
-      name: 'Rainbow Six',
+      name: 'Rainbow Six Siege X',
       icon: '🛡️',
       color: '#FFB90F',
-      description: 'FPS tático com destruição ambiental',
-      achievements: ['Gold Tier', 'Ace Master', 'Estrategista'],
-      players: 5,
+      description: 'FPS tático com destruição ambiental e estratégias avançadas',
+      achievements: ['Champion Tier', 'Ace Master', 'Estrategistas Profissionais'],
+      players: 7,
       status: 'Ativo',
     },
     {
@@ -67,7 +67,7 @@ const AXK = () => {
       name: 'Predecessor',
       icon: '🏰',
       color: '#6C5CE7',
-      description: 'MOBA terceira pessoa com heróis únicos',
+      description: 'MOBA terceira pessoa com heróis únicos e mecânicas inovadoras',
       achievements: ['Early Access Beta', 'Meta Pioneer', 'Team Captain'],
       players: 6,
       status: 'Beta',
@@ -77,8 +77,8 @@ const AXK = () => {
       name: 'Brawl Stars',
       icon: '⭐',
       color: '#FFC107',
-      description: 'Battle royale mobile da Supercell',
-      achievements: ['Mythic League', 'Brawler Master', '1000+ Trophies'],
+      description: '3v3  mobile da Supercell com ação frenética',
+      achievements: ['Master League', 'Brawlers Masters', '70.000+ Trophies'],
       players: 3,
       status: 'Ativo',
     },
@@ -88,7 +88,7 @@ const AXK = () => {
     { icon: Trophy, number: '50+', label: 'Torneios Participados', color: '#FFD700' },
     { icon: Users, number: '30+', label: 'Membros Ativos', color: '#00D5B7' },
     { icon: Crown, number: '6', label: 'Jogos Competitivos', color: '#FF4655' },
-    { icon: Star, number: '2024', label: 'Fundada em', color: '#01BFBA' },
+    { icon: Star, number: '2021', label: 'Fundada em', color: '#01BFBA' },
   ];
 
   const containerVariants = {
@@ -182,13 +182,14 @@ const AXK = () => {
             <div className="w-32 h-1 bg-gradient-to-r from-[#00D5B7] to-[#01BFBA] mx-auto rounded-full" />
           </motion.div>
 
-          {/* Subtítulo */}
+          {/* Subtítulo mais impactante */}
           <motion.p
             variants={itemVariants}
             className="text-xl text-white/80 max-w-3xl mx-auto leading-relaxed"
           >
-            Organização de eSports dedicada à excelência competitiva, contrução de uma comunidade
-            orgânica e o desenvolvimento de jovens talentos, prontos para chegar ao pódio.
+            Organização de eSports focada na excelência competitiva e desenvolvimento de talentos
+            d'elite. Construindo o futuro dos esportes eletrônicos através da estratégia, dedicação
+            e resultados excepcionais.
           </motion.p>
         </motion.div>
 
@@ -218,413 +219,503 @@ const AXK = () => {
           ))}
         </motion.div>
 
-        {/* Navegação por abas */}
-        <motion.div
-          variants={containerVariants}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.3 }}
-          className="flex justify-center mb-12"
-        >
-          <div className="bg-white/5 backdrop-blur-md rounded-2xl p-2 border border-white/10">
-            {[
-              { id: 'about', label: 'Sobre', icon: Shield },
-              { id: 'games', label: 'Jogos', icon: Gamepad2 },
-              { id: 'leadership', label: 'Liderança', icon: Crown },
-            ].map(tab => (
-              <button
-                key={tab.id}
-                onClick={() => setActiveTab(tab.id)}
-                className={`px-6 py-3 rounded-xl font-medium transition-all duration-300 flex items-center gap-2 ${
-                  activeTab === tab.id
-                    ? 'bg-gradient-to-r from-[#00D5B7] to-[#01BFBA] text-white shadow-lg'
-                    : 'text-white/70 hover:text-white hover:bg-white/10'
-                }`}
-              >
-                <tab.icon className="w-4 h-4" />
-                {tab.label}
-              </button>
-            ))}
-          </div>
-        </motion.div>
+        {/* Layout principal */}
+        <div className="grid lg:grid-cols-4 gap-8">
+          {/* Menu à esquerda */}
+          <motion.div
+            variants={containerVariants}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.3 }}
+            className="lg:col-span-1"
+          >
+            <div className="bg-white/5 backdrop-blur-md rounded-2xl p-6 border border-white/10 sticky top-8">
+              <h3 className="text-lg font-bold text-white mb-6 text-center lg:text-left">
+                Navegação AXK
+              </h3>
+              <nav className="space-y-2">
+                {[
+                  { id: 'about', label: 'Sobre a AXK', icon: Shield },
+                  { id: 'games', label: 'Modalidades', icon: Gamepad2 },
+                  { id: 'leadership', label: 'Liderança', icon: Crown },
+                ].map(tab => (
+                  <button
+                    key={tab.id}
+                    onClick={() => setActiveTab(tab.id)}
+                    className={`w-full text-left px-4 py-3 rounded-xl font-medium transition-all duration-300
+                               flex items-center gap-3 group ${
+                                 activeTab === tab.id
+                                   ? 'bg-gradient-to-r from-[#00D5B7] to-[#01BFBA] text-white shadow-lg'
+                                   : 'text-white/70 hover:text-white hover:bg-white/10'
+                               }`}
+                  >
+                    <tab.icon className="w-5 h-5 group-hover:scale-110 transition-transform duration-200" />
+                    <span className="text-sm lg:text-base">{tab.label}</span>
+                  </button>
+                ))}
+              </nav>
+            </div>
+          </motion.div>
 
-        {/* Conteúdo das abas */}
-        <AnimatePresence mode="wait">
-          {activeTab === 'about' && (
-            <motion.div
-              key="about"
-              variants={tabVariants}
-              initial="hidden"
-              animate="visible"
-              exit="exit"
-              className="grid lg:grid-cols-2 gap-12 items-center"
-            >
-              {/* Informações sobre a AXK */}
-              <div className="space-y-6">
-                <div className="bg-white/5 backdrop-blur-md rounded-2xl p-8 border border-white/10">
-                  <h3 className="text-2xl font-bold text-white mb-6 flex items-center gap-3">
-                    <Shield className="w-6 h-6 text-[#00D5B7]" />
-                    Nossa Missão
-                  </h3>
-                  <p className="text-white/80 leading-relaxed mb-6">
-                    A AXK eSports nasceu com o objetivo de criar um ambiente competitivo e acolhedor
-                    para gamers apaixonados. Buscamos a excelência em cada modalidade, desenvolvendo
-                    estratégias inovadoras e fortalecendo o espírito de equipe.
-                  </p>
+          {/* Conteúdo à direita */}
+          <div className="lg:col-span-3">
+            <AnimatePresence mode="wait">
+              {activeTab === 'about' && (
+                <motion.div
+                  key="about"
+                  variants={tabVariants}
+                  initial="hidden"
+                  animate="visible"
+                  exit="exit"
+                  className="space-y-8"
+                >
+                  {/* Sobre a AXK */}
+                  <div className="bg-white/5 backdrop-blur-md rounded-2xl p-8 border border-white/10">
+                    <h3 className="text-3xl font-bold text-white mb-6 flex items-center gap-3">
+                      <Shield className="w-8 h-8 text-[#00D5B7]" />
+                      Missão & Visão
+                    </h3>
+                    <p className="text-white/80 leading-relaxed mb-8 text-lg">
+                      A AXKRUM representa a vanguarda do cenário competitivo brasileiro. Nossa
+                      organização combina talento excepcional, estratégias inovadoras, mentalidade
+                      vencedora, além dos pilares fundamentais de educação, respeito e sucesso para
+                      alcançar resultados extraordinários em múltiplas modalidades de eSports.
+                    </p>
 
-                  <div className="space-y-4">
-                    <div className="flex items-start gap-3">
-                      <div className="w-2 h-2 rounded-full bg-[#00D5B7] mt-2 flex-shrink-0" />
-                      <span className="text-white/80">
-                        Desenvolvimento de jovens talentos no cenário competitivo
-                      </span>
-                    </div>
-                    <div className="flex items-start gap-3">
-                      <div className="w-2 h-2 rounded-full bg-[#01BFBA] mt-2 flex-shrink-0" />
-                      <span className="text-white/80">
-                        Participação ativa em torneios regionais e nacionais
-                      </span>
-                    </div>
-                    <div className="flex items-start gap-3">
-                      <div className="w-2 h-2 rounded-full bg-[#FFD700] mt-2 flex-shrink-0" />
-                      <span className="text-white/80">
-                        Criação de conteúdo educativo para a comunidade gamer
-                      </span>
+                    <div className="grid md:grid-cols-2 gap-8">
+                      <div className="space-y-4">
+                        <h4 className="text-xl font-semibold text-white flex items-center gap-2">
+                          <Target className="w-5 h-5 text-[#00D5B7]" />
+                          Nossos Pilares
+                        </h4>
+                        <div className="space-y-3">
+                          <div className="flex items-start gap-3">
+                            <div className="w-2 h-2 rounded-full bg-[#00D5B7] mt-2 flex-shrink-0" />
+                            <span className="text-white/80">
+                              <strong className="text-white">Excelência Competitiva:</strong> Busca
+                              incessante pela perfeição em cada partida
+                            </span>
+                          </div>
+                          <div className="flex items-start gap-3">
+                            <div className="w-2 h-2 rounded-full bg-[#01BFBA] mt-2 flex-shrink-0" />
+                            <span className="text-white/80">
+                              <strong className="text-white">Desenvolvimento Estratégico:</strong>{' '}
+                              Formação de talentos com metodologia profissional
+                            </span>
+                          </div>
+                          <div className="flex items-start gap-3">
+                            <div className="w-2 h-2 rounded-full bg-[#FFD700] mt-2 flex-shrink-0" />
+                            <span className="text-white/80">
+                              <strong className="text-white">Inovação Tecnológica:</strong>{' '}
+                              Ferramentas avançadas para análise e crescimento
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div className="space-y-4">
+                        <h4 className="text-xl font-semibold text-white flex items-center gap-2">
+                          <Trophy className="w-5 h-5 text-[#FFD700]" />
+                          Conquistas 2024
+                        </h4>
+                        <div className="grid grid-cols-1 gap-3">
+                          {[
+                            'Top 3 Regional Pokémon UNITE',
+                            'Melhor Equipe Emergente',
+                            'MVP Individual VALORANT',
+                            'Maior Crescimento Anual',
+                          ].map((achievement, index) => (
+                            <div
+                              key={index}
+                              className="flex items-center gap-3 text-white/80 bg-white/5 rounded-lg p-3 border border-white/10"
+                            >
+                              <Award className="w-4 h-4 text-[#FFD700] flex-shrink-0" />
+                              <span className="font-medium">{achievement}</span>
+                            </div>
+                          ))}
+                        </div>
+                      </div>
                     </div>
                   </div>
-                </div>
 
-                {/* Conquistas */}
-                <div className="bg-gradient-to-br from-[#00D5B7]/10 to-[#01BFBA]/10 backdrop-blur-md rounded-2xl p-8 border border-[#00D5B7]/20">
-                  <h4 className="text-xl font-bold text-white mb-4 flex items-center gap-2">
-                    <Trophy className="w-5 h-5 text-[#FFD700]" />
-                    Principais Conquistas 2024
-                  </h4>
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  {/* AXK Marketplace */}
+                  <div className="bg-gradient-to-br from-[#00D5B7]/10 to-[#01BFBA]/10 backdrop-blur-md rounded-2xl p-8 border border-[#00D5B7]/30">
+                    <h3 className="text-3xl font-bold text-white mb-6 flex items-center gap-3">
+                      <Zap className="w-8 h-8 text-[#01BFBA]" />
+                      AXK Marketplace
+                    </h3>
+                    <p className="text-white/80 mb-8 text-lg leading-relaxed">
+                      Plataforma oficial da AXK desenvolvida para revolucionar o ecossistema gamer,
+                      além de vender nossos produtos oficiais, conectando nossos jogadores
+                      profissionais com o público de eSports, além de apresentar para qual objetivo
+                      viemos conquistar o mercado Brasileiro e Mundial.
+                    </p>
+
+                    <div className="grid md:grid-cols-3 gap-6 mb-8">
+                      <div className="text-center bg-white/5 rounded-xl p-6 border border-white/10">
+                        <Target className="w-8 h-8 text-[#00D5B7] mx-auto mb-3" />
+                        <h5 className="font-semibold text-white mb-2">Coaching Elite</h5>
+                        <p className="text-white/70 text-sm">
+                          Mentoria personalizada com profissionais renomados
+                        </p>
+                      </div>
+                      <div className="text-center bg-white/5 rounded-xl p-6 border border-white/10">
+                        <TrendingUp className="w-8 h-8 text-[#01BFBA] mx-auto mb-3" />
+                        <h5 className="font-semibold text-white mb-2">Marketplace Premium</h5>
+                        <p className="text-white/70 text-sm">
+                          Itens exclusivos e contas verificadas
+                        </p>
+                      </div>
+                      <div className="text-center bg-white/5 rounded-xl p-6 border border-white/10">
+                        <Users className="w-8 h-8 text-[#FFD700] mx-auto mb-3" />
+                        <h5 className="font-semibold text-white mb-2">Comunidade Ativa</h5>
+                        <p className="text-white/70 text-sm">Networking com gamers profissionais</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Valores da organização */}
+                  <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                     {[
-                      'Top 3 Regional Pokémon UNITE',
-                      'Melhor Equipe Emergente',
-                      'MVP Individual VALORANT',
-                      'Maior Crescimento do Ano',
-                    ].map((achievement, index) => (
-                      <div key={index} className="flex items-center gap-2 text-white/80">
-                        <Award className="w-4 h-4 text-[#FFD700] flex-shrink-0" />
-                        <span className="text-sm">{achievement}</span>
+                      {
+                        icon: Shield,
+                        title: 'Integridade',
+                        desc: 'Fair play em primeiro lugar',
+                        color: '#00D5B7',
+                      },
+                      {
+                        icon: Sword,
+                        title: 'Competitividade',
+                        desc: 'Mentalidade vencedora',
+                        color: '#01BFBA',
+                      },
+                      {
+                        icon: Users,
+                        title: 'Unidade',
+                        desc: 'Força do trabalho em equipe',
+                        color: '#FFD700',
+                      },
+                      {
+                        icon: Star,
+                        title: 'Inovação',
+                        desc: 'Evolução constante',
+                        color: '#FF4655',
+                      },
+                    ].map((value, index) => (
+                      <div
+                        key={index}
+                        className="bg-white/5 backdrop-blur-md rounded-xl p-6 border border-white/10 hover:border-[#00D5B7]/30 transition-all duration-300 group text-center"
+                      >
+                        <value.icon
+                          className="w-8 h-8 mx-auto mb-3 group-hover:scale-110 transition-transform duration-200"
+                          style={{ color: value.color }}
+                        />
+                        <h5 className="font-semibold text-white mb-2">{value.title}</h5>
+                        <p className="text-white/60 text-sm">{value.desc}</p>
                       </div>
                     ))}
                   </div>
-                </div>
-              </div>
+                </motion.div>
+              )}
 
-              {/* Marketplace showcase */}
-              <div className="space-y-6">
-                <div className="bg-white/5 backdrop-blur-md rounded-2xl p-8 border border-white/10 hover:border-[#00D5B7]/50 transition-all duration-300">
-                  <h3 className="text-2xl font-bold text-white mb-4 flex items-center gap-3">
-                    <Zap className="w-6 h-6 text-[#01BFBA]" />
-                    AXK Marketplace
-                  </h3>
-                  <p className="text-white/80 mb-6 leading-relaxed">
-                    Plataforma inovadora desenvolvida internamente para conectar gamers, oferecendo
-                    serviços de coaching, venda de contas e marketplace de itens.
-                  </p>
+              {activeTab === 'games' && (
+                <motion.div
+                  key="games"
+                  variants={tabVariants}
+                  initial="hidden"
+                  animate="visible"
+                  exit="exit"
+                  className="grid lg:grid-cols-2 gap-8"
+                >
+                  {/* Lista de modalidades */}
+                  <div className="space-y-4">
+                    <h3 className="text-3xl font-bold text-white mb-6 flex items-center gap-3">
+                      <Gamepad2 className="w-8 h-8 text-[#00D5B7]" />
+                      Modalidades Competitivas
+                    </h3>
 
-                  <div className="space-y-3 mb-6">
-                    <div className="flex items-center gap-3 text-white/70">
-                      <Target className="w-4 h-4 text-[#00D5B7]" />
-                      <span>Sistema de coaching personalizado</span>
-                    </div>
-                    <div className="flex items-center gap-3 text-white/70">
-                      <TrendingUp className="w-4 h-4 text-[#01BFBA]" />
-                      <span>Marketplace de itens raros</span>
-                    </div>
-                    <div className="flex items-center gap-3 text-white/70">
-                      <Users className="w-4 h-4 text-[#FFD700]" />
-                      <span>Comunidade ativa de gamers</span>
-                    </div>
+                    {games.map((game, index) => (
+                      <motion.div
+                        key={game.id}
+                        variants={itemVariants}
+                        className={`bg-white/5 backdrop-blur-md rounded-xl p-4 border transition-all duration-300 cursor-pointer ${
+                          selectedGame === index
+                            ? 'border-[#00D5B7]/50 bg-white/10 scale-[1.02]'
+                            : 'border-white/10 hover:border-[#00D5B7]/30'
+                        }`}
+                        onClick={() => setSelectedGame(index)}
+                      >
+                        <div className="flex items-center justify-between">
+                          <div className="flex items-center gap-4">
+                            <div className="text-3xl p-2 bg-white/5 rounded-lg">{game.icon}</div>
+                            <div>
+                              <h4 className="font-bold text-white text-lg">{game.name}</h4>
+                              <p className="text-white/60 text-sm">
+                                {game.players} atletas d'elite
+                              </p>
+                            </div>
+                          </div>
+                          <div className="flex items-center gap-3">
+                            <span
+                              className={`px-3 py-1 rounded-full text-xs font-bold ${
+                                game.status === 'Ativo'
+                                  ? 'bg-green-500/20 text-green-400 border border-green-500/30'
+                                  : 'bg-blue-500/20 text-blue-400 border border-blue-500/30'
+                              }`}
+                            >
+                              {game.status}
+                            </span>
+                            <ChevronRight
+                              className={`w-5 h-5 transition-transform duration-200 ${
+                                selectedGame === index
+                                  ? 'rotate-90 text-[#00D5B7]'
+                                  : 'text-white/40'
+                              }`}
+                            />
+                          </div>
+                        </div>
+                      </motion.div>
+                    ))}
                   </div>
 
-                  <div className="flex gap-3">
-                    <button className="bg-gradient-to-r from-[#00D5B7] to-[#01BFBA] text-white px-4 py-2 rounded-lg font-medium hover:scale-105 transition-transform duration-200 flex items-center gap-2">
-                      <ExternalLink className="w-4 h-4" />
-                      Visitar Site
-                    </button>
-                    <button className="border border-[#00D5B7]/50 text-[#00D5B7] px-4 py-2 rounded-lg font-medium hover:bg-[#00D5B7]/10 transition-colors duration-200 flex items-center gap-2">
-                      <Play className="w-4 h-4" />
-                      Demo
-                    </button>
+                  {/* Detalhes da modalidade selecionada */}
+                  <div className="sticky top-8">
+                    <AnimatePresence mode="wait">
+                      <motion.div
+                        key={selectedGame}
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        exit={{ opacity: 0, y: -20 }}
+                        transition={{ duration: 0.3 }}
+                        className="bg-white/5 backdrop-blur-md rounded-2xl p-8 border border-white/10"
+                      >
+                        {(() => {
+                          const game = games[selectedGame];
+                          return (
+                            <>
+                              <div className="flex items-center gap-4 mb-8">
+                                <div className="text-5xl p-3 bg-white/10 rounded-xl">
+                                  {game.icon}
+                                </div>
+                                <div>
+                                  <h3 className="text-2xl font-bold text-white">{game.name}</h3>
+                                  <p className="text-white/70 text-lg">{game.description}</p>
+                                </div>
+                              </div>
+
+                              <div className="space-y-6">
+                                <div>
+                                  <h4 className="font-bold text-white text-xl mb-4 flex items-center gap-2">
+                                    <Trophy className="w-6 h-6 text-[#FFD700]" />
+                                    Conquistas da Equipe
+                                  </h4>
+                                  <div className="space-y-3">
+                                    {game.achievements.map((achievement, index) => (
+                                      <div
+                                        key={index}
+                                        className="flex items-center gap-3 text-white/80 bg-white/5 rounded-lg p-3 border border-white/10"
+                                      >
+                                        <div
+                                          className="w-3 h-3 rounded-full flex-shrink-0"
+                                          style={{ backgroundColor: game.color }}
+                                        />
+                                        <span className="font-medium">{achievement}</span>
+                                      </div>
+                                    ))}
+                                  </div>
+                                </div>
+
+                                <div className="grid grid-cols-2 gap-4">
+                                  <div className="text-center p-6 bg-gradient-to-br from-white/10 to-white/5 rounded-xl border border-white/20">
+                                    <div className="text-3xl font-bold text-white mb-2">
+                                      {game.players}
+                                    </div>
+                                    <div className="text-white/60 text-sm font-medium">
+                                      Atletas Ativos
+                                    </div>
+                                  </div>
+                                  <div className="text-center p-6 bg-gradient-to-br from-white/10 to-white/5 rounded-xl border border-white/20">
+                                    <div
+                                      className="text-3xl font-bold mb-2"
+                                      style={{ color: game.color }}
+                                    >
+                                      {game.status}
+                                    </div>
+                                    <div className="text-white/60 text-sm font-medium">
+                                      Status Competitivo
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </>
+                          );
+                        })()}
+                      </motion.div>
+                    </AnimatePresence>
                   </div>
-                </div>
+                </motion.div>
+              )}
 
-                {/* Valores da organização */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                  {[
-                    { icon: Shield, title: 'Integridade', desc: 'Fair play sempre' },
-                    { icon: Sword, title: 'Competitividade', desc: 'Busca pela excelência' },
-                    { icon: Users, title: 'União', desc: 'Força do coletivo' },
-                    { icon: Star, title: 'Inovação', desc: 'Sempre evoluindo' },
-                  ].map((value, index) => (
-                    <div
-                      key={index}
-                      className="bg-white/5 backdrop-blur-md rounded-xl p-4 border border-white/10 hover:border-[#00D5B7]/30 transition-all duration-300 group"
-                    >
-                      <value.icon className="w-6 h-6 text-[#00D5B7] mb-2 group-hover:scale-110 transition-transform duration-200" />
-                      <h5 className="font-semibold text-white mb-1">{value.title}</h5>
-                      <p className="text-white/60 text-sm">{value.desc}</p>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </motion.div>
-          )}
+              {activeTab === 'leadership' && (
+                <motion.div
+                  key="leadership"
+                  variants={tabVariants}
+                  initial="hidden"
+                  animate="visible"
+                  exit="exit"
+                  className="space-y-8"
+                >
+                  <div className="text-center mb-8">
+                    <h3 className="text-4xl font-bold text-white mb-4 flex items-center justify-center gap-3">
+                      <Crown className="w-10 h-10 text-[#FFD700]" />
+                      Liderança Executiva
+                    </h3>
+                    <p className="text-white/70 text-lg max-w-2xl mx-auto">
+                      Conheça a visão estratégica e expertise técnica por trás do crescimento
+                      exponencial da AXKRUM
+                    </p>
+                  </div>
 
-          {activeTab === 'games' && (
-            <motion.div
-              key="games"
-              variants={tabVariants}
-              initial="hidden"
-              animate="visible"
-              exit="exit"
-              className="grid lg:grid-cols-2 gap-12"
-            >
-              {/* Lista de jogos */}
-              <div className="space-y-4">
-                <h3 className="text-2xl font-bold text-white mb-6 flex items-center gap-3">
-                  <Gamepad2 className="w-6 h-6 text-[#00D5B7]" />
-                  Modalidades Competitivas
-                </h3>
+                  {/* Card do CEO Aprimorado */}
+                  <div className="bg-gradient-to-br from-[#00D5B7]/10 to-[#01BFBA]/10 backdrop-blur-md rounded-2xl p-8 border border-[#00D5B7]/30">
+                    <div className="flex flex-col lg:flex-row items-center gap-8">
+                      <div className="w-36 h-36 bg-gradient-to-br from-[#00D5B7] to-[#01BFBA] rounded-full flex items-center justify-center text-5xl font-bold text-white shadow-2xl shadow-[#00D5B7]/40 relative">
+                        <div className="absolute inset-0 bg-gradient-to-br from-[#00D5B7] to-[#01BFBA] rounded-full animate-pulse opacity-50"></div>
+                        <span className="relative z-10">GV</span>
+                      </div>
 
-                {games.map((game, index) => (
-                  <motion.div
-                    key={game.id}
-                    variants={itemVariants}
-                    className={`bg-white/5 backdrop-blur-md rounded-xl p-4 border transition-all duration-300 cursor-pointer ${
-                      selectedGame === index
-                        ? 'border-[#00D5B7]/50 bg-white/10'
-                        : 'border-white/10 hover:border-[#00D5B7]/30'
-                    }`}
-                    onClick={() => setSelectedGame(index)}
-                  >
-                    <div className="flex items-center justify-between">
-                      <div className="flex items-center gap-4">
-                        <span className="text-2xl">{game.icon}</span>
-                        <div>
-                          <h4 className="font-semibold text-white">{game.name}</h4>
-                          <p className="text-white/60 text-sm">{game.players} jogadores</p>
+                      <div className="flex-1 text-center lg:text-left">
+                        <h4 className="text-4xl font-bold text-white mb-3">Gustavo Vargas</h4>
+                        <p className="text-[#00D5B7] font-bold text-2xl mb-6">
+                          CEO & Fundador da AXK eSports
+                        </p>
+                        <p className="text-white/80 leading-relaxed text-lg mb-8">
+                          Visionário tecnológico e estrategista de eSports, Gustavo combina
+                          expertise em desenvolvimento fullstack com profundo conhecimento do
+                          cenário competitivo. Sua liderança transformou a AXK em uma das
+                          organizações mais promissoras do Brasil, estabelecendo novos padrões de
+                          excelência e inovação no setor.
+                        </p>
+
+                        <div className="flex flex-wrap gap-3 justify-center lg:justify-start">
+                          <span className="bg-[#00D5B7]/20 text-[#00D5B7] px-4 py-2 rounded-full font-bold border border-[#00D5B7]/40">
+                            Liderança Estratégica
+                          </span>
+                          <span className="bg-[#01BFBA]/20 text-[#01BFBA] px-4 py-2 rounded-full font-bold border border-[#01BFBA]/40">
+                            Arquiteto de Software
+                          </span>
+                          <span className="bg-[#FFD700]/20 text-[#FFD700] px-4 py-2 rounded-full font-bold border border-[#FFD700]/40">
+                            Mentor Técnico
+                          </span>
                         </div>
                       </div>
-                      <div className="flex items-center gap-2">
-                        <span
-                          className={`px-2 py-1 rounded-full text-xs font-medium ${
-                            game.status === 'Ativo'
-                              ? 'bg-green-500/20 text-green-400'
-                              : 'bg-blue-500/20 text-blue-400'
-                          }`}
-                        >
-                          {game.status}
-                        </span>
-                        <ChevronRight className="w-4 h-4 text-white/40" />
-                      </div>
-                    </div>
-                  </motion.div>
-                ))}
-              </div>
-
-              {/* Detalhes do jogo selecionado */}
-              <div className="sticky top-8">
-                <AnimatePresence mode="wait">
-                  <motion.div
-                    key={selectedGame}
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    exit={{ opacity: 0, y: -20 }}
-                    transition={{ duration: 0.3 }}
-                    className="bg-white/5 backdrop-blur-md rounded-2xl p-8 border border-white/10"
-                  >
-                    {(() => {
-                      const game = games[selectedGame];
-                      return (
-                        <>
-                          <div className="flex items-center gap-4 mb-6">
-                            <span className="text-4xl">{game.icon}</span>
-                            <div>
-                              <h3 className="text-2xl font-bold text-white">{game.name}</h3>
-                              <p className="text-white/70">{game.description}</p>
-                            </div>
-                          </div>
-
-                          <div className="space-y-6">
-                            <div>
-                              <h4 className="font-semibold text-white mb-3 flex items-center gap-2">
-                                <Trophy className="w-5 h-5 text-[#FFD700]" />
-                                Conquistas da Equipe
-                              </h4>
-                              <div className="space-y-2">
-                                {game.achievements.map((achievement, index) => (
-                                  <div
-                                    key={index}
-                                    className="flex items-center gap-3 text-white/80"
-                                  >
-                                    <div
-                                      className="w-2 h-2 rounded-full flex-shrink-0"
-                                      style={{ backgroundColor: game.color }}
-                                    />
-                                    {achievement}
-                                  </div>
-                                ))}
-                              </div>
-                            </div>
-
-                            <div className="grid grid-cols-2 gap-4">
-                              <div className="text-center p-4 bg-white/5 rounded-xl border border-white/10">
-                                <div className="text-2xl font-bold text-white">{game.players}</div>
-                                <div className="text-white/60 text-sm">Jogadores Ativos</div>
-                              </div>
-                              <div className="text-center p-4 bg-white/5 rounded-xl border border-white/10">
-                                <div className="text-2xl font-bold" style={{ color: game.color }}>
-                                  {game.status}
-                                </div>
-                                <div className="text-white/60 text-sm">Status Atual</div>
-                              </div>
-                            </div>
-                          </div>
-                        </>
-                      );
-                    })()}
-                  </motion.div>
-                </AnimatePresence>
-              </div>
-            </motion.div>
-          )}
-
-          {activeTab === 'leadership' && (
-            <motion.div
-              key="leadership"
-              variants={tabVariants}
-              initial="hidden"
-              animate="visible"
-              exit="exit"
-              className="max-w-4xl mx-auto"
-            >
-              <div className="text-center mb-12">
-                <h3 className="text-3xl font-bold text-white mb-4 flex items-center justify-center gap-3">
-                  <Crown className="w-8 h-8 text-[#FFD700]" />
-                  Liderança AXK
-                </h3>
-                <p className="text-white/70 max-w-2xl mx-auto">
-                  Conheça a pessoa por trás da visão estratégica e crescimento da AXK eSports
-                </p>
-              </div>
-
-              {/* Card do CEO */}
-              <div className="bg-gradient-to-br from-[#00D5B7]/10 to-[#01BFBA]/10 backdrop-blur-md rounded-2xl p-8 border border-[#00D5B7]/30 mb-8">
-                <div className="flex flex-col md:flex-row items-center gap-8">
-                  <div className="w-32 h-32 bg-gradient-to-br from-[#00D5B7] to-[#01BFBA] rounded-full flex items-center justify-center text-4xl font-bold text-white shadow-2xl shadow-[#00D5B7]/30">
-                    GV
-                  </div>
-
-                  <div className="flex-1 text-center md:text-left">
-                    <h4 className="text-3xl font-bold text-white mb-2">Gustavo Vargas</h4>
-                    <p className="text-[#00D5B7] font-semibold text-xl mb-4">
-                      CEO & Fundador da AXK
-                    </p>
-                    <p className="text-white/80 leading-relaxed mb-6">
-                      Visionário e apaixonado por eSports, Gustavo fundou a AXK com o objetivo de
-                      criar uma das organizações mais respeitadas do cenário competitivo brasileiro.
-                      Além de liderar a organização, atua como mentor de desenvolvimento back-end,
-                      compartilhando seu conhecimento técnico com a nova geração de desenvolvedores.
-                    </p>
-
-                    <div className="flex flex-wrap gap-3 justify-center md:justify-start">
-                      <span className="bg-[#00D5B7]/20 text-[#00D5B7] px-3 py-1 rounded-full text-sm font-medium border border-[#00D5B7]/30">
-                        Liderança Estratégica
-                      </span>
-                      <span className="bg-[#01BFBA]/20 text-[#01BFBA] px-3 py-1 rounded-full text-sm font-medium border border-[#01BFBA]/30">
-                        Mentor Back-end
-                      </span>
-                      <span className="bg-[#FFD700]/20 text-[#FFD700] px-3 py-1 rounded-full text-sm font-medium border border-[#FFD700]/30">
-                        Fundador AXK
-                      </span>
                     </div>
                   </div>
-                </div>
-              </div>
 
-              {/* Impacto e mentoria */}
-              <div className="grid md:grid-cols-2 gap-6">
-                <div className="bg-white/5 backdrop-blur-md rounded-xl p-6 border border-white/10">
-                  <h5 className="font-semibold text-white mb-4 flex items-center gap-2">
-                    <Users className="w-5 h-5 text-[#00D5B7]" />
-                    Impacto na Organização
-                  </h5>
-                  <ul className="space-y-3 text-white/80">
-                    <li className="flex items-start gap-3">
-                      <div className="w-1.5 h-1.5 rounded-full bg-[#00D5B7] mt-2 flex-shrink-0" />
-                      Crescimento de 300% em membros ativos
-                    </li>
-                    <li className="flex items-start gap-3">
-                      <div className="w-1.5 h-1.5 rounded-full bg-[#01BFBA] mt-2 flex-shrink-0" />
-                      Desenvolvimento do AXK Marketplace
-                    </li>
-                    <li className="flex items-start gap-3">
-                      <div className="w-1.5 h-1.5 rounded-full bg-[#FFD700] mt-2 flex-shrink-0" />
-                      Parcerias estratégicas com sponsors
-                    </li>
-                  </ul>
-                </div>
+                  {/* Impacto e resultados */}
+                  <div className="grid md:grid-cols-2 gap-8">
+                    <div className="bg-white/5 backdrop-blur-md rounded-xl p-8 border border-white/10">
+                      <h5 className="font-bold text-white text-xl mb-6 flex items-center gap-3">
+                        <TrendingUp className="w-6 h-6 text-[#00D5B7]" />
+                        Impacto Organizacional
+                      </h5>
+                      <ul className="space-y-4 text-white/80">
+                        <li className="flex items-start gap-3">
+                          <div className="w-2 h-2 rounded-full bg-[#00D5B7] mt-2 flex-shrink-0" />
+                          <span>
+                            <strong className="text-white">300% crescimento</strong> em membros
+                            ativos em 12 meses
+                          </span>
+                        </li>
+                        <li className="flex items-start gap-3">
+                          <div className="w-2 h-2 rounded-full bg-[#01BFBA] mt-2 flex-shrink-0" />
+                          <span>
+                            <strong className="text-white">Desenvolvimento completo</strong> do AXK
+                            Marketplace proprietário
+                          </span>
+                        </li>
+                        <li className="flex items-start gap-3">
+                          <div className="w-2 h-2 rounded-full bg-[#FFD700] mt-2 flex-shrink-0" />
+                          <span>
+                            <strong className="text-white">Parcerias estratégicas</strong> com
+                            sponsors e organizações d'elite
+                          </span>
+                        </li>
+                        <li className="flex items-start gap-3">
+                          <div className="w-2 h-2 rounded-full bg-[#FF4655] mt-2 flex-shrink-0" />
+                          <span>
+                            <strong className="text-white">Metodologia inovadora</strong> de
+                            treinamento competitivo
+                          </span>
+                        </li>
+                      </ul>
+                    </div>
 
-                <div className="bg-white/5 backdrop-blur-md rounded-xl p-6 border border-white/10">
-                  <h5 className="font-semibold text-white mb-4 flex items-center gap-2">
-                    <Star className="w-5 h-5 text-[#FFD700]" />
-                    Mentoria Técnica
-                  </h5>
-                  <ul className="space-y-3 text-white/80">
-                    <li className="flex items-start gap-3">
-                      <div className="w-1.5 h-1.5 rounded-full bg-[#00D5B7] mt-2 flex-shrink-0" />
-                      Orientação em arquitetura de software
-                    </li>
-                    <li className="flex items-start gap-3">
-                      <div className="w-1.5 h-1.5 rounded-full bg-[#01BFBA] mt-2 flex-shrink-0" />
-                      Desenvolvimento de APIs robustas
-                    </li>
-                    <li className="flex items-start gap-3">
-                      <div className="w-1.5 h-1.5 rounded-full bg-[#FFD700] mt-2 flex-shrink-0" />
-                      Metodologias ágeis na prática
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </motion.div>
-          )}
-        </AnimatePresence>
+                    <div className="bg-white/5 backdrop-blur-md rounded-xl p-8 border border-white/10">
+                      <h5 className="font-bold text-white text-xl mb-6 flex items-center gap-3">
+                        <Star className="w-6 h-6 text-[#FFD700]" />
+                        Expertise Técnica
+                      </h5>
+                      <ul className="space-y-4 text-white/80">
+                        <li className="flex items-start gap-3">
+                          <div className="w-2 h-2 rounded-full bg-[#00D5B7] mt-2 flex-shrink-0" />
+                          <span>
+                            <strong className="text-white">Arquitetura de Software:</strong>{' '}
+                            Sistemas escaláveis e robustos
+                          </span>
+                        </li>
+                        <li className="flex items-start gap-3">
+                          <div className="w-2 h-2 rounded-full bg-[#01BFBA] mt-2 flex-shrink-0" />
+                          <span>
+                            <strong className="text-white">APIs Avançadas:</strong> Desenvolvimento
+                            back-end de alta performance
+                          </span>
+                        </li>
+                        <li className="flex items-start gap-3">
+                          <div className="w-2 h-2 rounded-full bg-[#FFD700] mt-2 flex-shrink-0" />
+                          <span>
+                            <strong className="text-white">Metodologias Ágeis:</strong>{' '}
+                            Implementação prática e mentoria
+                          </span>
+                        </li>
+                        <li className="flex items-start gap-3">
+                          <div className="w-2 h-2 rounded-full bg-[#FF4655] mt-2 flex-shrink-0" />
+                          <span>
+                            <strong className="text-white">Análise de Dados:</strong> Métricas
+                            avançadas para otimização
+                          </span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </motion.div>
+              )}
+            </AnimatePresence>
+          </div>
+        </div>
 
-        {/* Call to Action */}
+        {/* Call to Action Refinado - Apenas Marketplace */}
         <motion.div
           variants={itemVariants}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.3 }}
-          className="text-center mt-16"
+          className="text-center mt-20"
         >
-          <p className="text-white/60 text-lg mb-6">
-            Junte-se à família AXK e faça parte do futuro dos eSports
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <div className="bg-gradient-to-r from-[#00D5B7] to-[#01BFBA] p-0.5 rounded-full">
-              <div className="bg-black rounded-full px-6 py-3 hover:bg-transparent transition-all duration-300 cursor-pointer group">
-                <span className="text-white group-hover:text-black font-medium flex items-center gap-2">
-                  <ExternalLink className="w-4 h-4" />
-                  Visitar AXK Marketplace
+          <div className="bg-gradient-to-br from-[#00D5B7]/10 to-[#01BFBA]/10 backdrop-blur-md rounded-2xl p-8 border border-[#00D5B7]/30 max-w-3xl mx-auto">
+            <h3 className="text-2xl font-bold text-white mb-4">Explore o Ecossistema AXK</h3>
+            <p className="text-white/70 text-lg mb-8 max-w-2xl mx-auto">
+              Descubra nossa plataforma inovadora e faça parte da revolução dos eSports brasileiros.
+              Conecte-se com profissionais, desenvolva suas habilidades e alcance o próximo nível.
+            </p>
+
+            <div className="bg-gradient-to-r from-[#00D5B7] to-[#01BFBA] p-0.5 rounded-full inline-block">
+              <div className="bg-black rounded-full px-8 py-4 hover:bg-transparent transition-all duration-300 cursor-pointer group">
+                <span className="text-white group-hover:text-black font-bold flex items-center gap-3 text-lg">
+                  <ExternalLink className="w-5 h-5" />
+                  Visite a AXK
                 </span>
               </div>
-            </div>
-            <div
-              className="border border-[#01BFBA]/50 rounded-full px-6 py-3 hover:bg-[#01BFBA]/10
-                          transition-all duration-300 cursor-pointer group"
-            >
-              <span className="text-[#01BFBA] font-medium flex items-center gap-2">
-                <Users className="w-4 h-4" />
-                Conhecer a Equipe
-              </span>
             </div>
           </div>
         </motion.div>
