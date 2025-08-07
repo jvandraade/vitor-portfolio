@@ -11,6 +11,7 @@ interface Course {
   certificateImage?: string;
   completedYear: string;
   skills: string[];
+  isCompleted: boolean; // Nova propriedade para identificar cursos concluídos
 }
 
 export const Courses: React.FC = () => {
@@ -26,7 +27,8 @@ export const Courses: React.FC = () => {
       category: 'backend',
       completedYear: 'In progress',
       skills: ['Python', 'Algoritmos', 'Estruturas de Dados'],
-      // certificateImage: '/images/certificates/python.png',
+      isCompleted: false,
+      // certificateImage: '/certificates/python.png',
     },
     {
       id: 'javascript',
@@ -35,7 +37,8 @@ export const Courses: React.FC = () => {
       category: 'frontend',
       completedYear: '2023',
       skills: ['JavaScript', 'DOM', 'ES6+'],
-      certificateImage: '/images/certificates/javascript.png',
+      certificateImage: '/certificates/javascript.png',
+      isCompleted: true,
     },
     {
       id: 'vue',
@@ -44,7 +47,8 @@ export const Courses: React.FC = () => {
       category: 'frontend',
       completedYear: '2024',
       skills: ['Vue', 'JavaScript', 'Responsive Design'],
-      certificateImage: '../../../public/certificates/vue.png',
+      certificateImage: '/certificates/vue.png',
+      isCompleted: true,
     },
     {
       id: 'html-css',
@@ -53,7 +57,8 @@ export const Courses: React.FC = () => {
       category: 'frontend',
       completedYear: '2023',
       skills: ['HTML5', 'CSS3', 'Responsive Design'],
-      certificateImage: '/images/certificates/html-css.png',
+      certificateImage: '/certificates/html-css.png',
+      isCompleted: true,
     },
     {
       id: 'react',
@@ -62,16 +67,18 @@ export const Courses: React.FC = () => {
       category: 'frontend',
       completedYear: '2024',
       skills: ['React', 'Hooks', 'Context API'],
-      certificateImage: '../../../public/certificates/react.png',
+      certificateImage: '/certificates/react.png',
+      isCompleted: true,
     },
     {
-      id: 'react',
+      id: 'react-redux',
       name: 'React + Redux - Udemy',
       platform: 'Udemy',
       category: 'frontend',
       completedYear: '2024',
       skills: ['TypeScript', 'Tipos', 'Interfaces'],
-      certificateImage: '../../../public/certificates/react2.png',
+      certificateImage: '/certificates/react2.png',
+      isCompleted: true,
     },
     {
       id: 'nodejs',
@@ -80,7 +87,8 @@ export const Courses: React.FC = () => {
       category: 'backend',
       completedYear: '2025',
       skills: ['Node.js', 'Express', 'APIs'],
-      certificateImage: '/images/certificates/nodejs.png',
+      certificateImage: '/certificates/nodejs.png',
+      isCompleted: true,
     },
     {
       id: 'git',
@@ -89,7 +97,8 @@ export const Courses: React.FC = () => {
       category: 'tools',
       completedYear: 'In progress',
       skills: ['Git', 'GitHub', 'Versionamento'],
-      // certificateImage: '/images/certificates/git.png'
+      isCompleted: false,
+      // certificateImage: '/certificates/git.png'
     },
     {
       id: 'mysql',
@@ -98,7 +107,8 @@ export const Courses: React.FC = () => {
       category: 'backend',
       completedYear: '2023',
       skills: ['MySQL', 'SQL', 'Banco de Dados'],
-      certificateImage: '/images/certificates/mysql.png',
+      certificateImage: '/certificates/mysql.png',
+      isCompleted: true,
     },
     {
       id: 'docker',
@@ -107,7 +117,8 @@ export const Courses: React.FC = () => {
       category: 'tools',
       completedYear: 'In progress',
       skills: ['Docker', 'Containers', 'DevOps'],
-      // certificateImage: '/images/certificates/docker.png'
+      isCompleted: false,
+      // certificateImage: '/certificates/docker.png'
     },
     {
       id: 'uiux',
@@ -116,7 +127,8 @@ export const Courses: React.FC = () => {
       category: 'design',
       completedYear: 'In progress',
       skills: ['UI Design', 'UX Research', 'Figma'],
-      // certificateImage: '/images/certificates/uiux.png'
+      isCompleted: false,
+      // certificateImage: '/certificates/uiux.png'
     },
     {
       id: 'ml',
@@ -125,7 +137,8 @@ export const Courses: React.FC = () => {
       category: 'data',
       completedYear: 'In progress',
       skills: ['Machine Learning', 'Python', 'Scikit-learn'],
-      // certificateImage: '/images/certificates/ml.png'
+      isCompleted: false,
+      // certificateImage: '/certificates/ml.png'
     },
     {
       id: 'agile',
@@ -134,7 +147,8 @@ export const Courses: React.FC = () => {
       category: 'tools',
       completedYear: 'In progress',
       skills: ['Scrum', 'Agile', 'Metodologias'],
-      // certificateImage: '/images/certificates/agile.png'
+      isCompleted: false,
+      // certificateImage: '/certificates/agile.png'
     },
   ];
 
@@ -156,9 +170,14 @@ export const Courses: React.FC = () => {
     }));
   };
 
-  // Verificar se o curso tem certificado disponível
+  // Verificar se o curso tem certificado disponível (sem erro de imagem)
   const hasCertificate = (course: Course) => {
-    return course.certificateImage && !imageError[course.id];
+    return course.isCompleted && course.certificateImage && !imageError[course.id];
+  };
+
+  // Verificar se deve mostrar a medalha (curso concluído, independente da imagem)
+  const shouldShowMedal = (course: Course) => {
+    return course.isCompleted;
   };
 
   return (
@@ -252,7 +271,7 @@ export const Courses: React.FC = () => {
                                   <span>{course.platform}</span>
                                   <span>•</span>
                                   <span>{course.completedYear}</span>
-                                  {hasCertificate(course) && (
+                                  {shouldShowMedal(course) && (
                                     <>
                                       <span>•</span>
                                       <div className="flex items-center space-x-1 text-gold">
@@ -279,11 +298,11 @@ export const Courses: React.FC = () => {
                           </div>
 
                           <div className="flex items-center space-x-2">
-                            {hasCertificate(course) ? (
-                              <Award className="w-5 h-5 text-gold group-hover:scale-110 transition-transform" />
-                            ) : (
-                              <Eye className="w-4 h-4 text-gray-400 group-hover:text-aqua-green transition-colors" />
+                            {/* Medalha sempre visível para cursos concluídos */}
+                            {shouldShowMedal(course) && (
+                              <Award className="w-5 h-5 text-gold transition-transform group-hover:scale-110" />
                             )}
+                            <Eye className="w-4 h-4 text-gray-400 group-hover:text-aqua-green transition-colors" />
                             <ExternalLink className="w-4 h-4 text-gray-400 group-hover:text-aqua-green transition-colors" />
                           </div>
                         </div>
@@ -321,7 +340,7 @@ export const Courses: React.FC = () => {
                         <h3 className="font-bold text-lg text-gray-800 dark:text-gray-200">
                           {hasCertificate(selectedCourse) ? 'Certificado' : 'Preview do Curso'}
                         </h3>
-                        {hasCertificate(selectedCourse) && (
+                        {shouldShowMedal(selectedCourse) && (
                           <div className="ml-auto">
                             <div className="flex items-center space-x-1 text-xs bg-gold/20 text-gold px-2 py-1 rounded-full">
                               <CheckCircle className="w-3 h-3" />
@@ -345,6 +364,11 @@ export const Courses: React.FC = () => {
                               alt={`Certificado ${selectedCourse.name}`}
                               className="w-full h-full object-cover rounded-xl transition-transform duration-500 group-hover:scale-105"
                               onError={() => handleImageError(selectedCourse.id)}
+                              loading="eager"
+                              onLoad={() => {
+                                // Log para debug
+                                console.log(`Imagem carregada: ${selectedCourse.certificateImage}`);
+                              }}
                             />
 
                             {/* Overlay com zoom hint */}
@@ -375,9 +399,15 @@ export const Courses: React.FC = () => {
                             </motion.div>
                             <div className="space-y-1">
                               <p className="text-sm font-medium text-gray-600 dark:text-gray-400">
-                                Certificado em breve
+                                {selectedCourse.isCompleted
+                                  ? 'Certificado em breve'
+                                  : 'Curso em andamento'}
                               </p>
-                              <p className="text-xs text-gray-500">Imagem será adicionada</p>
+                              <p className="text-xs text-gray-500">
+                                {selectedCourse.isCompleted
+                                  ? 'Imagem será adicionada'
+                                  : 'Aguardando conclusão'}
+                              </p>
                             </div>
                           </div>
                         )}
@@ -396,7 +426,7 @@ export const Courses: React.FC = () => {
                             <span>{selectedCourse.platform}</span>
                             <span>•</span>
                             <span>{selectedCourse.completedYear}</span>
-                            {hasCertificate(selectedCourse) && (
+                            {shouldShowMedal(selectedCourse) && (
                               <>
                                 <span>•</span>
                                 <div className="flex items-center space-x-1 text-green-600">
@@ -465,7 +495,7 @@ export const Courses: React.FC = () => {
             {[
               { number: courses.length.toString(), label: 'Cursos Concluídos' },
               {
-                number: courses.filter(c => hasCertificate(c)).length.toString(),
+                number: courses.filter(c => shouldShowMedal(c)).length.toString(),
                 label: 'Certificados',
               },
               { number: '2022', label: 'Início dos Estudos' },
