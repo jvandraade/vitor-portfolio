@@ -1,9 +1,8 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import {
   Code2,
   ExternalLink,
-  Github,
   Monitor,
   Smartphone,
   Globe,
@@ -14,9 +13,8 @@ import {
   Tag,
   ChevronLeft,
   ChevronRight,
-  Image as Layers,
+  Layers,
   Palette,
-  Server,
 } from 'lucide-react';
 
 const Portfolio = () => {
@@ -28,24 +26,24 @@ const Portfolio = () => {
       id: 0,
       title: 'AXK Marketplace',
       category: 'fullstack',
-      type: 'Plataforma Web',
+      type: 'Plataforma Full Stack',
       description:
         'Marketplace completo para a comunidade gaming da AXK, com sistema de compra/venda, coaching e gestão de usuários.',
       longDescription:
-        'Plataforma desenvolvida para a AXK eSports que conecta gamers através de um marketplace inovador. O sistema permite compra e venda de contas, itens raros, serviços de coaching personalizado e criação de uma comunidade ativa. Implementado com arquitetura robusta e foco na experiência do usuário.',
+        'Plataforma desenvolvida para a AXKRUM, uma organização de eSports que conecta gamers através de um marketplace inovador. O sistema permite compra e venda de itens personalizados, gerenciamento de usuários e todas as atualizações dos nossos jogadores/equipes de eSports ao redor do Brasil e do mundo. Tudo foi calculado e implementado com arquiteturas robustas e o foco na experiência do usuário.',
       image: '🎮',
-      technologies: ['React', 'TypeScript', 'Node.js', 'PostgreSQL', 'Docker'],
+      technologies: ['React', 'TypeScript', 'Node.js', 'PostgreSQL', 'Docker', 'Tailwind'],
       features: [
         'Sistema completo de autenticação',
-        'Marketplace de itens e contas',
-        'Plataforma de coaching',
+        'Marketplace de itens e novidades',
+        'Plataforma de administração de conteúdos',
         'Dashboard administrativo',
         'Sistema de pagamentos integrado',
       ],
       status: 'Em Produção',
-      year: '2024',
+      year: '2025',
       role: 'Full Stack Developer',
-      team: 'AXK Team',
+      team: 'AXKRUM',
       duration: '6 meses',
       highlights: [
         'Arquitetura escalável com microserviços',
@@ -54,185 +52,145 @@ const Portfolio = () => {
         'Integração com APIs de pagamento',
       ],
       links: {
-        live: 'https://hml.axkrum.com',
-        github: null, // Projeto privado
+        // live: 'https://hml.axkrum.com',
       },
       color: '#00D5B7',
     },
     {
       id: 1,
-      title: 'Sistema de Gestão Acadêmica',
+      title: 'Clora',
       category: 'web',
       type: 'Aplicação Web',
       description:
-        'Sistema completo para gestão de estudantes, notas e frequência desenvolvido para instituição de ensino.',
+        'Aplicação web moderna e responsiva desenvolvida com foco na experiência do usuário e performance.',
       longDescription:
-        'Aplicação web robusta desenvolvida para digitalizar e otimizar a gestão acadêmica. O sistema oferece funcionalidades completas para professores, alunos e administradores, incluindo controle de notas, frequência, horários e comunicação interna.',
-      image: '🎓',
-      technologies: ['React', 'JavaScript', 'Express', 'MySQL', 'Bootstrap'],
+        'Clora é uma aplicação web robusta que demonstra habilidades avançadas em desenvolvimento frontend. O projeto combina design moderno, interatividade fluida e código limpo, resultando em uma experiência excepcional para o usuário.',
+      image: '👨‍⚕️',
+      technologies: ['React', 'JavaScript', 'CSS3', 'Tailwind', 'Typescript', 'Responsive Design'],
       features: [
-        'Dashboard para diferentes perfis de usuário',
-        'Controle de notas e frequência',
-        'Sistema de comunicação interno',
-        'Relatórios automatizados',
-        'Gestão de horários e turmas',
+        'Interface moderna e intuitiva',
+        'Design responsivo completo',
+        'Animações e transições suaves',
+        'Otimização de performance',
+        'Código limpo e maintível',
       ],
-      status: 'Concluído',
-      year: '2023',
+      status: 'Finalizado',
+      year: '2025',
       role: 'Frontend Developer',
-      team: 'Projeto Acadêmico',
-      duration: '4 meses',
+      team: 'Projeto Pessoal',
+      duration: '1 mês',
       highlights: [
-        'Interface intuitiva para diferentes perfis',
-        'Relatórios automatizados em PDF',
-        'Sistema de notificações por email',
-        'Responsive design para mobile',
+        'Performance otimizada para web',
+        'Design system consistente',
+        'Acessibilidade web implementada',
+        'SEO e otimizações avançadas',
       ],
       links: {
-        live: null,
-        github: 'https://github.com/vitorandrade',
-      },
-      color: '#FFD700',
-    },
-    {
-      id: 2,
-      title: 'E-commerce Responsivo',
-      category: 'web',
-      type: 'Loja Virtual',
-      description:
-        'Loja virtual completa com carrinho de compras, sistema de pagamento e painel administrativo.',
-      longDescription:
-        'E-commerce moderno desenvolvido com foco na experiência do usuário e performance. Inclui catálogo de produtos, sistema de carrinho, checkout integrado, painel administrativo e sistema de pedidos completo.',
-      image: '🛍️',
-      technologies: ['Vue.js', 'TypeScript', 'Node.js', 'MongoDB', 'Tailwind'],
-      features: [
-        'Catálogo de produtos dinâmico',
-        'Carrinho de compras persistente',
-        'Sistema de checkout integrado',
-        'Painel administrativo completo',
-        'Gestão de pedidos e estoque',
-      ],
-      status: 'Concluído',
-      year: '2023',
-      role: 'Full Stack Developer',
-      team: 'Freelance',
-      duration: '3 meses',
-      highlights: [
-        'Performance otimizada com lazy loading',
-        'Design responsivo e moderno',
-        'Integração com gateway de pagamento',
-        'Dashboard de analytics em tempo real',
-      ],
-      links: {
-        live: 'https://demo-ecommerce.com',
-        github: 'https://github.com/vitorandrade/ecommerce',
+        live: 'https://clora.vercel.app',
       },
       color: '#01BFBA',
     },
     {
-      id: 3,
-      title: 'App de Produtividade',
-      category: 'mobile',
-      type: 'Aplicativo Mobile',
+      id: 2,
+      title: 'Make Your Burger',
+      category: 'web',
+      type: 'Aplicação Web',
       description:
-        'Aplicativo mobile para gestão de tarefas com sincronização em nuvem e notificações inteligentes.',
+        'Aplicação web interativa para personalização de hambúrguers com interface moderna e experiência gamificada.',
       longDescription:
-        'Aplicativo mobile desenvolvido para aumentar a produtividade pessoal. Oferece gestão avançada de tarefas, categorização, lembretes inteligentes, sincronização entre dispositivos e analytics pessoais de produtividade.',
-      image: '📱',
-      technologies: ['React Native', 'TypeScript', 'Firebase', 'Redux', 'Expo'],
+        'Make Your Burger é uma aplicação web que permite aos usuários criar hambúrguers personalizados de forma interativa e divertida. O projeto demonstra habilidades em desenvolvimento frontend, UX/UI design e criação de experiências envolventes.',
+      image: '🍔',
+      technologies: ['React', 'JavaScript', 'CSS3', 'Interactive UI'],
       features: [
-        'Gestão avançada de tarefas',
-        'Sincronização em nuvem',
-        'Notificações inteligentes',
-        'Analytics de produtividade',
-        'Interface moderna e intuitiva',
+        'Sistema de personalização interativo',
+        'Interface gamificada e divertida',
+        'Visualização em tempo real',
+        'Sistema de preços dinâmico',
+        'Experiência responsiva completa',
       ],
-      status: 'Em Desenvolvimento',
+      status: 'Finalizado',
+      year: '2024',
+      role: 'Frontend Developer',
+      team: 'Projeto Pessoal',
+      duration: '1 mês',
+      highlights: [
+        'Interatividade avançada com animações',
+        'Sistema de estado complexo gerenciado',
+        'Interface altamente responsiva',
+        'Experiência do usuário excepcional',
+      ],
+      links: {
+        live: 'https://makeyourburguer-ten.vercel.app',
+      },
+      color: '#FFD700',
+    },
+    {
+      id: 3,
+      title: 'Comenta App',
+      category: 'mobile',
+      type: 'Aplicação Mobile',
+      description:
+        'Aplicação mobile responsiva com interface otimizada para dispositivos móveis e experiência nativa.',
+      longDescription:
+        'Comenta App é uma aplicação desenvolvida com foco na experiência mobile, oferecendo interface otimizada, navegação intuitiva e performance excepcional em dispositivos móveis. O projeto demonstra expertise em desenvolvimento mobile-first.',
+      image: '📱',
+      technologies: ['React', 'Mobile-First Design', 'PWA', 'Responsive'],
+      features: [
+        'Interface otimizada para mobile',
+        'Navegação touch-friendly',
+        'Performance otimizada',
+        'Design responsivo avançado',
+        'Experiência similar a app nativo',
+      ],
+      status: 'Finalizado',
       year: '2024',
       role: 'Mobile Developer',
       team: 'Projeto Pessoal',
       duration: '2 meses',
       highlights: [
-        'Offline-first architecture',
-        'Notificações push personalizadas',
-        'Gamificação para engajamento',
-        'Integração com calendários',
+        'Mobile-first development approach',
+        'Otimização para touch interfaces',
+        'Performance excepcional em mobile',
+        'PWA capabilities implementadas',
       ],
       links: {
-        live: null,
-        github: 'https://github.com/vitorandrade/productivity-app',
+        live: 'https://comenta-app-zeta.vercel.app',
       },
       color: '#FF4655',
     },
     {
       id: 4,
-      title: 'Dashboard Analytics',
+      title: 'First HTML Project',
       category: 'web',
-      type: 'Painel Administrativo',
+      type: 'Projeto Web Foundational',
       description:
-        'Dashboard interativo para visualização de dados com gráficos dinâmicos e relatórios personalizados.',
+        'Projeto inicial em HTML demonstrando fundamentos sólidos de desenvolvimento web e evolução técnica.',
       longDescription:
-        'Painel administrativo avançado para análise de dados de negócio. Oferece visualizações interativas, relatórios customizáveis, filtros avançados e integração com múltiplas fontes de dados.',
-      image: '📊',
-      technologies: ['React', 'D3.js', 'Python', 'FastAPI', 'PostgreSQL'],
+        'First HTML Project representa os primeiros passos no desenvolvimento web, demonstrando a evolução e crescimento técnico ao longo do tempo. Este projeto foundational estabeleceu as bases para projetos mais complexos e sofisticados.',
+      image: '🌐',
+      technologies: ['HTML5', 'CSS3', 'JavaScript', 'Web Fundamentals'],
       features: [
-        'Gráficos interativos e dinâmicos',
-        'Relatórios personalizáveis',
-        'Filtros avançados de dados',
-        'Exportação em múltiplos formatos',
-        'Sistema de alertas automáticos',
+        'Estrutura HTML semântica',
+        'Estilização CSS responsiva',
+        'JavaScript interativo',
+        'Fundamentos web sólidos',
+        'Base para projetos futuros',
       ],
-      status: 'Concluído',
-      year: '2023',
-      role: 'Frontend Developer',
-      team: 'Freelance',
+      status: 'Finalizado',
+      year: '2022/23',
+      role: 'Web Developer',
+      team: 'Projeto Pessoal',
       duration: '2 meses',
       highlights: [
-        'Visualizações em tempo real',
-        'Performance otimizada para big data',
-        'Interface responsiva e moderna',
-        'Sistema de cache inteligente',
+        'Primeiro projeto web completo',
+        'Fundamentos sólidos estabelecidos',
+        'Demonstração de evolução técnica',
+        'Base para o crescimento profissional',
       ],
       links: {
-        live: 'https://dashboard-demo.com',
-        github: 'https://github.com/vitorandrade/dashboard',
+        live: 'https://first-html-ecru.vercel.app',
       },
       color: '#6C5CE7',
-    },
-    {
-      id: 5,
-      title: 'API de Microserviços',
-      category: 'backend',
-      type: 'Sistema Backend',
-      description:
-        'Arquitetura de microserviços robusta para aplicações enterprise com alta disponibilidade.',
-      longDescription:
-        'Sistema backend desenvolvido com arquitetura de microserviços para suportar aplicações de grande escala. Implementa padrões de design modernos, containerização, monitoramento e alta disponibilidade.',
-      image: '⚙️',
-      technologies: ['Python', 'FastAPI', 'Docker', 'Redis', 'PostgreSQL'],
-      features: [
-        'Arquitetura de microserviços',
-        'Sistema de autenticação JWT',
-        'Cache distribuído com Redis',
-        'Monitoramento e logs centralizados',
-        'Deploy automatizado com CI/CD',
-      ],
-      status: 'Concluído',
-      year: '2024',
-      role: 'Backend Developer',
-      team: 'Projeto Técnico',
-      duration: '3 meses',
-      highlights: [
-        'Alta disponibilidade (99.9% uptime)',
-        'Escalabilidade horizontal',
-        'Documentação automática com OpenAPI',
-        'Testes automatizados completos',
-      ],
-      links: {
-        live: null,
-        github: 'https://github.com/vitorandrade/microservices-api',
-      },
-      color: '#28A745',
     },
   ];
 
@@ -241,13 +199,20 @@ const Portfolio = () => {
     { id: 'fullstack', label: 'Full Stack', icon: Code2 },
     { id: 'web', label: 'Web Apps', icon: Monitor },
     { id: 'mobile', label: 'Mobile', icon: Smartphone },
-    { id: 'backend', label: 'Backend', icon: Server },
   ];
 
+  // Projetos filtrados
   const filteredProjects =
     selectedCategory === 'all'
       ? projects
       : projects.filter(project => project.category === selectedCategory);
+
+  // useEffect para resetar o selectedProject quando a lista filtrada muda
+  useEffect(() => {
+    if (filteredProjects.length > 0 && selectedProject >= filteredProjects.length) {
+      setSelectedProject(0);
+    }
+  }, [filteredProjects, selectedProject]);
 
   const containerVariants = {
     hidden: { opacity: 0, y: 50 },
@@ -276,6 +241,12 @@ const Portfolio = () => {
 
   const prevProject = () => {
     setSelectedProject(prev => (prev === 0 ? filteredProjects.length - 1 : prev - 1));
+  };
+
+  // Função para mudar categoria com reset do projeto selecionado
+  const handleCategoryChange = (categoryId: string) => {
+    setSelectedCategory(categoryId);
+    setSelectedProject(0); // Sempre começar do primeiro projeto da nova categoria
   };
 
   return (
@@ -323,17 +294,18 @@ const Portfolio = () => {
             <div className="w-24 h-1 bg-gradient-to-r from-[#00D5B7] to-[#FFD700] mx-auto rounded-full" />
           </motion.div>
 
-          {/* Subtítulo */}
+          {/* Subtítulo aprimorado */}
           <motion.p
             variants={itemVariants}
             className="text-xl text-white/80 max-w-3xl mx-auto leading-relaxed"
           >
-            Uma coleção dos meus projetos mais significativos, demonstrando habilidades técnicas e
-            criatividade
+            Explore abaixo meus projetos em produção/finalizados, nas quais os mesmos demonstram
+            toda minha trajetória inicial. Todos contém inovação e resultados reais entregues para
+            usuários ao redor do mundo.
           </motion.p>
         </motion.div>
 
-        {/* Estatísticas */}
+        {/* Estatísticas atualizadas */}
         <motion.div
           variants={containerVariants}
           initial="hidden"
@@ -342,10 +314,10 @@ const Portfolio = () => {
           className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-16"
         >
           {[
-            { icon: Code2, number: '6+', label: 'Projetos Concluídos', color: '#00D5B7' },
-            { icon: Globe, number: '4', label: 'Em Produção', color: '#01BFBA' },
-            { icon: Star, number: '15+', label: 'Tecnologias Usadas', color: '#FFD700' },
-            { icon: Eye, number: '1000+', label: 'Horas de Código', color: '#FF4655' },
+            { icon: Globe, number: '5', label: 'Projetos em Produção', color: '#00D5B7' },
+            { icon: Eye, number: '4', label: 'Deploys Ativos', color: '#01BFBA' },
+            { icon: Star, number: '12+', label: 'Tecnologias Aplicadas', color: '#FFD700' },
+            { icon: Code2, number: '2+', label: 'Anos de Experiência', color: '#FF4655' },
           ].map((stat, index) => (
             <motion.div
               key={index}
@@ -364,7 +336,7 @@ const Portfolio = () => {
           ))}
         </motion.div>
 
-        {/* Filtros de categoria */}
+        {/* Filtros de categoria atualizados */}
         <motion.div
           variants={containerVariants}
           initial="hidden"
@@ -376,10 +348,7 @@ const Portfolio = () => {
             {categories.map(category => (
               <button
                 key={category.id}
-                onClick={() => {
-                  setSelectedCategory(category.id);
-                  setSelectedProject(0);
-                }}
+                onClick={() => handleCategoryChange(category.id)}
                 className={`px-4 py-2 rounded-xl font-medium transition-all duration-300 flex items-center gap-2 ${
                   selectedCategory === category.id
                     ? 'bg-gradient-to-r from-[#00D5B7] to-[#01BFBA] text-white shadow-lg'
@@ -406,36 +375,40 @@ const Portfolio = () => {
             <div className="flex items-center justify-between mb-6">
               <h3 className="text-2xl font-bold text-white flex items-center gap-3">
                 <Layers className="w-6 h-6 text-[#00D5B7]" />
-                Projetos ({filteredProjects.length})
+                Projetos em Deploy ({filteredProjects.length})
               </h3>
 
               {/* Navegação */}
-              <div className="flex gap-2">
-                <button
-                  onClick={prevProject}
-                  className="p-2 bg-white/5 backdrop-blur-md rounded-lg border border-white/10
-                           hover:border-[#00D5B7]/50 transition-all duration-300 hover:bg-white/10"
-                >
-                  <ChevronLeft className="w-4 h-4 text-white/70" />
-                </button>
-                <button
-                  onClick={nextProject}
-                  className="p-2 bg-white/5 backdrop-blur-md rounded-lg border border-white/10
-                           hover:border-[#00D5B7]/50 transition-all duration-300 hover:bg-white/10"
-                >
-                  <ChevronRight className="w-4 h-4 text-white/70" />
-                </button>
-              </div>
+              {filteredProjects.length > 1 && (
+                <div className="flex gap-2">
+                  <button
+                    onClick={prevProject}
+                    className="p-2 bg-white/5 backdrop-blur-md rounded-lg border border-white/10
+                             hover:border-[#00D5B7]/50 transition-all duration-300 hover:bg-white/10"
+                  >
+                    <ChevronLeft className="w-4 h-4 text-white/70" />
+                  </button>
+                  <button
+                    onClick={nextProject}
+                    className="p-2 bg-white/5 backdrop-blur-md rounded-lg border border-white/10
+                             hover:border-[#00D5B7]/50 transition-all duration-300 hover:bg-white/10"
+                  >
+                    <ChevronRight className="w-4 h-4 text-white/70" />
+                  </button>
+                </div>
+              )}
             </div>
 
             <div className="space-y-3 max-h-96 overflow-y-auto custom-scrollbar">
               {filteredProjects.map((project, index) => (
                 <motion.div
-                  key={project.id}
+                  key={`${selectedCategory}-${project.id}`} // Key única para re-render correto
                   variants={itemVariants}
+                  initial="hidden"
+                  animate="visible"
                   className={`bg-white/5 backdrop-blur-md rounded-xl p-4 border transition-all duration-300 cursor-pointer ${
                     selectedProject === index
-                      ? 'border-[#00D5B7]/50 bg-white/10'
+                      ? 'border-[#00D5B7]/50 bg-white/10 scale-[1.02]'
                       : 'border-white/10 hover:border-[#00D5B7]/30'
                   }`}
                   onClick={() => setSelectedProject(index)}
@@ -445,10 +418,13 @@ const Portfolio = () => {
                     <div className="flex-1 min-w-0">
                       <div className="flex items-center gap-2 mb-1">
                         <h4 className="font-semibold text-white truncate">{project.title}</h4>
-                        <span
-                          className="w-2 h-2 rounded-full flex-shrink-0"
-                          style={{ backgroundColor: project.color }}
-                        />
+                        <div className="flex items-center gap-2">
+                          <span
+                            className="w-2 h-2 rounded-full flex-shrink-0"
+                            style={{ backgroundColor: project.color }}
+                          />
+                          <Globe className="w-3 h-3 text-green-400" />
+                        </div>
                       </div>
                       <p className="text-white/60 text-sm mb-2 line-clamp-2">
                         {project.description}
@@ -462,15 +438,7 @@ const Portfolio = () => {
                           <Tag className="w-3 h-3" />
                           {project.type}
                         </span>
-                        <span
-                          className={`px-2 py-0.5 rounded-full text-xs font-medium ${
-                            project.status === 'Em Produção'
-                              ? 'bg-green-500/20 text-green-400'
-                              : project.status === 'Em Desenvolvimento'
-                              ? 'bg-blue-500/20 text-blue-400'
-                              : 'bg-gray-500/20 text-gray-400'
-                          }`}
-                        >
+                        <span className="bg-green-500/20 text-green-400 px-2 py-0.5 rounded-full text-xs font-medium border border-green-500/30">
                           {project.status}
                         </span>
                       </div>
@@ -479,14 +447,22 @@ const Portfolio = () => {
                 </motion.div>
               ))}
             </div>
+
+            {/* Mensagem quando não há projetos */}
+            {filteredProjects.length === 0 && (
+              <div className="text-center py-8 text-white/60">
+                <Layers className="w-12 h-12 mx-auto mb-4 opacity-50" />
+                <p>Nenhum projeto encontrado nesta categoria.</p>
+              </div>
+            )}
           </motion.div>
 
           {/* Detalhes do projeto selecionado */}
           <div className="sticky top-8">
             <AnimatePresence mode="wait">
-              {filteredProjects.length > 0 && (
+              {filteredProjects.length > 0 && filteredProjects[selectedProject] && (
                 <motion.div
-                  key={selectedProject}
+                  key={`${selectedCategory}-${selectedProject}`}
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: -20 }}
@@ -521,21 +497,20 @@ const Portfolio = () => {
                             </div>
                           </div>
 
-                          {/* Links do projeto */}
-                          <div className="flex gap-3">
-                            {project.links.live && (
-                              <button className="bg-gradient-to-r from-[#00D5B7] to-[#01BFBA] text-white px-4 py-2 rounded-lg font-medium hover:scale-105 transition-transform duration-200 flex items-center gap-2">
+                          {/* Link do projeto - só mostra se existe */}
+                          {project.links.live && (
+                            <div className="flex gap-3">
+                              <a
+                                href={project.links.live}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="bg-gradient-to-r from-[#00D5B7] to-[#01BFBA] text-white px-6 py-3 rounded-lg font-medium hover:scale-105 transition-transform duration-200 flex items-center gap-2"
+                              >
                                 <ExternalLink className="w-4 h-4" />
                                 Ver Online
-                              </button>
-                            )}
-                            {project.links.github && (
-                              <button className="border border-white/30 text-white/90 px-4 py-2 rounded-lg font-medium hover:bg-white/10 transition-colors duration-200 flex items-center gap-2">
-                                <Github className="w-4 h-4" />
-                                Código
-                              </button>
-                            )}
-                          </div>
+                              </a>
+                            </div>
+                          )}
                         </div>
 
                         {/* Conteúdo do projeto */}
@@ -544,7 +519,7 @@ const Portfolio = () => {
                           <div>
                             <h4 className="font-semibold text-white mb-3 flex items-center gap-2">
                               <Code2 className="w-5 h-5 text-[#00D5B7]" />
-                              Tecnologias Utilizadas
+                              Stack Tecnológico
                             </h4>
                             <div className="flex flex-wrap gap-2">
                               {project.technologies.map((tech, index) => (
@@ -563,7 +538,7 @@ const Portfolio = () => {
                           <div>
                             <h4 className="font-semibold text-white mb-3 flex items-center gap-2">
                               <Star className="w-5 h-5 text-[#FFD700]" />
-                              Principais Funcionalidades
+                              Funcionalidades Implementadas
                             </h4>
                             <ul className="space-y-2">
                               {project.features.map((feature, index) => (
@@ -617,74 +592,48 @@ const Portfolio = () => {
           </div>
         </div>
 
-        {/* Introdução aos projetos */}
+        {/* Seção "Sobre Meus Projetos" */}
         <motion.div
           variants={itemVariants}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.3 }}
-          className="mt-16 text-center"
+          className="mt-20"
         >
           <div className="bg-gradient-to-br from-[#00D5B7]/10 to-[#01BFBA]/10 backdrop-blur-md rounded-2xl p-8 border border-[#00D5B7]/20 max-w-4xl mx-auto">
-            <h3 className="text-2xl font-bold text-white mb-4 flex items-center justify-center gap-3">
-              <Palette className="w-6 h-6 text-[#00D5B7]" />
+            <h3 className="text-3xl font-bold text-white mb-6 flex items-center justify-center gap-3">
+              <Palette className="w-8 h-8 text-[#00D5B7]" />
               Sobre Meus Projetos
             </h3>
-            <p className="text-white/80 leading-relaxed mb-6">
-              Cada projeto representa um desafio único e uma oportunidade de aprendizado.Desde
-              aplicações full-stack complexas até soluções mobile inovadoras,busco sempre aplicar as
-              melhores práticas de desenvolvimento, foco na experiência do usuário e código limpo e
-              maintível.
+            <p className="text-white/80 leading-relaxed text-lg mb-8 text-center">
+              Cada projeto representa um marco na minha jornada de desenvolvimento, demonstrando
+              evolução técnica constante e aplicação prática de tecnologias modernas. Todos os
+              projetos estão em produção, acessíveis globalmente e refletem meu comprometimento com
+              qualidade, performance e experiência do usuário.
             </p>
 
-            <div className="grid md:grid-cols-3 gap-6 mt-8">
+            <div className="grid md:grid-cols-3 gap-8">
               <div className="text-center">
-                <Code2 className="w-8 h-8 text-[#00D5B7] mx-auto mb-2" />
-                <h4 className="font-semibold text-white mb-1">Código Limpo</h4>
-                <p className="text-white/60 text-sm">Seguindo padrões e boas práticas</p>
-              </div>
-              <div className="text-center">
-                <Monitor className="w-8 h-8 text-[#01BFBA] mx-auto mb-2" />
-                <h4 className="font-semibold text-white mb-1">UX/UI Moderno</h4>
-                <p className="text-white/60 text-sm">Interfaces intuitivas e responsivas</p>
+                <Code2 className="w-10 h-10 text-[#00D5B7] mx-auto mb-4" />
+                <h4 className="font-bold text-white text-lg mb-2">Código Otimizado</h4>
+                <p className="text-white/60">
+                  Seguindo padrões de mercado e boas práticas de desenvolvimento
+                </p>
               </div>
               <div className="text-center">
-                <Zap className="w-8 h-8 text-[#FFD700] mx-auto mb-2" />
-                <h4 className="font-semibold text-white mb-1">Performance</h4>
-                <p className="text-white/60 text-sm">Otimização e escalabilidade</p>
+                <Monitor className="w-10 h-10 text-[#01BFBA] mx-auto mb-4" />
+                <h4 className="font-bold text-white text-lg mb-2">Design Responsivo</h4>
+                <p className="text-white/60">
+                  Interfaces modernas e funcionais em qualquer dispositivo
+                </p>
               </div>
-            </div>
-          </div>
-        </motion.div>
-
-        {/* Call to Action */}
-        <motion.div
-          variants={itemVariants}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.3 }}
-          className="text-center mt-16"
-        >
-          <p className="text-white/60 text-lg mb-6">
-            Gostou dos projetos? Vamos conversar sobre seu próximo projeto!
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <div className="bg-gradient-to-r from-[#00D5B7] to-[#01BFBA] p-0.5 rounded-full">
-              <div className="bg-black rounded-full px-6 py-3 hover:bg-transparent transition-all duration-300 cursor-pointer group">
-                <span className="text-white group-hover:text-black font-medium flex items-center gap-2">
-                  <Github className="w-4 h-4" />
-                  Ver no GitHub
-                </span>
+              <div className="text-center">
+                <Zap className="w-10 h-10 text-[#FFD700] mx-auto mb-4" />
+                <h4 className="font-bold text-white text-lg mb-2">Performance</h4>
+                <p className="text-white/60">
+                  Deploy otimizado com foco em velocidade e escalabilidade
+                </p>
               </div>
-            </div>
-            <div
-              className="border border-[#01BFBA]/50 rounded-full px-6 py-3 hover:bg-[#01BFBA]/10
-                          transition-all duration-300 cursor-pointer group"
-            >
-              <span className="text-[#01BFBA] font-medium flex items-center gap-2">
-                <ExternalLink className="w-4 h-4" />
-                Entrar em Contato
-              </span>
             </div>
           </div>
         </motion.div>

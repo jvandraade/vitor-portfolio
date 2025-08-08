@@ -18,16 +18,16 @@ const Experience = () => {
   const experiences = [
     {
       id: 0,
-      title: 'Desenvolvedor Backend',
+      title: 'Estagiário de programação Fullstack',
       company: 'AXKRUM',
-      location: 'Paraná, Brasil',
+      location: 'Remoto',
       period: '2024 - Presente',
       type: 'Estágio',
       status: 'Atual',
       isHighlight: true,
       logo: '🎮',
       description:
-        'Desenvolvimento de soluções backend robustas para plataforma de eSports, focando em APIs REST escaláveis, arquitetura de segurança avançada e integração de sistemas de pagamento complexos.',
+        'Desenvolvimento de soluções backend e frontendrobustas para plataforma de eSports, focando em APIs REST escaláveis, arquitetura de segurança avançada e integração de sistemas de pagamento complexos. Além de especialidades em UI/UX para proporcionar a maior fluidez de minhas habilidades aos usuários.',
       mentor:
         'Gustavo Vargas (CEO & Engenheiro de Software Fullstack Sênior, Especialista em IA e Machine Learning)',
       technologies: ['C#', 'ASP.NET Core', 'SQL Server', 'Docker', 'Git', 'TypeScript', 'React'],
