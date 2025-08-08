@@ -11,7 +11,7 @@ interface Course {
   certificateImage?: string;
   completedYear: string;
   skills: string[];
-  isCompleted: boolean; // Nova propriedade para identificar cursos concluídos
+  isCompleted: boolean;
 }
 
 export const Courses: React.FC = () => {
@@ -170,12 +170,12 @@ export const Courses: React.FC = () => {
     }));
   };
 
-  // Verificar se o curso tem certificado disponível (sem erro de imagem)
+  // Verificar se o curso tem certificado disponível
   const hasCertificate = (course: Course) => {
     return course.isCompleted && course.certificateImage && !imageError[course.id];
   };
 
-  // Verificar se deve mostrar a medalha (curso concluído, independente da imagem)
+  // Verificar se o curso foi concluído
   const shouldShowMedal = (course: Course) => {
     return course.isCompleted;
   };

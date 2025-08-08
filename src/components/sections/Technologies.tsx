@@ -90,7 +90,7 @@ const Technologies = () => {
                     hover:shadow-[#00D5B7]/20 h-32 flex flex-col items-center justify-center
                     relative overflow-hidden group-hover:bg-white/10"
       >
-        {/* Efeito de brilho no hover - CORRIGIDO: Agora fica dentro do card */}
+        {/* Efeito de brilho no hover do card */}
         <div
           className="absolute inset-0 bg-gradient-to-br from-transparent via-white/5 to-transparent
                        opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-2xl"

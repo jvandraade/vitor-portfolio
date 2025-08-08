@@ -402,7 +402,7 @@ const Portfolio = () => {
             <div className="space-y-3 max-h-96 overflow-y-auto custom-scrollbar">
               {filteredProjects.map((project, index) => (
                 <motion.div
-                  key={`${selectedCategory}-${project.id}`} // Key única para re-render correto
+                  key={`${selectedCategory}-${project.id}`}
                   variants={itemVariants}
                   initial="hidden"
                   animate="visible"
