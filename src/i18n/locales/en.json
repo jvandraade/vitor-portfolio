@@ -7,38 +7,84 @@
     "experience": "Experience",
     "axk": "AXK",
     "portfolio": "Portfolio",
-    "contact": "Contact"
+    "contact": "Contact",
+    "home": "Home",
+    "menu": "Menu",
+    "close": "Close",
+    "language": "Language",
+    "scroll_to_top": "Back to top"
   },
   "theme": {
     "light": "Light",
-    "dark": "Dark"
+    "dark": "Dark",
+    "toggle": "Toggle theme",
+    "current": "Current theme"
+  },
+  "hero": {
+    "greeting": "Hello, I'm",
+    "name": "Vitor Andrade",
+    "role": "Front-end Software Engineer",
+    "tagline": "Creating exceptional digital experiences",
+    "cta_primary": "View my projects",
+    "cta_secondary": "Get in touch",
+    "scroll_down": "Scroll down",
+    "explore": "Explore"
   },
   "about": {
     "title": "About me",
+    "subtitle": "Get to know my professional journey",
     "name": "Vitor Andrade",
     "role": "Front-end Software Engineer",
-    "description": "UI/UX Specialist with a degree in Systems Analysis and Development and a Postgraduate degree in Software Engineering. I'm passionate about creating exceptional digital experiences, with expertise in AI and Machine Learning. Besides programming, I'm addicted to video games and compete semi-professionally in various titles.",
+    "description": "UI/UX Specialist with a degree in Systems Analysis and Development and a Postgraduate degree in Software Engineering. I'm passionate about creating exceptional digital experiences for users, with focus and enthusiasm in AI and Machine Learning. Besides programming, I'm fascinated by video games and compete semi-professionally in various titles during my free time.",
     "age": "years old",
-    "location": "Aracaju, Sergipe - Brazil"
+    "location": "Aracaju, Sergipe - Brazil",
+    "stats": {
+      "experience": "Years of experience",
+      "projects": "Completed projects",
+      "technologies": "Mastered technologies",
+      "certifications": "Obtained certifications"
+    },
+    "download_cv": "Download CV",
+    "view_projects": "View projects"
   },
   "education": {
     "title": "Academic Background",
+    "subtitle": "My solid educational foundation",
     "ads": {
       "title": "Systems Analysis and Development",
       "institution": "Estácio de Sergipe",
       "period": "2022 - 2024",
-      "status": "Completed"
+      "status": "Completed",
+      "description": "Formation focused on systems development, programming and technology project management."
     },
     "pos": {
       "title": "Postgraduate in Software Engineering",
       "institution": "Estácio de Sergipe",
       "period": "2025 - 2026",
-      "status": "In progress"
-    }
+      "status": "In progress",
+      "description": "Specialization in software architecture, agile methodologies and technical leadership."
+    },
+    "view_certificate": "View certificate",
+    "in_progress": "In progress",
+    "completed": "Completed"
   },
   "courses": {
     "title": "Certifications & Courses",
+    "subtitle": "Continuous learning and technical specialization",
     "description": "Click on courses to view certificates",
+    "filter": {
+      "all": "All",
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "tools": "Tools",
+      "design": "Design"
+    },
+    "completed": "Completed",
+    "in_progress": "In progress",
+    "view_certificate": "View certificate",
+    "load_more": "Load more",
+    "no_results": "No courses found",
+    "total": "Total courses",
     "list": [
       "Python - Curso em Vídeo",
       "JavaScript - Curso em Vídeo",
@@ -55,64 +101,316 @@
     ]
   },
   "technologies": {
-    "title": "Technologies",
+    "title": "Technologies & Tools",
     "subtitle": "Tools and technologies I master to create innovative solutions",
+    "categories": {
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "database": "Database",
+      "tools": "Tools",
+      "design": "Design",
+      "mobile": "Mobile"
+    },
     "stats": {
       "frontend": "Frontend",
       "backend": "Backend",
       "database": "Database",
       "tools": "Tools"
     },
-    "cta": "Always learning and exploring new technologies",
-    "explore": "Explore Projects"
+    "cta": "Always learning and exploring new technologies to deliver the best solutions",
+    "explore": "Explore Projects",
+    "filter": "Filter by category",
+    "show_all": "Show all",
+    "proficiency": "Proficiency level",
+    "years_experience": "years of experience"
   },
   "experience": {
     "title": "Professional Experience",
+    "subtitle": "My journey in software development",
+    "current": "Current",
+    "present": "Present",
+    "view_details": "View details",
+    "technologies_used": "Technologies used",
+    "achievements": "Key achievements",
+    "responsibilities": "Responsibilities",
     "axk": {
       "title": "Back-end Development Internship",
       "company": "AXK eSports",
       "period": "2024 - Current",
+      "location": "Remote",
       "mentor": "Mentor: Gustavo Vargas (CEO)",
-      "description": "Development of APIs and back-end systems for eSports platform. Working with modern technologies and agile methodologies under the mentorship of CEO Gustavo Vargas, Senior Software Engineer."
+      "description": "Development of robust APIs and scalable back-end systems for professional eSports platform. Implementation of modern architectures, performance optimization and database integration. Agile team collaboration under direct mentorship of CEO Gustavo Vargas, Senior Software Engineer with extensive experience in corporate systems.",
+      "achievements": [
+        "Development of RESTful APIs with ASP.NET Core",
+        "Implementation of JWT authentication and authorization",
+        "SQL Server query optimization with 40% performance improvement",
+        "Creation of unit tests and integration with 85% coverage",
+        "Automated deployment with Azure DevOps and Docker"
+      ],
+      "technologies": ["ASP.NET Core", "SQL Server", "Docker", "Azure", "Git"]
+    },
+    "timeline": {
+      "present": "Present",
+      "duration": "duration"
     }
   },
   "axk": {
     "title": "AXK eSports",
-    "subtitle": "Professional eSports Organization",
-    "description": "AXK is a Brazilian eSports organization founded with the goal of competing at the highest levels of electronic games. Our mission is to develop talent and represent Brazil on the world competitive scene.",
-    "ceo": "CEO: Gustavo Vargas",
-    "ceoDescription": "Senior Software Engineer and eSports visionary",
+    "subtitle": "Competitive excellence developing elite talents in the global eSports scene",
+    "description": "AXK is a Brazilian eSports organization founded with the goal of competing at the highest levels of electronic games. Our mission is to develop exceptional talents and represent Brazil in the global competitive scene with technical and strategic excellence.",
+    "menu": {
+      "overview": "Overview",
+      "ceo": "CEO",
+      "games": "Games",
+      "achievements": "Achievements",
+      "team": "Team",
+      "contact": "Contact"
+    },
+    "ceo": {
+      "title": "CEO: Gustavo Vargas",
+      "subtitle": "Senior Software Engineer and Brazilian eSports visionary",
+      "description": "Technical leader with extensive experience in corporate systems development and passion for the competitive gaming scene. Gustavo combines technical expertise with strategic vision to position AXK as a national reference in professional eSports."
+    },
     "games": {
-      "title": "Games We Compete In",
+      "title": "Competitive Modalities",
+      "subtitle": "We compete in the main titles of the global scene",
+      "description": "Our team competes in the most relevant games in global eSports, always seeking technical excellence and significant results.",
       "list": [
-        "Pokémon UNITE",
-        "VALORANT",
-        "Brawlhalla",
-        "Rainbow Six Siege",
-        "Predecessor",
-        "Brawl Stars"
+        {
+          "name": "Pokémon UNITE",
+          "category": "MOBA",
+          "description": "Strategy and team coordination"
+        },
+        {
+          "name": "VALORANT",
+          "category": "Tactical FPS",
+          "description": "Precision and advanced tactics"
+        },
+        {
+          "name": "Brawlhalla",
+          "category": "Fighting",
+          "description": "Technical combat and sharp reflexes"
+        },
+        {
+          "name": "Rainbow Six Siege",
+          "category": "Tactical FPS",
+          "description": "Military strategy and teamwork"
+        },
+        {
+          "name": "Predecessor",
+          "category": "MOBA",
+          "description": "Advanced mechanics and macro game"
+        },
+        {
+          "name": "Brawl Stars",
+          "category": "Battle Royale",
+          "description": "Agility and strategic coordination"
+        }
       ]
     },
     "pillars": {
-      "title": "Our Pillars",
-      "excellence": "Competitive Excellence",
-      "innovation": "Technological Innovation",
-      "community": "Strong Community",
-      "growth": "Sustainable Growth"
+      "title": "Our Fundamental Pillars",
+      "subtitle": "The values that guide our organization",
+      "excellence": {
+        "title": "Competitive Excellence",
+        "description": "Relentless pursuit of the best results in each modality"
+      },
+      "innovation": {
+        "title": "Technological Innovation",
+        "description": "Use of cutting-edge technology for analysis and development"
+      },
+      "community": {
+        "title": "Strong Community",
+        "description": "Building a solid base of fans and supporters"
+      },
+      "growth": {
+        "title": "Sustainable Growth",
+        "description": "Responsible expansion and investment in new talents"
+      }
+    },
+    "achievements": {
+      "title": "Our Achievements",
+      "subtitle": "Results that make us proud",
+      "stats": {
+        "tournaments": "Tournaments competed",
+        "victories": "Victories achieved",
+        "players": "Athletes developed",
+        "partnerships": "Partnerships established"
+      }
+    },
+    "cta": {
+      "title": "Learn more about AXK",
+      "description": "Discover how we're revolutionizing the eSports scene in Brazil",
+      "button": "Visit AXK",
+      "contact": "Get in touch"
     }
   },
   "portfolio": {
     "title": "My Projects",
+    "subtitle": "Innovative solutions I've developed",
     "introduction": {
-      "title": "Introduction",
+      "title": "About my projects",
       "description": "This portfolio was created with great dedication for personal presentation, but also to showcase my technical skills and projects in a structured and interactive way. In addition to telling a bit about myself, it also shows what I'm capable of creating with code. It's divided into its respective sections, each highlighting technologies used and challenges faced. Feel free to explore and learn more about my work. If you have any questions, the contact section will be at your disposal!"
-    }
+    },
+    "filters": {
+      "all": "All projects",
+      "web": "Web Apps",
+      "mobile": "Mobile",
+      "api": "APIs",
+      "ui_ux": "UI/UX",
+      "game": "Games"
+    },
+    "project": {
+      "view_live": "View project",
+      "view_code": "View code",
+      "technologies": "Technologies used",
+      "features": "Key features",
+      "challenges": "Challenges faced",
+      "lessons": "Lessons learned",
+      "duration": "Project duration",
+      "team": "Team",
+      "role": "My role",
+      "status": "Status",
+      "completed": "Completed",
+      "in_development": "In development",
+      "next": "Next project",
+      "previous": "Previous project",
+      "close": "Close"
+    },
+    "no_projects": "No projects found for this category",
+    "load_more": "Load more projects",
+    "total_projects": "Total projects"
   },
   "contact": {
-    "title": "Let's Talk?",
-    "subtitle": "Get in touch through social media",
-    "linkedin": "LinkedIn",
-    "instagram": "Instagram",
-    "twitter": "Twitter"
+    "title": "Professional Contact",
+    "subtitle": "Let's build something incredible together? Get in touch!",
+    "description": "I'm always open to new opportunities, collaborations and interesting challenges. Whether to discuss projects, job opportunities or simply exchange ideas about technology.",
+    "info": {
+      "title": "Contact Information",
+      "email": "Email",
+      "phone": "Phone",
+      "location": "Location",
+      "availability": "Availability"
+    },
+    "social": {
+      "title": "Social Networks",
+      "linkedin": {
+        "title": "LinkedIn",
+        "description": "Connect with me professionally",
+        "stats": "500+ connections"
+      },
+      "github": {
+        "title": "GitHub",
+        "description": "Check my projects and contributions",
+        "stats": "50+ repositories"
+      },
+      "instagram": {
+        "title": "Instagram",
+        "description": "Follow my journey",
+        "stats": "1k+ followers"
+      },
+      "twitter": {
+        "title": "Twitter",
+        "description": "Thoughts about tech and development",
+        "stats": "500+ tweets"
+      }
+    },
+    "availability": {
+      "title": "Professional Availability",
+      "status": "Open to opportunities",
+      "response_time": "Response time: 24h",
+      "work_preference": "Remote/Hybrid",
+      "collaboration": "Freelance projects accepted"
+    },
+    "interests": {
+      "title": "Areas of Interest",
+      "frontend": "Frontend Development",
+      "backend": "APIs and Backend",
+      "mobile": "Mobile Applications",
+      "ai": "Artificial Intelligence",
+      "web3": "Web3 Technologies",
+      "mentorship": "Technical Mentorship"
+    },
+    "form": {
+      "title": "Send your message",
+      "name": "Full name",
+      "email": "Email",
+      "subject": "Subject",
+      "message": "Message",
+      "send": "Send message",
+      "sending": "Sending...",
+      "success": "Message sent successfully!",
+      "error": "Error sending message. Please try again.",
+      "required": "Required field"
+    }
+  },
+  "footer": {
+    "copyright": "© 2024 Vitor Andrade. All rights reserved.",
+    "made_with": "Made with",
+    "in": "in",
+    "brazil": "Brazil",
+    "links": {
+      "privacy": "Privacy Policy",
+      "terms": "Terms of Use",
+      "sitemap": "Site Map"
+    }
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "Error",
+    "success": "Success",
+    "warning": "Warning",
+    "info": "Information",
+    "close": "Close",
+    "open": "Open",
+    "save": "Save",
+    "cancel": "Cancel",
+    "confirm": "Confirm",
+    "delete": "Delete",
+    "edit": "Edit",
+    "view": "View",
+    "download": "Download",
+    "upload": "Upload",
+    "search": "Search",
+    "filter": "Filter",
+    "sort": "Sort",
+    "clear": "Clear",
+    "reset": "Reset",
+    "submit": "Submit",
+    "back": "Back",
+    "next": "Next",
+    "previous": "Previous",
+    "continue": "Continue",
+    "finish": "Finish",
+    "yes": "Yes",
+    "no": "No",
+    "maybe": "Maybe",
+    "unknown": "Unknown",
+    "other": "Other",
+    "more": "More",
+    "less": "Less",
+    "show": "Show",
+    "hide": "Hide",
+    "expand": "Expand",
+    "collapse": "Collapse",
+    "select_all": "Select all",
+    "deselect_all": "Deselect all",
+    "required_field": "Required field",
+    "optional_field": "Optional field",
+    "invalid_format": "Invalid format",
+    "max_length": "Maximum length exceeded",
+    "min_length": "Minimum length not reached",
+    "page_not_found": "Page not found",
+    "coming_soon": "Coming soon",
+    "under_maintenance": "Under maintenance",
+    "try_again": "Try again",
+    "read_more": "Read more",
+    "read_less": "Read less"
+  },
+  "meta": {
+    "title": "Vitor Andrade - Front-end Software Engineer",
+    "description": "Professional portfolio of Vitor Andrade, Software Engineer specialized in front-end development, UI/UX and modern technologies.",
+    "keywords": "Vitor Andrade, front-end developer, software engineer, React, TypeScript, UI/UX, portfolio",
+    "author": "Vitor Andrade"
   }
 }

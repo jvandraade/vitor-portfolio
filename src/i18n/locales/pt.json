@@ -7,38 +7,84 @@
     "experience": "Experiências",
     "axk": "AXK",
     "portfolio": "Portfólio",
-    "contact": "Contato"
+    "contact": "Contato",
+    "home": "Início",
+    "menu": "Menu",
+    "close": "Fechar",
+    "language": "Idioma",
+    "scroll_to_top": "Voltar ao topo"
   },
   "theme": {
     "light": "Claro",
-    "dark": "Escuro"
+    "dark": "Escuro",
+    "toggle": "Alternar tema",
+    "current": "Tema atual"
+  },
+  "hero": {
+    "greeting": "Olá, eu sou",
+    "name": "Vitor Andrade",
+    "role": "Engenheiro de Software Front-end",
+    "tagline": "Criando experiências digitais excepcionais",
+    "cta_primary": "Ver meus projetos",
+    "cta_secondary": "Entre em contato",
+    "scroll_down": "Role para baixo",
+    "explore": "Explorar"
   },
   "about": {
     "title": "Sobre mim",
+    "subtitle": "Conheça minha jornada profissional",
     "name": "Vitor Andrade",
     "role": "Engenheiro de Software Front-end",
     "description": "Especialista em UI/UX com formação em Análise e Desenvolvimento de Sistemas e Pós-graduação em Engenharia de Software. Sou apaixonado por criar experiências digitais excepcionais aos usuários, com foco e entusiasmo em IA e Machine Learning. Além da programação, sou fascinado por jogos eletrônicos e em tempo livre sou competidor semi-profissional em diversos títulos.",
     "age": "anos",
-    "location": "Aracaju, Sergipe - Brasil"
+    "location": "Aracaju, Sergipe - Brasil",
+    "stats": {
+      "experience": "Anos de experiência",
+      "projects": "Projetos concluídos",
+      "technologies": "Tecnologias dominadas",
+      "certifications": "Certificações obtidas"
+    },
+    "download_cv": "Baixar currículo",
+    "view_projects": "Ver projetos"
   },
   "education": {
     "title": "Formação Acadêmica",
+    "subtitle": "Minha base educacional sólida",
     "ads": {
       "title": "Análise e Desenvolvimento de Sistemas",
       "institution": "Estácio de Sergipe",
       "period": "2022 - 2024",
-      "status": "Concluído"
+      "status": "Concluído",
+      "description": "Formação focada em desenvolvimento de sistemas, programação e gestão de projetos tecnológicos."
     },
     "pos": {
       "title": "Pós-graduação em Engenharia de Software",
       "institution": "Estácio de Sergipe",
       "period": "2025 - 2026",
-      "status": "Em andamento"
-    }
+      "status": "Em andamento",
+      "description": "Especialização em arquitetura de software, metodologias ágeis e liderança técnica."
+    },
+    "view_certificate": "Ver certificado",
+    "in_progress": "Em andamento",
+    "completed": "Concluído"
   },
   "courses": {
     "title": "Certificações e Cursos",
+    "subtitle": "Aprendizado contínuo e especialização técnica",
     "description": "Clique nos cursos para visualizar os certificados",
+    "filter": {
+      "all": "Todos",
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "tools": "Ferramentas",
+      "design": "Design"
+    },
+    "completed": "Concluído",
+    "in_progress": "Em andamento",
+    "view_certificate": "Ver certificado",
+    "load_more": "Carregar mais",
+    "no_results": "Nenhum curso encontrado",
+    "total": "Total de cursos",
     "list": [
       "Python - Curso em Vídeo",
       "JavaScript - Curso em Vídeo",
@@ -55,64 +101,316 @@
     ]
   },
   "technologies": {
-    "title": "Tecnologias",
+    "title": "Tecnologias & Ferramentas",
     "subtitle": "Ferramentas e tecnologias que domino para criar soluções inovadoras",
+    "categories": {
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "database": "Banco de Dados",
+      "tools": "Ferramentas",
+      "design": "Design",
+      "mobile": "Mobile"
+    },
     "stats": {
       "frontend": "Frontend",
       "backend": "Backend",
       "database": "Database",
       "tools": "Ferramentas"
     },
-    "cta": "Sempre aprendendo e explorando novas tecnologias",
-    "explore": "Explorar Projetos"
+    "cta": "Sempre aprendendo e explorando novas tecnologias para entregar as melhores soluções",
+    "explore": "Explorar Projetos",
+    "filter": "Filtrar por categoria",
+    "show_all": "Mostrar todas",
+    "proficiency": "Nível de proficiência",
+    "years_experience": "anos de experiência"
   },
   "experience": {
     "title": "Experiência Profissional",
+    "subtitle": "Minha trajetória no desenvolvimento de software",
+    "current": "Atual",
+    "present": "Presente",
+    "view_details": "Ver detalhes",
+    "technologies_used": "Tecnologias utilizadas",
+    "achievements": "Principais conquistas",
+    "responsibilities": "Responsabilidades",
     "axk": {
       "title": "Estágio em Desenvolvimento Back-end",
       "company": "AXK eSports",
       "period": "2024 - Atual",
+      "location": "Remoto",
       "mentor": "Mentor: Gustavo Vargas (CEO)",
-      "description": "Desenvolvimento de APIs e sistemas back-end para plataforma de eSports. Trabalhando com tecnologias modernas e metodologias ágeis sob mentoria do CEO Gustavo Vargas, Engenheiro de Software Sênior."
+      "description": "Desenvolvimento de APIs robustas e sistemas back-end escaláveis para plataforma de eSports profissional. Implementação de arquiteturas modernas, otimização de performance e integração com bancos de dados. Colaboração em equipe ágil sob mentoria direta do CEO Gustavo Vargas, Engenheiro de Software Sênior com vasta experiência em sistemas corporativos.",
+      "achievements": [
+        "Desenvolvimento de APIs RESTful com ASP.NET Core",
+        "Implementação de autenticação JWT e autorização",
+        "Otimização de consultas SQL Server com 40% melhoria na performance",
+        "Criação de testes unitários e integração com cobertura 85%",
+        "Deploy automatizado com Azure DevOps e Docker"
+      ],
+      "technologies": ["ASP.NET Core", "SQL Server", "Docker", "Azure", "Git"]
+    },
+    "timeline": {
+      "present": "Presente",
+      "duration": "duração"
     }
   },
   "axk": {
     "title": "AXK eSports",
-    "subtitle": "Organização de eSports Profissional",
-    "description": "A AXK é uma organização brasileira de eSports fundada com o objetivo de competir nos mais altos níveis dos jogos eletrônicos. Nossa missão é formar talentos e representar o Brasil no cenário competitivo mundial.",
-    "ceo": "CEO: Gustavo Vargas",
-    "ceoDescription": "Engenheiro de Software Sênior e visionário dos eSports",
+    "subtitle": "Excelência competitiva formando talentos d'elite no cenário mundial de eSports",
+    "description": "A AXK é uma organização brasileira de eSports fundada com o objetivo de competir nos mais altos níveis dos jogos eletrônicos. Nossa missão é formar talentos excepcionais e representar o Brasil no cenário competitivo mundial com excelência técnica e estratégica.",
+    "menu": {
+      "overview": "Visão Geral",
+      "ceo": "CEO",
+      "games": "Modalidades",
+      "achievements": "Conquistas",
+      "team": "Equipe",
+      "contact": "Contato"
+    },
+    "ceo": {
+      "title": "CEO: Gustavo Vargas",
+      "subtitle": "Engenheiro de Software Sênior e visionário dos eSports brasileiros",
+      "description": "Líder técnico com vasta experiência em desenvolvimento de sistemas corporativos e paixão pelo cenário competitivo de jogos eletrônicos. Gustavo combina expertise técnica com visão estratégica para posicionar a AXK como referência nacional em eSports profissionais."
+    },
     "games": {
-      "title": "Jogos de Atuação",
+      "title": "Modalidades Competitivas",
+      "subtitle": "Atuamos nos principais títulos do cenário mundial",
+      "description": "Nossa equipe compete nos jogos mais relevantes do eSports mundial, sempre buscando excelência técnica e resultados expressivos.",
       "list": [
-        "Pokémon UNITE",
-        "VALORANT",
-        "Brawlhalla",
-        "Rainbow Six Siege",
-        "Predecessor",
-        "Brawl Stars"
+        {
+          "name": "Pokémon UNITE",
+          "category": "MOBA",
+          "description": "Estratégia e coordenação em equipe"
+        },
+        {
+          "name": "VALORANT",
+          "category": "FPS Tático",
+          "description": "Precisão e tática avançada"
+        },
+        {
+          "name": "Brawlhalla",
+          "category": "Fighting",
+          "description": "Combates técnicos e reflexos apurados"
+        },
+        {
+          "name": "Rainbow Six Siege",
+          "category": "FPS Tático",
+          "description": "Estratégia militar e trabalho em equipe"
+        },
+        {
+          "name": "Predecessor",
+          "category": "MOBA",
+          "description": "Mecânicas avançadas e macro game"
+        },
+        {
+          "name": "Brawl Stars",
+          "category": "Battle Royale",
+          "description": "Agilidade e coordenação estratégica"
+        }
       ]
     },
     "pillars": {
-      "title": "Nossos Pilares",
-      "excellence": "Excelência Competitiva",
-      "innovation": "Inovação Tecnológica",
-      "community": "Comunidade Forte",
-      "growth": "Crescimento Sustentável"
+      "title": "Nossos Pilares Fundamentais",
+      "subtitle": "Os valores que norteiam nossa organização",
+      "excellence": {
+        "title": "Excelência Competitiva",
+        "description": "Busca incansável pelos melhores resultados em cada modalidade"
+      },
+      "innovation": {
+        "title": "Inovação Tecnológica",
+        "description": "Uso de tecnologia de ponta para análise e desenvolvimento"
+      },
+      "community": {
+        "title": "Comunidade Forte",
+        "description": "Construção de uma base sólida de fãs e apoiadores"
+      },
+      "growth": {
+        "title": "Crescimento Sustentável",
+        "description": "Expansão responsável e investimento em novos talentos"
+      }
+    },
+    "achievements": {
+      "title": "Nossas Conquistas",
+      "subtitle": "Resultados que nos orgulham",
+      "stats": {
+        "tournaments": "Torneios disputados",
+        "victories": "Vitórias conquistadas",
+        "players": "Atletas formados",
+        "partnerships": "Parcerias estabelecidas"
+      }
+    },
+    "cta": {
+      "title": "Conheça mais sobre a AXK",
+      "description": "Descubra como estamos revolucionando o cenário de eSports no Brasil",
+      "button": "Visite a AXK",
+      "contact": "Entre em contato"
     }
   },
   "portfolio": {
     "title": "Meus Projetos",
+    "subtitle": "Soluções inovadoras que desenvolvi",
     "introduction": {
-      "title": "Introdução",
+      "title": "Sobre meus projetos",
       "description": "Este portfólio foi criado com muita dedicação para apresentação pessoal, mas também das minhas habilidades técnicas, projetos de maneira estruturada e interativa. Além de contar um pouco sobre mim, e também mostrar do que sou capaz de criar com códigos. Ele está dividido em suas devidas sessões, cada uma destacando tecnologias utilizadas e desafios enfrentados. Sinta-se à vontade para explorar e conhecer mais sobre meu trabalho. Caso tenha dúvidas, a aba de contato estará à sua disposição!"
-    }
+    },
+    "filters": {
+      "all": "Todos os projetos",
+      "web": "Web Apps",
+      "mobile": "Mobile",
+      "api": "APIs",
+      "ui_ux": "UI/UX",
+      "game": "Games"
+    },
+    "project": {
+      "view_live": "Ver projeto",
+      "view_code": "Ver código",
+      "technologies": "Tecnologias utilizadas",
+      "features": "Principais funcionalidades",
+      "challenges": "Desafios enfrentados",
+      "lessons": "Aprendizados obtidos",
+      "duration": "Duração do projeto",
+      "team": "Equipe",
+      "role": "Minha função",
+      "status": "Status",
+      "completed": "Concluído",
+      "in_development": "Em desenvolvimento",
+      "next": "Próximo projeto",
+      "previous": "Projeto anterior",
+      "close": "Fechar"
+    },
+    "no_projects": "Nenhum projeto encontrado para esta categoria",
+    "load_more": "Carregar mais projetos",
+    "total_projects": "Total de projetos"
   },
   "contact": {
-    "title": "Vamos Conversar?",
-    "subtitle": "Entre em contato através das redes sociais",
-    "linkedin": "LinkedIn",
-    "instagram": "Instagram",
-    "twitter": "Twitter"
+    "title": "Contato Profissional",
+    "subtitle": "Vamos construir algo incrível juntos? Entre em contato!",
+    "description": "Estou sempre aberto a novas oportunidades, colaborações e desafios interessantes. Seja para discutir projetos, oportunidades de trabalho ou simplesmente trocar uma ideia sobre tecnologia.",
+    "info": {
+      "title": "Informações de Contato",
+      "email": "Email",
+      "phone": "Telefone",
+      "location": "Localização",
+      "availability": "Disponibilidade"
+    },
+    "social": {
+      "title": "Redes Sociais",
+      "linkedin": {
+        "title": "LinkedIn",
+        "description": "Conecte-se comigo profissionalmente",
+        "stats": "500+ conexões"
+      },
+      "github": {
+        "title": "GitHub",
+        "description": "Veja meus projetos e contribuições",
+        "stats": "50+ repositórios"
+      },
+      "instagram": {
+        "title": "Instagram",
+        "description": "Acompanhe minha jornada",
+        "stats": "1k+ seguidores"
+      },
+      "twitter": {
+        "title": "Twitter",
+        "description": "Pensamentos sobre tech e desenvolvimento",
+        "stats": "500+ tweets"
+      }
+    },
+    "availability": {
+      "title": "Disponibilidade Profissional",
+      "status": "Aberto a oportunidades",
+      "response_time": "Tempo de resposta: 24h",
+      "work_preference": "Remoto/Híbrido",
+      "collaboration": "Projetos freelance aceitos"
+    },
+    "interests": {
+      "title": "Áreas de Interesse",
+      "frontend": "Desenvolvimento Frontend",
+      "backend": "APIs e Backend",
+      "mobile": "Aplicações Mobile",
+      "ai": "Inteligência Artificial",
+      "web3": "Tecnologias Web3",
+      "mentorship": "Mentoria técnica"
+    },
+    "form": {
+      "title": "Envie sua mensagem",
+      "name": "Nome completo",
+      "email": "Email",
+      "subject": "Assunto",
+      "message": "Mensagem",
+      "send": "Enviar mensagem",
+      "sending": "Enviando...",
+      "success": "Mensagem enviada com sucesso!",
+      "error": "Erro ao enviar mensagem. Tente novamente.",
+      "required": "Campo obrigatório"
+    }
+  },
+  "footer": {
+    "copyright": "© 2024 Vitor Andrade. Todos os direitos reservados.",
+    "made_with": "Feito com",
+    "in": "em",
+    "brazil": "Brasil",
+    "links": {
+      "privacy": "Política de Privacidade",
+      "terms": "Termos de Uso",
+      "sitemap": "Mapa do Site"
+    }
+  },
+  "common": {
+    "loading": "Carregando...",
+    "error": "Erro",
+    "success": "Sucesso",
+    "warning": "Atenção",
+    "info": "Informação",
+    "close": "Fechar",
+    "open": "Abrir",
+    "save": "Salvar",
+    "cancel": "Cancelar",
+    "confirm": "Confirmar",
+    "delete": "Excluir",
+    "edit": "Editar",
+    "view": "Visualizar",
+    "download": "Baixar",
+    "upload": "Enviar",
+    "search": "Pesquisar",
+    "filter": "Filtrar",
+    "sort": "Ordenar",
+    "clear": "Limpar",
+    "reset": "Redefinir",
+    "submit": "Enviar",
+    "back": "Voltar",
+    "next": "Próximo",
+    "previous": "Anterior",
+    "continue": "Continuar",
+    "finish": "Finalizar",
+    "yes": "Sim",
+    "no": "Não",
+    "maybe": "Talvez",
+    "unknown": "Desconhecido",
+    "other": "Outro",
+    "more": "Mais",
+    "less": "Menos",
+    "show": "Mostrar",
+    "hide": "Ocultar",
+    "expand": "Expandir",
+    "collapse": "Recolher",
+    "select_all": "Selecionar tudo",
+    "deselect_all": "Desmarcar tudo",
+    "required_field": "Campo obrigatório",
+    "optional_field": "Campo opcional",
+    "invalid_format": "Formato inválido",
+    "max_length": "Comprimento máximo excedido",
+    "min_length": "Comprimento mínimo não atingido",
+    "page_not_found": "Página não encontrada",
+    "coming_soon": "Em breve",
+    "under_maintenance": "Em manutenção",
+    "try_again": "Tente novamente",
+    "read_more": "Ler mais",
+    "read_less": "Ler menos"
+  },
+  "meta": {
+    "title": "Vitor Andrade - Engenheiro de Software Front-end",
+    "description": "Portfólio profissional de Vitor Andrade, Engenheiro de Software especializado em desenvolvimento front-end, UI/UX e tecnologias modernas.",
+    "keywords": "Vitor Andrade, desenvolvedor front-end, engenheiro software, React, TypeScript, UI/UX, portfólio",
+    "author": "Vitor Andrade"
   }
 }
