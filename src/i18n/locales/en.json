@@ -1,90 +1,92 @@
 {
   "nav": {
-    "about": "About me",
-    "education": "Education",
-    "courses": "Courses",
-    "technologies": "Technologies",
-    "experience": "Experience",
+    "about": "Sobre mim",
+    "education": "Formação",
+    "courses": "Cursos",
+    "technologies": "Tecnologias",
+    "experience": "Experiências",
     "axk": "AXK",
-    "portfolio": "Portfolio",
-    "contact": "Contact",
-    "home": "Home",
+    "portfolio": "Portfólio",
+    "contact": "Contato",
+    "home": "Início",
     "menu": "Menu",
-    "close": "Close",
-    "language": "Language",
-    "scroll_to_top": "Back to top"
+    "close": "Fechar",
+    "language": "Idioma",
+    "scroll_to_top": "Voltar ao topo",
+    "scroll_down": "Role para baixo",
+    "explore": "Explorar",
+    "theme": "Tema",
+    "highlights": "{UIdescription: $t.('highlights.UIdescription')}"
   },
   "theme": {
-    "light": "Light",
-    "dark": "Dark",
-    "toggle": "Toggle theme",
-    "current": "Current theme"
+    "light": "Claro",
+    "dark": "Escuro",
+    "toggle": "Alternar tema",
+    "current": "Tema atual"
   },
   "hero": {
-    "greeting": "Hello, I'm",
-    "name": "Vitor Andrade",
-    "role": "Front-end Software Engineer",
-    "tagline": "Creating exceptional digital experiences",
-    "cta_primary": "View my projects",
-    "cta_secondary": "Get in touch",
-    "scroll_down": "Scroll down",
-    "explore": "Explore"
+    "greeting": "Olá, eu sou",
+    "name": "Gustavo Vargas",
+    "title": "Desenvolvedor Full Stack",
+    "subtitle": "Apaixonado por criar soluções digitais inovadoras e experiências excepcionais",
+    "cta": "Vamos conversar",
+    "viewWork": "Ver meu trabalho"
   },
   "about": {
-    "title": "About me",
-    "subtitle": "Get to know my professional journey",
+    "title": "Sobre mim",
+    "subtitle": "Conheça minha jornada profissional",
     "name": "Vitor Andrade",
-    "role": "Front-end Software Engineer",
-    "description": "UI/UX Specialist with a degree in Systems Analysis and Development and a Postgraduate degree in Software Engineering. I'm passionate about creating exceptional digital experiences for users, with focus and enthusiasm in AI and Machine Learning. Besides programming, I'm fascinated by video games and compete semi-professionally in various titles during my free time.",
-    "age": "years old",
-    "location": "Aracaju, Sergipe - Brazil",
+    "role": "Engenheiro de Software Front-end",
+    "description": "Especialista em UI/UX com formação em Análise e Desenvolvimento de Sistemas e Pós-graduação em Engenharia de Software. Sou apaixonado por criar experiências digitais excepcionais aos usuários, com foco e entusiasmo em IA e Machine Learning. Além da programação, sou fascinado por jogos eletrônicos e em tempo livre sou competidor semi-profissional em diversos títulos.",
+    "age": "anos",
+    "location": "Aracaju, Sergipe - Brasil",
     "stats": {
-      "experience": "Years of experience",
-      "projects": "Completed projects",
-      "technologies": "Mastered technologies",
-      "certifications": "Obtained certifications"
+      "experience": "Anos de experiência",
+      "projects": "Projetos concluídos",
+      "technologies": "Tecnologias dominadas",
+      "certifications": "Certificações obtidas"
     },
-    "download_cv": "Download CV",
-    "view_projects": "View projects"
+    "download_cv": "Baixar currículo",
+    "view_projects": "Ver projetos"
   },
   "education": {
-    "title": "Academic Background",
-    "subtitle": "My solid educational foundation",
+    "title": "Formação Acadêmica",
+    "subtitle": "Minha base educacional sólida",
     "ads": {
-      "title": "Systems Analysis and Development",
+      "title": "Análise e Desenvolvimento de Sistemas",
       "institution": "Estácio de Sergipe",
       "period": "2022 - 2024",
-      "status": "Completed",
-      "description": "Formation focused on systems development, programming and technology project management."
+      "status": "Concluído",
+      "description": "Formação focada em desenvolvimento de sistemas, programação e gestão de projetos tecnológicos."
     },
     "pos": {
-      "title": "Postgraduate in Software Engineering",
+      "title": "Pós-graduação em Engenharia de Software",
       "institution": "Estácio de Sergipe",
       "period": "2025 - 2026",
-      "status": "In progress",
-      "description": "Specialization in software architecture, agile methodologies and technical leadership."
+      "status": "Em andamento",
+      "description": "Especialização em arquitetura de software, metodologias ágeis e liderança técnica."
     },
-    "view_certificate": "View certificate",
-    "in_progress": "In progress",
-    "completed": "Completed"
+    "view_certificate": "Ver certificado",
+    "in_progress": "Em andamento",
+    "completed": "Concluído"
   },
   "courses": {
-    "title": "Certifications & Courses",
-    "subtitle": "Continuous learning and technical specialization",
-    "description": "Click on courses to view certificates",
+    "title": "Certificações e Cursos",
+    "subtitle": "Aprendizado contínuo e especialização técnica",
+    "description": "Clique nos cursos para visualizar os certificados",
     "filter": {
-      "all": "All",
+      "all": "Todos",
       "frontend": "Frontend",
       "backend": "Backend",
-      "tools": "Tools",
+      "tools": "Ferramentas",
       "design": "Design"
     },
-    "completed": "Completed",
-    "in_progress": "In progress",
-    "view_certificate": "View certificate",
-    "load_more": "Load more",
-    "no_results": "No courses found",
-    "total": "Total courses",
+    "completed": "Concluído",
+    "in_progress": "Em andamento",
+    "view_certificate": "Ver certificado",
+    "load_more": "Carregar mais",
+    "no_results": "Nenhum curso encontrado",
+    "total": "Total de cursos",
     "list": [
       "Python - Curso em Vídeo",
       "JavaScript - Curso em Vídeo",
@@ -101,13 +103,13 @@
     ]
   },
   "technologies": {
-    "title": "Technologies & Tools",
-    "subtitle": "Tools and technologies I master to create innovative solutions",
+    "title": "Tecnologias & Ferramentas",
+    "subtitle": "Ferramentas e tecnologias que domino para criar soluções inovadoras",
     "categories": {
       "frontend": "Frontend",
       "backend": "Backend",
-      "database": "Database",
-      "tools": "Tools",
+      "database": "Banco de Dados",
+      "tools": "Ferramentas",
       "design": "Design",
       "mobile": "Mobile"
     },
@@ -115,145 +117,145 @@
       "frontend": "Frontend",
       "backend": "Backend",
       "database": "Database",
-      "tools": "Tools"
+      "tools": "Ferramentas"
     },
-    "cta": "Always learning and exploring new technologies to deliver the best solutions",
-    "explore": "Explore Projects",
-    "filter": "Filter by category",
-    "show_all": "Show all",
-    "proficiency": "Proficiency level",
-    "years_experience": "years of experience"
+    "cta": "Sempre aprendendo e explorando novas tecnologias para entregar as melhores soluções",
+    "explore": "Explorar Projetos",
+    "filter": "Filtrar por categoria",
+    "show_all": "Mostrar todas",
+    "proficiency": "Nível de proficiência",
+    "years_experience": "anos de experiência"
   },
   "experience": {
-    "title": "Professional Experience",
-    "subtitle": "My journey in software development",
-    "current": "Current",
-    "present": "Present",
-    "view_details": "View details",
-    "technologies_used": "Technologies used",
-    "achievements": "Key achievements",
-    "responsibilities": "Responsibilities",
+    "title": "Experiência Profissional",
+    "subtitle": "Minha trajetória no desenvolvimento de software",
+    "current": "Atual",
+    "present": "Presente",
+    "view_details": "Ver detalhes",
+    "technologies_used": "Tecnologias utilizadas",
+    "achievements": "Principais conquistas",
+    "responsibilities": "Responsabilidades",
     "axk": {
-      "title": "Back-end Development Internship",
+      "title": "Estágio em Desenvolvimento Back-end",
       "company": "AXK eSports",
-      "period": "2024 - Current",
-      "location": "Remote",
+      "period": "2024 - Atual",
+      "location": "Remoto",
       "mentor": "Mentor: Gustavo Vargas (CEO)",
-      "description": "Development of robust APIs and scalable back-end systems for professional eSports platform. Implementation of modern architectures, performance optimization and database integration. Agile team collaboration under direct mentorship of CEO Gustavo Vargas, Senior Software Engineer with extensive experience in corporate systems.",
+      "description": "Desenvolvimento de APIs robustas e sistemas back-end escaláveis para plataforma de eSports profissional. Implementação de arquiteturas modernas, otimização de performance e integração com bancos de dados. Colaboração em equipe ágil sob mentoria direta do CEO Gustavo Vargas, Engenheiro de Software Sênior com vasta experiência em sistemas corporativos.",
       "achievements": [
-        "Development of RESTful APIs with ASP.NET Core",
-        "Implementation of JWT authentication and authorization",
-        "SQL Server query optimization with 40% performance improvement",
-        "Creation of unit tests and integration with 85% coverage",
-        "Automated deployment with Azure DevOps and Docker"
+        "Desenvolvimento de APIs RESTful com ASP.NET Core",
+        "Implementação de autenticação JWT e autorização",
+        "Otimização de consultas SQL Server com 40% melhoria na performance",
+        "Criação de testes unitários e integração com cobertura 85%",
+        "Deploy automatizado com Azure DevOps e Docker"
       ],
       "technologies": ["ASP.NET Core", "SQL Server", "Docker", "Azure", "Git"]
     },
     "timeline": {
-      "present": "Present",
-      "duration": "duration"
+      "present": "Presente",
+      "duration": "duração"
     }
   },
   "axk": {
     "title": "AXK eSports",
-    "subtitle": "Competitive excellence developing elite talents in the global eSports scene",
-    "description": "AXK is a Brazilian eSports organization founded with the goal of competing at the highest levels of electronic games. Our mission is to develop exceptional talents and represent Brazil in the global competitive scene with technical and strategic excellence.",
+    "subtitle": "Excelência competitiva formando talentos d'elite no cenário mundial de eSports",
+    "description": "A AXK é uma organização brasileira de eSports fundada com o objetivo de competir nos mais altos níveis dos jogos eletrônicos. Nossa missão é formar talentos excepcionais e representar o Brasil no cenário competitivo mundial com excelência técnica e estratégica.",
     "menu": {
-      "overview": "Overview",
+      "overview": "Visão Geral",
       "ceo": "CEO",
-      "games": "Games",
-      "achievements": "Achievements",
-      "team": "Team",
-      "contact": "Contact"
+      "games": "Modalidades",
+      "achievements": "Conquistas",
+      "team": "Equipe",
+      "contact": "Contato"
     },
     "ceo": {
       "title": "CEO: Gustavo Vargas",
-      "subtitle": "Senior Software Engineer and Brazilian eSports visionary",
-      "description": "Technical leader with extensive experience in corporate systems development and passion for the competitive gaming scene. Gustavo combines technical expertise with strategic vision to position AXK as a national reference in professional eSports."
+      "subtitle": "Engenheiro de Software Sênior e visionário dos eSports brasileiros",
+      "description": "Líder técnico com vasta experiência em desenvolvimento de sistemas corporativos e paixão pelo cenário competitivo de jogos eletrônicos. Gustavo combina expertise técnica com visão estratégica para posicionar a AXK como referência nacional em eSports profissionais."
     },
     "games": {
-      "title": "Competitive Modalities",
-      "subtitle": "We compete in the main titles of the global scene",
-      "description": "Our team competes in the most relevant games in global eSports, always seeking technical excellence and significant results.",
+      "title": "Modalidades Competitivas",
+      "subtitle": "Atuamos nos principais títulos do cenário mundial",
+      "description": "Nossa equipe compete nos jogos mais relevantes do eSports mundial, sempre buscando excelência técnica e resultados expressivos.",
       "list": [
         {
           "name": "Pokémon UNITE",
           "category": "MOBA",
-          "description": "Strategy and team coordination"
+          "description": "Estratégia e coordenação em equipe"
         },
         {
           "name": "VALORANT",
-          "category": "Tactical FPS",
-          "description": "Precision and advanced tactics"
+          "category": "FPS Tático",
+          "description": "Precisão e tática avançada"
         },
         {
           "name": "Brawlhalla",
           "category": "Fighting",
-          "description": "Technical combat and sharp reflexes"
+          "description": "Combates técnicos e reflexos apurados"
         },
         {
           "name": "Rainbow Six Siege",
-          "category": "Tactical FPS",
-          "description": "Military strategy and teamwork"
+          "category": "FPS Tático",
+          "description": "Estratégia militar e trabalho em equipe"
         },
         {
           "name": "Predecessor",
           "category": "MOBA",
-          "description": "Advanced mechanics and macro game"
+          "description": "Mecânicas avançadas e macro game"
         },
         {
           "name": "Brawl Stars",
           "category": "Battle Royale",
-          "description": "Agility and strategic coordination"
+          "description": "Agilidade e coordenação estratégica"
         }
       ]
     },
     "pillars": {
-      "title": "Our Fundamental Pillars",
-      "subtitle": "The values that guide our organization",
+      "title": "Nossos Pilares Fundamentais",
+      "subtitle": "Os valores que norteiam nossa organização",
       "excellence": {
-        "title": "Competitive Excellence",
-        "description": "Relentless pursuit of the best results in each modality"
+        "title": "Excelência Competitiva",
+        "description": "Busca incansável pelos melhores resultados em cada modalidade"
       },
       "innovation": {
-        "title": "Technological Innovation",
-        "description": "Use of cutting-edge technology for analysis and development"
+        "title": "Inovação Tecnológica",
+        "description": "Uso de tecnologia de ponta para análise e desenvolvimento"
       },
       "community": {
-        "title": "Strong Community",
-        "description": "Building a solid base of fans and supporters"
+        "title": "Comunidade Forte",
+        "description": "Construção de uma base sólida de fãs e apoiadores"
       },
       "growth": {
-        "title": "Sustainable Growth",
-        "description": "Responsible expansion and investment in new talents"
+        "title": "Crescimento Sustentável",
+        "description": "Expansão responsável e investimento em novos talentos"
       }
     },
     "achievements": {
-      "title": "Our Achievements",
-      "subtitle": "Results that make us proud",
+      "title": "Nossas Conquistas",
+      "subtitle": "Resultados que nos orgulham",
       "stats": {
-        "tournaments": "Tournaments competed",
-        "victories": "Victories achieved",
-        "players": "Athletes developed",
-        "partnerships": "Partnerships established"
+        "tournaments": "Torneios disputados",
+        "victories": "Vitórias conquistadas",
+        "players": "Atletas formados",
+        "partnerships": "Parcerias estabelecidas"
       }
     },
     "cta": {
-      "title": "Learn more about AXK",
-      "description": "Discover how we're revolutionizing the eSports scene in Brazil",
-      "button": "Visit AXK",
-      "contact": "Get in touch"
+      "title": "Conheça mais sobre a AXK",
+      "description": "Descubra como estamos revolucionando o cenário de eSports no Brasil",
+      "button": "Visite a AXK",
+      "contact": "Entre em contato"
     }
   },
   "portfolio": {
-    "title": "My Projects",
-    "subtitle": "Innovative solutions I've developed",
+    "title": "Meus Projetos",
+    "subtitle": "Soluções inovadoras que desenvolvi",
     "introduction": {
-      "title": "About my projects",
-      "description": "This portfolio was created with great dedication for personal presentation, but also to showcase my technical skills and projects in a structured and interactive way. In addition to telling a bit about myself, it also shows what I'm capable of creating with code. It's divided into its respective sections, each highlighting technologies used and challenges faced. Feel free to explore and learn more about my work. If you have any questions, the contact section will be at your disposal!"
+      "title": "Sobre meus projetos",
+      "description": "Este portfólio foi criado com muita dedicação para apresentação pessoal, mas também das minhas habilidades técnicas, projetos de maneira estruturada e interativa. Além de contar um pouco sobre mim, e também mostrar do que sou capaz de criar com códigos. Ele está dividido em suas devidas sessões, cada uma destacando tecnologias utilizadas e desafios enfrentados. Sinta-se à vontade para explorar e conhecer mais sobre meu trabalho. Caso tenha dúvidas, a aba de contato estará à sua disposição!"
     },
     "filters": {
-      "all": "All projects",
+      "all": "Todos os projetos",
       "web": "Web Apps",
       "mobile": "Mobile",
       "api": "APIs",
@@ -261,156 +263,551 @@
       "game": "Games"
     },
     "project": {
-      "view_live": "View project",
-      "view_code": "View code",
-      "technologies": "Technologies used",
-      "features": "Key features",
-      "challenges": "Challenges faced",
-      "lessons": "Lessons learned",
-      "duration": "Project duration",
-      "team": "Team",
-      "role": "My role",
+      "view_live": "Ver projeto",
+      "view_code": "Ver código",
+      "technologies": "Tecnologias utilizadas",
+      "features": "Principais funcionalidades",
+      "challenges": "Desafios enfrentados",
+      "lessons": "Aprendizados obtidos",
+      "duration": "Duração do projeto",
+      "team": "Equipe",
+      "role": "Minha função",
       "status": "Status",
-      "completed": "Completed",
-      "in_development": "In development",
-      "next": "Next project",
-      "previous": "Previous project",
-      "close": "Close"
+      "completed": "Concluído",
+      "in_development": "Em desenvolvimento",
+      "next": "Próximo projeto",
+      "previous": "Projeto anterior",
+      "close": "Fechar"
     },
-    "no_projects": "No projects found for this category",
-    "load_more": "Load more projects",
-    "total_projects": "Total projects"
+    "no_projects": "Nenhum projeto encontrado para esta categoria",
+    "load_more": "Carregar mais projetos",
+    "total_projects": "Total de projetos"
   },
   "contact": {
-    "title": "Professional Contact",
-    "subtitle": "Let's build something incredible together? Get in touch!",
-    "description": "I'm always open to new opportunities, collaborations and interesting challenges. Whether to discuss projects, job opportunities or simply exchange ideas about technology.",
+    "title": "Contato Profissional",
+    "subtitle": "Vamos construir algo incrível juntos? Entre em contato!",
+    "description": "Estou sempre aberto a novas oportunidades, colaborações e desafios interessantes. Seja para discutir projetos, oportunidades de trabalho ou simplesmente trocar uma ideia sobre tecnologia.",
     "info": {
-      "title": "Contact Information",
+      "title": "Informações de Contato",
       "email": "Email",
-      "phone": "Phone",
-      "location": "Location",
-      "availability": "Availability"
+      "phone": "Telefone",
+      "location": "Localização",
+      "availability": "Disponibilidade"
     },
     "social": {
-      "title": "Social Networks",
+      "title": "Redes Sociais",
       "linkedin": {
         "title": "LinkedIn",
-        "description": "Connect with me professionally",
-        "stats": "500+ connections"
+        "description": "Conecte-se comigo profissionalmente",
+        "stats": "500+ conexões"
       },
       "github": {
         "title": "GitHub",
-        "description": "Check my projects and contributions",
-        "stats": "50+ repositories"
+        "description": "Veja meus projetos e contribuições",
+        "stats": "50+ repositórios"
       },
       "instagram": {
         "title": "Instagram",
-        "description": "Follow my journey",
-        "stats": "1k+ followers"
+        "description": "Acompanhe minha jornada",
+        "stats": "1k+ seguidores"
       },
       "twitter": {
         "title": "Twitter",
-        "description": "Thoughts about tech and development",
+        "description": "Pensamentos sobre tech e desenvolvimento",
         "stats": "500+ tweets"
       }
     },
     "availability": {
-      "title": "Professional Availability",
-      "status": "Open to opportunities",
-      "response_time": "Response time: 24h",
-      "work_preference": "Remote/Hybrid",
-      "collaboration": "Freelance projects accepted"
+      "title": "Disponibilidade Profissional",
+      "status": "Aberto a oportunidades",
+      "response_time": "Tempo de resposta: 24h",
+      "work_preference": "Remoto/Híbrido",
+      "collaboration": "Projetos freelance aceitos"
     },
     "interests": {
-      "title": "Areas of Interest",
-      "frontend": "Frontend Development",
-      "backend": "APIs and Backend",
-      "mobile": "Mobile Applications",
-      "ai": "Artificial Intelligence",
-      "web3": "Web3 Technologies",
-      "mentorship": "Technical Mentorship"
+      "title": "Áreas de Interesse",
+      "frontend": "Desenvolvimento Frontend",
+      "backend": "APIs e Backend",
+      "mobile": "Aplicações Mobile",
+      "ai": "Inteligência Artificial",
+      "web3": "Tecnologias Web3",
+      "mentorship": "Mentoria técnica"
     },
     "form": {
-      "title": "Send your message",
-      "name": "Full name",
+      "title": "Envie sua mensagem",
+      "name": "Nome completo",
       "email": "Email",
-      "subject": "Subject",
-      "message": "Message",
-      "send": "Send message",
-      "sending": "Sending...",
-      "success": "Message sent successfully!",
-      "error": "Error sending message. Please try again.",
-      "required": "Required field"
+      "subject": "Assunto",
+      "message": "Mensagem",
+      "send": "Enviar mensagem",
+      "sending": "Enviando...",
+      "success": "Mensagem enviada com sucesso!",
+      "error": "Erro ao enviar mensagem. Tente novamente.",
+      "required": "Campo obrigatório"
     }
   },
   "footer": {
-    "copyright": "© 2024 Vitor Andrade. All rights reserved.",
-    "made_with": "Made with",
-    "in": "in",
-    "brazil": "Brazil",
+    "copyright": "© 2024 Vitor Andrade. Todos os direitos reservados.",
+    "made_with": "Feito com",
+    "in": "em",
+    "brazil": "Brasil",
     "links": {
-      "privacy": "Privacy Policy",
-      "terms": "Terms of Use",
-      "sitemap": "Site Map"
+      "privacy": "Política de Privacidade",
+      "terms": "Termos de Uso",
+      "sitemap": "Mapa do Site"
     }
   },
   "common": {
-    "loading": "Loading...",
-    "error": "Error",
-    "success": "Success",
-    "warning": "Warning",
-    "info": "Information",
-    "close": "Close",
-    "open": "Open",
-    "save": "Save",
-    "cancel": "Cancel",
-    "confirm": "Confirm",
-    "delete": "Delete",
-    "edit": "Edit",
-    "view": "View",
-    "download": "Download",
-    "upload": "Upload",
-    "search": "Search",
-    "filter": "Filter",
-    "sort": "Sort",
-    "clear": "Clear",
-    "reset": "Reset",
-    "submit": "Submit",
-    "back": "Back",
-    "next": "Next",
-    "previous": "Previous",
-    "continue": "Continue",
-    "finish": "Finish",
-    "yes": "Yes",
-    "no": "No",
-    "maybe": "Maybe",
-    "unknown": "Unknown",
-    "other": "Other",
-    "more": "More",
-    "less": "Less",
-    "show": "Show",
-    "hide": "Hide",
-    "expand": "Expand",
-    "collapse": "Collapse",
-    "select_all": "Select all",
-    "deselect_all": "Deselect all",
-    "required_field": "Required field",
-    "optional_field": "Optional field",
-    "invalid_format": "Invalid format",
-    "max_length": "Maximum length exceeded",
-    "min_length": "Minimum length not reached",
-    "page_not_found": "Page not found",
-    "coming_soon": "Coming soon",
-    "under_maintenance": "Under maintenance",
-    "try_again": "Try again",
-    "read_more": "Read more",
-    "read_less": "Read less"
+    "loading": "Carregando...",
+    "error": "Erro",
+    "success": "Sucesso",
+    "warning": "Atenção",
+    "info": "Informação",
+    "close": "Fechar",
+    "open": "Abrir",
+    "save": "Salvar",
+    "cancel": "Cancelar",
+    "confirm": "Confirmar",
+    "delete": "Excluir",
+    "edit": "Editar",
+    "view": "Visualizar",
+    "download": "Baixar",
+    "upload": "Enviar",
+    "search": "Pesquisar",
+    "filter": "Filtrar",
+    "sort": "Ordenar",
+    "clear": "Limpar",
+    "reset": "Redefinir",
+    "submit": "Enviar",
+    "back": "Voltar",
+    "next": "Próximo",
+    "previous": "Anterior",
+    "continue": "Continuar",
+    "finish": "Finalizar",
+    "yes": "Sim",
+    "no": "Não",
+    "maybe": "Talvez",
+    "unknown": "Desconhecido",
+    "other": "Outro",
+    "more": "Mais",
+    "less": "Menos",
+    "show": "Mostrar",
+    "hide": "Ocultar",
+    "expand": "Expandir",
+    "collapse": "Recolher",
+    "select_all": "Selecionar tudo",
+    "deselect_all": "Desmarcar tudo",
+    "required_field": "Campo obrigatório",
+    "optional_field": "Campo opcional",
+    "invalid_format": "Formato inválido",
+    "max_length": "Comprimento máximo excedido",
+    "min_length": "Comprimento mínimo não atingido",
+    "page_not_found": "Página não encontrada",
+    "coming_soon": "Em breve",
+    "under_maintenance": "Em manutenção",
+    "try_again": "Tente novamente",
+    "read_more": "Ler mais",
+    "read_less": "Ler menos"
   },
   "meta": {
-    "title": "Vitor Andrade - Front-end Software Engineer",
-    "description": "Professional portfolio of Vitor Andrade, Software Engineer specialized in front-end development, UI/UX and modern technologies.",
-    "keywords": "Vitor Andrade, front-end developer, software engineer, React, TypeScript, UI/UX, portfolio",
+    "title": "Vitor Andrade - Engenheiro de Software Front-end",
+    "description": "Portfólio profissional de Vitor Andrade, Engenheiro de Software especializado em desenvolvimento front-end, UI/UX e tecnologias modernas.",
+    "keywords": "Vitor Andrade, desenvolvedor front-end, engenheiro software, React, TypeScript, UI/UX, portfólio",
     "author": "Vitor Andrade"
+  },
+  "highlights": {
+    "axk": {
+      "title": "AXKRUM",
+      "subtitle": "Organização de eSports focada na excelência competitiva e desenvolvimento de talentos d'elite. Construindo o futuro dos esportes eletrônicos através da estratégia, dedicação e resultados excepcionais.",
+      "navigation": "Navegação AXK",
+      "aboutAXK": "Sobre a AXK",
+      "modalities": "Modalidades",
+      "leadership": "Liderança",
+      "missionVision": "Missão & Visão",
+      "missionDescription": "A AXKRUM representa a vanguarda do cenário competitivo brasileiro. Nossa organização combina talento excepcional, estratégias inovadoras, mentalidade vencedora, além dos pilares fundamentais de educação, respeito e sucesso para alcançar resultados extraordinários em múltiplas modalidades de eSports.",
+      "ourPillars": "Nossos Pilares",
+      "competitiveExcellence": "Excelência Competitiva:",
+      "competitiveExcellenceDesc": "Busca incessante pela perfeição em cada partida",
+      "strategicDevelopment": "Desenvolvimento Estratégico:",
+      "strategicDevelopmentDesc": "Formação de talentos com metodologia profissional",
+      "technologicalInnovation": "Inovação Tecnológica:",
+      "technologicalInnovationDesc": "Ferramentas avançadas para análise e crescimento",
+      "achievements2024": "Conquistas 2024",
+      "topRegionalPokemon": "Top 3 Regional Pokémon UNITE",
+      "bestEmergingTeam": "Melhor Equipe Emergente",
+      "mvpValorant": "MVP Individual VALORANT",
+      "biggestGrowth": "Maior Crescimento Anual",
+      "axkMarketplace": "AXK Marketplace",
+      "marketplaceDescription": "Plataforma oficial da AXK desenvolvida para revolucionar o ecossistema gamer, além de vender nossos produtos oficiais, conectando nossos jogadores profissionais com o público de eSports, além de apresentar para qual objetivo viemos conquistar o mercado Brasileiro e Mundial.",
+      "eliteCoaching": "Coaching Elite",
+      "eliteCoachingDesc": "Mentoria personalizada com profissionais renomados",
+      "premiumMarketplace": "Marketplace Premium",
+      "premiumMarketplaceDesc": "Itens exclusivos e contas verificadas",
+      "activeCommunity": "Comunidade Ativa",
+      "activeCommunityDesc": "Networking com gamers profissionais",
+      "integrity": "Integridade",
+      "integrityDesc": "Fair play em primeiro lugar",
+      "competitiveness": "Competitividade",
+      "competitivenessDesc": "Mentalidade vencedora",
+      "unity": "Unidade",
+      "unityDesc": "Força do trabalho em equipe",
+      "innovation": "Inovação",
+      "innovationDesc": "Evolução constante",
+      "competitiveModalities": "Modalidades Competitivas",
+      "eliteAthletes": "atletas d'elite",
+      "active": "Ativo",
+      "beta": "Beta",
+      "teamAchievements": "Conquistas da Equipe",
+      "activeAthletes": "Atletas Ativos",
+      "competitiveStatus": "Status Competitivo",
+      "executiveLeadership": "Liderança Executiva",
+      "leadershipDescription": "Conheça a visão estratégica e expertise técnica por trás do crescimento exponencial da AXKRUM",
+      "gustavoVargas": "Gustavo Vargas",
+      "ceoFounder": "CEO & Fundador da AXK eSports",
+      "gustavoDescription": "Visionário tecnológico e estrategista de eSports, Gustavo combina expertise em desenvolvimento fullstack com profundo conhecimento do cenário competitivo. Sua liderança transformou a AXK em uma das organizações mais promissoras do Brasil, estabelecendo novos padrões de excelência e inovação no setor.",
+      "strategicLeadership": "Liderança Estratégica",
+      "softwareArchitect": "Arquiteto de Software",
+      "technicalMentor": "Mentor Técnico",
+      "organizationalImpact": "Impacto Organizacional",
+      "growthMembers": "300% crescimento em membros ativos em 12 meses",
+      "completeDevelopment": "Desenvolvimento completo do AXK Marketplace proprietário",
+      "strategicPartnerships": "Parcerias estratégicas com sponsors e organizações d'elite",
+      "innovativeMethodology": "Metodologia inovadora de treinamento competitivo",
+      "technicalExpertise": "Expertise Técnica",
+      "softwareArchitecture": "Arquitetura de Software:",
+      "softwareArchitectureDesc": "Sistemas escaláveis e robustos",
+      "advancedApis": "APIs Avançadas:",
+      "advancedApisDesc": "Desenvolvimento back-end de alta performance",
+      "agileMethodologies": "Metodologias Ágeis:",
+      "agileMethodologiesDesc": "Implementação prática e mentoria",
+      "dataAnalysis": "Análise de Dados:",
+      "dataAnalysisDesc": "Métricas avançadas para otimização",
+      "exploreEcosystem": "Explore o Ecossistema AXK",
+      "ecosystemDescription": "Descubra nossa plataforma inovadora e faça parte da revolução dos eSports brasileiros. Conecte-se com profissionais, desenvolva suas habilidades e alcance o próximo nível.",
+      "visitAXK": "Visite a AXK",
+      "stats": {
+        "tournamentsParticipated": "Torneios Participados",
+        "activeMembers": "Membros Ativos",
+        "competitiveGames": "Jogos Competitivos",
+        "foundedIn": "Fundada em"
+      },
+      "games": {
+        "pokemonUnite": {
+          "name": "Pokémon UNITE",
+          "description": "MOBA estratégico com Pokémons em batalhas 5v5 intensas",
+          "achievements": ["Top 5 Regional", "Melhor Equipe 2023/24", "15+ Vitórias Consecutivas"]
+        },
+        "valorant": {
+          "name": "VALORANT",
+          "description": "FPS tático competitivo da Riot Games com foco na transformação de novos talentos",
+          "achievements": [
+            "Radiant Tier",
+            "Champions of Desafiant tier in Premier",
+            "Clutch Master"
+          ]
+        },
+        "brawlhalla": {
+          "name": "Brawlhalla",
+          "description": "Jogo de luta 3D em plataforma com combos devastadores",
+          "achievements": ["Valhallan Rank", "Ultra Combo Champions", "100+ Vitórias"]
+        },
+        "rainbowSix": {
+          "name": "Rainbow Six Siege X",
+          "description": "FPS tático com destruição ambiental e estratégias avançadas",
+          "achievements": ["Champion Tier", "Ace Master", "Estrategistas Profissionais"]
+        },
+        "predecessor": {
+          "name": "Predecessor",
+          "description": "MOBA terceira pessoa com heróis únicos e mecânicas inovadoras",
+          "achievements": ["Early Access Beta", "Meta Pioneer", "Team Captain"]
+        },
+        "brawlStars": {
+          "name": "Brawl Stars",
+          "description": "3v3 mobile da Supercell com ação frenética",
+          "achievements": ["Master League", "Brawlers Masters", "70.000+ Trophies"]
+        }
+      }
+    },
+    "courses": {
+      "selectCourse": "Selecione um curso",
+      "selectCourseDesc": "Clique em qualquer curso da lista para visualizar o certificado",
+      "certificate": "Certificado",
+      "coursePreview": "Preview do Curso",
+      "verified": "Verificado",
+      "original": "Original",
+      "certificateSoon": "Certificado em breve",
+      "courseInProgress": "Curso em andamento",
+      "imageWillBeAdded": "Imagem será adicionada",
+      "awaitingCompletion": "Aguardando conclusão",
+      "skillsAcquired": "Habilidades adquiridas:",
+      "coursesCompleted": "Cursos Concluídos",
+      "certificates": "Certificados",
+      "studiesStart": "Início dos Estudos",
+      "continuousLearning": "Aprendizado Contínuo",
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "design": "Design",
+      "dataScience": "Data Science",
+      "tools": "Ferramentas",
+      "inProgress": "In progress"
+    },
+    "experience": {
+      "title": "Experiência Profissional",
+      "subtitle": "Aqui trago minha trajetória de crescimento técnico profissional e liderança, sempre ajudando ou construindo soluções que geram impacto.",
+      "professionalTimeline": "Timeline Profissional",
+      "highlight": "Destaque",
+      "current": "Atual",
+      "completed": "Concluído",
+      "remote": "Remoto",
+      "internship": "Estágio",
+      "freelance": "Freelance",
+      "academicProject": "Projeto Acadêmico",
+      "present": "Presente",
+      "mainAchievements": "Principais Conquistas",
+      "mainLearnings": "Principais Aprendizados",
+      "techStack": "Stack Tecnológico",
+      "finalText": "Cada experiência contribuiu unicamente para o meu crescimento como desenvolvedor e líder técnico, sempre focando em entregar soluções de alta qualidade e com maior impacto positivo aos olhos do público.",
+      "stats": {
+        "yearsExperience": "Anos de Experiência",
+        "projectsDelivered": "Projetos Entregues",
+        "developersLed": "Desenvolvedores Liderados",
+        "featuredPositions": "Posições de Destaque"
+      },
+      "positions": {
+        "axkrum": {
+          "title": "Estagiário de programação Fullstack",
+          "company": "AXKRUM",
+          "period": "2024 - Presente",
+          "description": "Desenvolvimento de soluções backend e frontendrobustas para plataforma de eSports, focando em APIs REST escaláveis, arquitetura de segurança avançada e integração de sistemas de pagamento complexos. Além de especialidades em UI/UX para proporcionar a maior fluidez de minhas habilidades aos usuários.",
+          "mentor": "Gustavo Vargas (CEO & Engenheiro de Software Fullstack Sênior, Especialista em IA e Machine Learning)",
+          "achievements": [
+            "Arquitetura e desenvolvimento de APIs REST para marketplace completo",
+            "Integração com gateways de pagamento, sistemas de armazenamento e logística",
+            "Implementação de camadas de segurança e proteção de dados pessoais",
+            "Otimização de consultas SQL complexas com melhorias de performance de 40%",
+            "Desenvolvimento seguindo Clean Architecture e princípios SOLID"
+          ],
+          "learnings": [
+            "Metodologias ágeis em ambiente profissional",
+            "Arquitetura de software escalável e maintível",
+            "Test-Driven Development (TDD)",
+            "Integração de sistemas distribuídos complexos"
+          ]
+        },
+        "freelancer": {
+          "title": "Desenvolvedor Frontend Freelancer",
+          "company": "Projetos Independentes",
+          "period": "2023 - 2024",
+          "description": "Desenvolvimento de interfaces web modernas e responsivas, criando experiências digitais excepcionais com foco em performance, acessibilidade e conversão para diversos segmentos de mercado.",
+          "achievements": [
+            "15+ projetos web entregues com 100% de satisfação do cliente",
+            "Interfaces responsivas com otimização mobile-first",
+            "Melhorias de performance web com PageSpeed Score 90+",
+            "Integração com APIs REST e sistemas de terceiros"
+          ],
+          "learnings": [
+            "Gestão completa de projetos independentes",
+            "Comunicação assertiva e consultiva com clientes",
+            "Negociação de prazos e escopo de projetos",
+            "Adaptação a diferentes stacks e requisitos técnicos"
+          ]
+        },
+        "estacioFullstack": {
+          "title": "Desenvolvedor Fullstack - Projeto Acadêmico",
+          "company": "Estácio",
+          "period": "2024",
+          "description": "Liderança técnica no desenvolvimento de sistema web para gestão de consultas psicológicas, otimizando o processo de agendamento e acompanhamento de pacientes para estudantes de Psicologia em estágio supervisionado.",
+          "achievements": [
+            "Liderança técnica de equipe multidisciplinar com 10 desenvolvedores",
+            "Sistema completo de gestão de consultas e agendamentos",
+            "Interface intuitiva com foco na experiência do usuário",
+            "Implementação de controle de versão e metodologia de desenvolvimento"
+          ],
+          "learnings": [
+            "Liderança técnica e coordenação de equipes",
+            "Desenvolvimento colaborativo em larga escala",
+            "Comunicação técnica clara e documentação",
+            "Gestão de conflitos e resolução de problemas em equipe"
+          ]
+        },
+        "estacioMobile": {
+          "title": "Tech Lead - Aplicativo Mobile",
+          "company": "Estácio",
+          "period": "2024",
+          "description": "Liderança no desenvolvimento do \"Comenta\", aplicativo mobile de participação cidadã para melhorar a qualidade de vida urbana em Aracaju, conectando moradores com a gestão pública local.",
+          "achievements": [
+            "Liderança de equipe de 5 desenvolvedores especializados",
+            "Aplicativo completo de reclamações e sugestões urbanas",
+            "Sistema de geolocalização para mapeamento de problemas",
+            "Interface mobile otimizada para engajamento cidadão"
+          ],
+          "learnings": [
+            "Desenvolvimento mobile e experiência do usuário",
+            "Liderança de projetos de impacto social",
+            "Metodologias de pesquisa e validação de produto",
+            "Gestão de stakeholders e apresentações executivas"
+          ]
+        }
+      }
+    },
+    "portfolio": {
+      "title": "Portfólio",
+      "subtitle": "Explore abaixo meus projetos em produção/finalizados, nas quais os mesmos demonstram toda minha trajetória inicial. Todos contém inovação e resultados reais entregues para usuários ao redor do mundo.",
+      "allProjects": "Todos os Projetos",
+      "fullStack": "Full Stack",
+      "webApps": "Web Apps",
+      "mobile": "Mobile",
+      "deployProjects": "Projetos em Deploy",
+      "viewOnline": "Ver Online",
+      "techStack": "Stack Tecnológico",
+      "implementedFeatures": "Funcionalidades Implementadas",
+      "technicalHighlights": "Destaques Técnicos",
+      "team": "Equipe",
+      "status": "Status",
+      "aboutMyProjects": "Sobre Meus Projetos",
+      "aboutProjectsDesc": "Cada projeto representa um marco na minha jornada de desenvolvimento, demonstrando evolução técnica constante e aplicação prática de tecnologias modernas. Todos os projetos estão em produção, acessíveis globalmente e refletem meu comprometimento com qualidade, performance e experiência do usuário.",
+      "optimizedCode": "Código Otimizado",
+      "optimizedCodeDesc": "Seguindo padrões de mercado e boas práticas de desenvolvimento",
+      "responsiveDesign": "Design Responsivo",
+      "responsiveDesignDesc": "Interfaces modernas e funcionais em qualquer dispositivo",
+      "performance": "Performance",
+      "performanceDesc": "Deploy otimizado com foco em velocidade e escalabilidade",
+      "noProjectsFound": "Nenhum projeto encontrado nesta categoria.",
+      "stats": {
+        "projectsProduction": "Projetos em Produção",
+        "activeDeploys": "Deploys Ativos",
+        "technologiesApplied": "Tecnologias Aplicadas",
+        "yearsExperience": "Anos de Experiência"
+      },
+      "projects": {
+        "axkMarketplace": {
+          "title": "AXK Marketplace",
+          "type": "Plataforma Full Stack",
+          "description": "Marketplace completo para a comunidade gaming da AXK, com sistema de compra/venda, coaching e gestão de usuários.",
+          "longDescription": "Plataforma desenvolvida para a AXKRUM, uma organização de eSports que conecta gamers através de um marketplace inovador. O sistema permite compra e venda de itens personalizados, gerenciamento de usuários e todas as atualizações dos nossos jogadores/equipes de eSports ao redor do Brasil e do mundo. Tudo foi calculado e implementado com arquiteturas robustas e o foco na experiência do usuário.",
+          "role": "Full Stack Developer",
+          "team": "AXKRUM",
+          "duration": "6 meses",
+          "status": "Em Produção",
+          "features": [
+            "Sistema completo de autenticação",
+            "Marketplace de itens e novidades",
+            "Plataforma de administração de conteúdos",
+            "Dashboard administrativo",
+            "Sistema de pagamentos integrado"
+          ],
+          "highlights": [
+            "Arquitetura escalável com microserviços",
+            "Interface responsiva e moderna",
+            "Sistema de notificações em tempo real",
+            "Integração com APIs de pagamento"
+          ]
+        },
+        "clora": {
+          "title": "Clora",
+          "type": "Aplicação Web",
+          "description": "Aplicação web moderna e responsiva desenvolvida com foco na experiência do usuário e performance.",
+          "longDescription": "Clora é uma aplicação web robusta que demonstra habilidades avançadas em desenvolvimento frontend. O projeto combina design moderno, interatividade fluida e código limpo, resultando em uma experiência excepcional para o usuário.",
+          "role": "Frontend Developer",
+          "team": "Projeto Pessoal",
+          "duration": "1 mês",
+          "status": "Finalizado",
+          "features": [
+            "Interface moderna e intuitiva",
+            "Design responsivo completo",
+            "Animações e transições suaves",
+            "Otimização de performance",
+            "Código limpo e maintível"
+          ],
+          "highlights": [
+            "Performance otimizada para web",
+            "Design system consistente",
+            "Acessibilidade web implementada",
+            "SEO e otimizações avançadas"
+          ]
+        },
+        "makeYourBurger": {
+          "title": "Make Your Burger",
+          "type": "Aplicação Web",
+          "description": "Aplicação web interativa para personalização de hambúrguers com interface moderna e experiência gamificada.",
+          "longDescription": "Make Your Burger é uma aplicação web que permite aos usuários criar hambúrguers personalizados de forma interativa e divertida. O projeto demonstra habilidades em desenvolvimento frontend, UX/UI design e criação de experiências envolventes.",
+          "role": "Frontend Developer",
+          "team": "Projeto Pessoal",
+          "duration": "1 mês",
+          "status": "Finalizado",
+          "features": [
+            "Sistema de personalização interativo",
+            "Interface gamificada e divertida",
+            "Visualização em tempo real",
+            "Sistema de preços dinâmico",
+            "Experiência responsiva completa"
+          ],
+          "highlights": [
+            "Interatividade avançada com animações",
+            "Sistema de estado complexo gerenciado",
+            "Interface altamente responsiva",
+            "Experiência do usuário excepcional"
+          ]
+        },
+        "comentaApp": {
+          "title": "Comenta App",
+          "type": "Aplicação Mobile",
+          "description": "Aplicação mobile responsiva com interface otimizada para dispositivos móveis e experiência nativa.",
+          "longDescription": "Comenta App é uma aplicação desenvolvida com foco na experiência mobile, oferecendo interface otimizada, navegação intuitiva e performance excepcional em dispositivos móveis. O projeto demonstra expertise em desenvolvimento mobile-first.",
+          "role": "Mobile Developer",
+          "team": "Projeto Pessoal",
+          "duration": "2 meses",
+          "status": "Finalizado",
+          "features": [
+            "Interface otimizada para mobile",
+            "Navegação touch-friendly",
+            "Performance otimizada",
+            "Design responsivo avançado",
+            "Experiência similar a app nativo"
+          ],
+          "highlights": [
+            "Mobile-first development approach",
+            "Otimização para touch interfaces",
+            "Performance excepcional em mobile",
+            "PWA capabilities implementadas"
+          ]
+        },
+        "firstHtml": {
+          "title": "First HTML Project",
+          "type": "Projeto Web Foundational",
+          "description": "Projeto inicial em HTML demonstrando fundamentos sólidos de desenvolvimento web e evolução técnica.",
+          "longDescription": "First HTML Project representa os primeiros passos no desenvolvimento web, demonstrando a evolução e crescimento técnico ao longo do tempo. Este projeto foundational estabeleceu as bases para projetos mais complexos e sofisticados.",
+          "role": "Web Developer",
+          "team": "Projeto Pessoal",
+          "duration": "2 meses",
+          "status": "Finalizado",
+          "features": [
+            "Estrutura HTML semântica",
+            "Estilização CSS responsiva",
+            "JavaScript interativo",
+            "Fundamentos web sólidos",
+            "Base para projetos futuros"
+          ],
+          "highlights": [
+            "Primeiro projeto web completo",
+            "Fundamentos sólidos estabelecidos",
+            "Demonstração de evolução técnica",
+            "Base para o crescimento profissional"
+          ]
+        }
+      }
+    },
+    "technologies": {
+      "title": "Tecnologias & Ferramentas",
+      "subtitle": "Ferramentas e tecnologias das quais eu domino bastante, ao ponto de criar soluções inovadoras.",
+      "finalText": "Estou em constante aprendizado e sempre atualizando meu stack tecnológico, para acompanhar as últimas tendências e melhores práticas do desenvolvimento moderno, afim de proporcionar a melhor experiência aos meus usuários e clientes.",
+      "categories": {
+        "frontend": "Frontend",
+        "backend": "Backend",
+        "databases": "Databases",
+        "tools": "Ferramentas",
+        "design": "Design"
+      }
+    }
   }
 }
